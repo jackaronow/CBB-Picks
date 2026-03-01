@@ -1,6 +1,6 @@
 {
   "date": "2026-03-01",
-  "updated": "2026-03-01 04:57 PM",
+  "updated": "2026-03-01 05:03 PM",
   "record": {
     "ats_combined": {
       "wins": 68,
@@ -373,7 +373,7 @@
     "home": "UTSA",
     "pick": "Wichita St.",
     "bet": "Wichita St. -14.5",
-    "edge": 9.2,
+    "edge": 9.3,
     "confidence": 0.8,
     "pred_score": "90-57"
   },
@@ -388,6 +388,15 @@
       "pred_score": "56-86"
     },
     {
+      "away": "Northern Iowa",
+      "home": "Drake",
+      "pick": "Northern Iowa",
+      "bet": "Northern Iowa -4.0",
+      "edge": 7.2,
+      "confidence": 0.744,
+      "pred_score": "78-62"
+    },
+    {
       "away": "Tulane",
       "home": "South Florida",
       "pick": "South Florida",
@@ -395,15 +404,6 @@
       "edge": 6.9,
       "confidence": 0.734,
       "pred_score": "62-89"
-    },
-    {
-      "away": "Northern Iowa",
-      "home": "Drake",
-      "pick": "Northern Iowa",
-      "bet": "Northern Iowa -4.0",
-      "edge": 6.4,
-      "confidence": 0.719,
-      "pred_score": "77-62"
     },
     {
       "away": "Merrimack",
@@ -505,7 +505,7 @@
       "pick": "Bradley",
       "bet": "Murray St. +4.5",
       "edge": 2.2,
-      "confidence": 0.579,
+      "confidence": 0.58,
       "pred_score": "77-79"
     },
     {
