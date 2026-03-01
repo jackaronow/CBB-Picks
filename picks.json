@@ -1,6 +1,6 @@
 {
   "date": "2026-03-01",
-  "updated": "2026-03-01 05:29 PM",
+  "updated": "2026-03-01 06:01 PM",
   "record": {
     "ats_combined": {
       "wins": 68,
@@ -374,7 +374,7 @@
     "pick": "Wichita St.",
     "bet": "Wichita St. -14.5",
     "edge": 9.3,
-    "confidence": 0.8,
+    "confidence": 0.801,
     "pred_score": "90-57"
   },
   "premium_picks": [
@@ -383,47 +383,65 @@
       "home": "Siena",
       "pick": "Siena",
       "bet": "Siena -15.5",
-      "edge": 7.4,
-      "confidence": 0.751,
-      "pred_score": "56-86"
+      "edge": 8.3,
+      "confidence": 0.775,
+      "pred_score": "55-86"
     },
     {
-      "away": "Northern Iowa",
-      "home": "Drake",
-      "pick": "Northern Iowa",
-      "bet": "Northern Iowa -4.0",
-      "edge": 7.2,
-      "confidence": 0.744,
-      "pred_score": "78-62"
+      "away": "Memphis",
+      "home": "East Carolina",
+      "pick": "Memphis",
+      "bet": "East Carolina +5.0",
+      "edge": 6.9,
+      "confidence": 0.735,
+      "pred_score": "81-65"
     },
     {
       "away": "Tulane",
       "home": "South Florida",
       "pick": "South Florida",
       "bet": "South Florida -14.5",
-      "edge": 6.9,
-      "confidence": 0.734,
+      "edge": 6.2,
+      "confidence": 0.713,
       "pred_score": "62-89"
     },
     {
       "away": "Merrimack",
       "home": "Niagara",
       "pick": "Merrimack",
-      "bet": "Merrimack -8.5",
-      "edge": 5.7,
-      "confidence": 0.698,
+      "bet": "Niagara +8.5",
+      "edge": 5.9,
+      "confidence": 0.704,
       "pred_score": "78-58"
     }
   ],
   "free_plays": [
+    {
+      "away": "Northern Iowa",
+      "home": "Drake",
+      "pick": "Northern Iowa",
+      "bet": "Northern Iowa -4.0",
+      "edge": 5.5,
+      "confidence": 0.691,
+      "pred_score": "76-63"
+    },
     {
       "away": "Iona",
       "home": "Manhattan",
       "pick": "Iona",
       "bet": "Iona -2.0",
       "edge": 5.1,
-      "confidence": 0.68,
+      "confidence": 0.679,
       "pred_score": "81-70"
+    },
+    {
+      "away": "Quinnipiac",
+      "home": "Canisius",
+      "pick": "Quinnipiac",
+      "bet": "Quinnipiac -7.0",
+      "edge": 5.0,
+      "confidence": 0.675,
+      "pred_score": "79-62"
     },
     {
       "away": "Southern Illinois",
@@ -440,35 +458,26 @@
       "pick": "Belmont",
       "bet": "Belmont +1.5",
       "edge": 4.5,
-      "confidence": 0.66,
+      "confidence": 0.659,
       "pred_score": "78-72"
-    },
-    {
-      "away": "Quinnipiac",
-      "home": "Canisius",
-      "pick": "Quinnipiac",
-      "bet": "Quinnipiac -7.0",
-      "edge": 4.3,
-      "confidence": 0.651,
-      "pred_score": "79-62"
-    },
-    {
-      "away": "Memphis",
-      "home": "East Carolina",
-      "pick": "Memphis",
-      "bet": "Memphis -5.0",
-      "edge": 4.2,
-      "confidence": 0.648,
-      "pred_score": "80-67"
     },
     {
       "away": "Charleston",
       "home": "UNC Wilmington",
       "pick": "UNC Wilmington",
       "bet": "UNC Wilmington -4.0",
-      "edge": 4.2,
-      "confidence": 0.647,
+      "edge": 4.1,
+      "confidence": 0.645,
       "pred_score": "67-77"
+    },
+    {
+      "away": "Saint Peter's",
+      "home": "Marist",
+      "pick": "Marist",
+      "bet": "Marist -3.5",
+      "edge": 4.1,
+      "confidence": 0.645,
+      "pred_score": "64-73"
     }
   ],
   "all_games": [
@@ -480,15 +489,6 @@
       "edge": 3.1,
       "confidence": 0.611,
       "pred_score": "77-68"
-    },
-    {
-      "away": "Saint Peter's",
-      "home": "Marist",
-      "pick": "Marist",
-      "bet": "Marist -3.5",
-      "edge": 2.7,
-      "confidence": 0.597,
-      "pred_score": "65-72"
     },
     {
       "away": "La Salle",
@@ -505,7 +505,7 @@
       "pick": "Bradley",
       "bet": "Murray St. +4.5",
       "edge": 2.2,
-      "confidence": 0.58,
+      "confidence": 0.579,
       "pred_score": "77-79"
     },
     {
@@ -523,7 +523,7 @@
       "pick": "Marquette",
       "bet": "Marquette -4.0",
       "edge": 1.8,
-      "confidence": 0.566,
+      "confidence": 0.565,
       "pred_score": "69-75"
     },
     {
@@ -550,7 +550,7 @@
       "pick": "Purdue",
       "bet": "Purdue -6.5",
       "edge": 0.8,
-      "confidence": 0.53,
+      "confidence": 0.529,
       "pred_score": "80-70"
     },
     {
@@ -568,7 +568,7 @@
       "pick": "UAB",
       "bet": "UAB -4.5",
       "edge": 0.1,
-      "confidence": 0.505,
+      "confidence": 0.504,
       "pred_score": "68-73"
     },
     {
@@ -577,7 +577,7 @@
       "pick": "Maryland",
       "bet": "Rutgers +5.5",
       "edge": 0.0,
-      "confidence": 0.502,
+      "confidence": 0.5,
       "pred_score": "70-76"
     }
   ]
