@@ -1,6 +1,6 @@
 {
   "date": "2026-03-01",
-  "updated": "2026-03-01 06:01 PM",
+  "updated": "2026-03-01 06:20 PM",
   "record": {
     "ats_combined": {
       "wins": 68,
@@ -391,7 +391,7 @@
       "away": "Memphis",
       "home": "East Carolina",
       "pick": "Memphis",
-      "bet": "East Carolina +5.0",
+      "bet": "Memphis -5.0",
       "edge": 6.9,
       "confidence": 0.735,
       "pred_score": "81-65"
@@ -409,7 +409,7 @@
       "away": "Merrimack",
       "home": "Niagara",
       "pick": "Merrimack",
-      "bet": "Niagara +8.5",
+      "bet": "Merrimack -8.5",
       "edge": 5.9,
       "confidence": 0.704,
       "pred_score": "78-58"
@@ -469,18 +469,18 @@
       "edge": 4.1,
       "confidence": 0.645,
       "pred_score": "67-77"
-    },
+    }
+  ],
+  "all_games": [
     {
       "away": "Saint Peter's",
       "home": "Marist",
       "pick": "Marist",
       "bet": "Marist -3.5",
-      "edge": 4.1,
-      "confidence": 0.645,
+      "edge": 3.9,
+      "confidence": 0.639,
       "pred_score": "64-73"
-    }
-  ],
-  "all_games": [
+    },
     {
       "away": "Michigan St.",
       "home": "Indiana",
