@@ -1,6 +1,6 @@
 {
   "date": "2026-03-01",
-  "updated": "2026-03-01 04:27 PM",
+  "updated": "2026-03-01 04:50 PM",
   "record": {
     "ats_combined": {
       "wins": 68,
@@ -375,7 +375,7 @@
     "bet": "Wichita St. -14.5",
     "edge": 9.2,
     "confidence": 0.799,
-    "pred_score": "90-57"
+    "pred_score": "89-57"
   },
   "premium_picks": [
     {
@@ -384,7 +384,7 @@
       "pick": "Siena",
       "bet": "Siena -15.5",
       "edge": 7.4,
-      "confidence": 0.75,
+      "confidence": 0.751,
       "pred_score": "56-86"
     },
     {
@@ -402,7 +402,7 @@
       "pick": "Merrimack",
       "bet": "Merrimack -8.5",
       "edge": 5.7,
-      "confidence": 0.696,
+      "confidence": 0.698,
       "pred_score": "78-58"
     },
     {
@@ -411,7 +411,7 @@
       "pick": "Northern Iowa",
       "bet": "Northern Iowa -4.0",
       "edge": 5.5,
-      "confidence": 0.692,
+      "confidence": 0.691,
       "pred_score": "76-63"
     }
   ],
@@ -422,7 +422,7 @@
       "pick": "Iona",
       "bet": "Iona -2.0",
       "edge": 5.1,
-      "confidence": 0.677,
+      "confidence": 0.68,
       "pred_score": "81-70"
     },
     {
@@ -458,7 +458,7 @@
       "pick": "Memphis",
       "bet": "Memphis -5.0",
       "edge": 4.2,
-      "confidence": 0.65,
+      "confidence": 0.648,
       "pred_score": "80-67"
     },
     {
@@ -473,15 +473,6 @@
   ],
   "all_games": [
     {
-      "away": "Saint Peter's",
-      "home": "Marist",
-      "pick": "Marist",
-      "bet": "Marist -3.5",
-      "edge": 3.2,
-      "confidence": 0.615,
-      "pred_score": "65-72"
-    },
-    {
       "away": "Michigan St.",
       "home": "Indiana",
       "pick": "Michigan St.",
@@ -491,22 +482,13 @@
       "pred_score": "77-68"
     },
     {
-      "away": "Murray St.",
-      "home": "Bradley",
-      "pick": "Bradley",
-      "bet": "Murray St. +4.5",
-      "edge": 2.8,
-      "confidence": 0.599,
-      "pred_score": "77-78"
-    },
-    {
-      "away": "Charlotte",
-      "home": "Florida Atlantic",
-      "pick": "Florida Atlantic",
-      "bet": "Florida Atlantic -7.0",
-      "edge": 2.4,
-      "confidence": 0.588,
-      "pred_score": "68-80"
+      "away": "Saint Peter's",
+      "home": "Marist",
+      "pick": "Marist",
+      "bet": "Marist -3.5",
+      "edge": 2.7,
+      "confidence": 0.597,
+      "pred_score": "65-72"
     },
     {
       "away": "La Salle",
@@ -516,6 +498,24 @@
       "edge": 2.3,
       "confidence": 0.583,
       "pred_score": "60-77"
+    },
+    {
+      "away": "Murray St.",
+      "home": "Bradley",
+      "pick": "Bradley",
+      "bet": "Murray St. +4.5",
+      "edge": 2.2,
+      "confidence": 0.579,
+      "pred_score": "77-79"
+    },
+    {
+      "away": "Charlotte",
+      "home": "Florida Atlantic",
+      "pick": "Florida Atlantic",
+      "bet": "Florida Atlantic -7.0",
+      "edge": 2.1,
+      "confidence": 0.576,
+      "pred_score": "68-79"
     },
     {
       "away": "DePaul",
@@ -541,7 +541,7 @@
       "pick": "Fairfield",
       "bet": "Mount St. Mary's +4.5",
       "edge": 1.0,
-      "confidence": 0.535,
+      "confidence": 0.536,
       "pred_score": "71-74"
     },
     {
@@ -549,18 +549,18 @@
       "home": "Ohio St.",
       "pick": "Purdue",
       "bet": "Purdue -6.5",
-      "edge": 0.9,
-      "confidence": 0.533,
+      "edge": 0.8,
+      "confidence": 0.53,
       "pred_score": "80-70"
     },
     {
       "away": "Rice",
       "home": "Temple",
       "pick": "Temple",
-      "bet": "Temple -7.5",
-      "edge": 0.4,
-      "confidence": 0.513,
-      "pred_score": "68-78"
+      "bet": "Rice +7.5",
+      "edge": 0.2,
+      "confidence": 0.507,
+      "pred_score": "69-77"
     },
     {
       "away": "North Texas",
@@ -576,7 +576,7 @@
       "home": "Maryland",
       "pick": "Maryland",
       "bet": "Rutgers +5.5",
-      "edge": 0.1,
+      "edge": 0.0,
       "confidence": 0.502,
       "pred_score": "70-76"
     }
