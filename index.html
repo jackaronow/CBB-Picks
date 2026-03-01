@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBB Model Picks</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBV1H4965L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YBV1H4965L');
+  </script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}body{background:#0a0a0f;color:#fff;font-family:'DM Sans',sans-serif;min-height:100vh}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+    @keyframes livePulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}70%{box-shadow:0 0 0 6px rgba(239,68,68,0)}}
+    .fade-up{animation:fadeUp .5s ease both}
+    .clickable{cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+    .clickable:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.3)}
+    .clickable:active{transform:scale(.98)}
+    input[type="text"],input[type="date"]{width:100%;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);color:#fff;font-size:13px;font-family:'DM Sans',sans-serif;outline:none}
+    input:focus{border-color:rgba(168,85,247,.4)}
+    .live-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;animation:livePulse 1.5s ease infinite;display:inline-block}
+    .follow-btn{padding:6px 12px;border-radius:8px;font-size:11px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all .2s ease;border:none}
+    .follow-btn.active{background:rgba(234,179,8,.2);color:#eab308;border:1px solid rgba(234,179,8,.4)}
+    .follow-btn.inactive{background:rgba(255,255,255,.04);color:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.06)}
+    .follow-btn.inactive:hover{background:rgba(234,179,8,.1);color:#eab308}
+    .fd-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:6px;background:rgba(24,118,210,.15);border:1px solid rgba(24,118,210,.3);color:#1876d2;font-size:10px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;text-decoration:none;transition:all .2s ease;letter-spacing:.3px}
+    .fd-btn:hover{background:rgba(24,118,210,.25)}
+    .help-btn{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);font-size:13px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s ease}
+    .help-btn:hover{background:rgba(255,255,255,.1);color:#fff}
+    .modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
+    .modal-content{background:#141420;border:1px solid rgba(255,255,255,.1);border-radius:16px;max-width:500px;width:100%;max-height:85vh;overflow-y:auto;padding:28px 24px}
+    .modal-content h3{font-size:16px;font-weight:800;margin-bottom:12px;color:#eab308}
+    .modal-content p{font-size:13px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:14px}
+    .modal-content .term{display:flex;gap:10px;margin-bottom:14px;align-items:flex-start}
+    .modal-content .term-badge{flex-shrink:0;padding:3px 8px;border-radius:6px;font-size:10px;font-weight:700;min-width:60px;text-align:center}
+    .modal-content .term-text{font-size:12px;color:rgba(255,255,255,.55);line-height:1.6}
+    .modal-close{width:100%;padding:12px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.5);font-size:13px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;margin-top:8px;transition:all .15s ease}
+    .modal-close:hover{background:rgba(255,255,255,.1);color:#fff}
+    .tail-count{font-size:10px;color:rgba(255,255,255,.35);font-weight:600;margin-top:2px;text-align:right}
+    .tail-count.flash{animation:tailFlash .8s ease}
+    @keyframes tailFlash{0%{color:#22c55e;text-shadow:0 0 8px rgba(34,197,94,.5)}100%{color:rgba(255,255,255,.35);text-shadow:none}}
+    .welcome-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.85);z-index:2000;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(6px)}
+    .welcome-box{background:linear-gradient(135deg,#141420,#1a1a2e);border:1px solid rgba(234,179,8,.3);border-radius:20px;max-width:440px;width:100%;padding:32px 28px;text-align:center;animation:fadeUp .5s ease}
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+let DATA=null,activeTab='picks',edgeFilter=3,searchQuery='',currentPage='main',dateRange='7',customFrom='',customTo='';
+let followed={};
+let liveScores={};
+let espnGames=[];
+let allGamesData=[];
+let scoreInterval=null;
+let liveSubTab='picks';
+let gamesSearch='';
+let liveSearch='';
+let followSearch='';
+let showHelp=false;
+
+// ===== FIREBASE =====
+const firebaseConfig={apiKey:"AIzaSyDYrWxK3CxN2kS_HG3ZAELPE3G24a0OPkk",authDomain:"cbb-picks-e5218.firebaseapp.com",databaseURL:"https://cbb-picks-e5218-default-rtdb.firebaseio.com",projectId:"cbb-picks-e5218",storageBucket:"cbb-picks-e5218.firebasestorage.app",messagingSenderId:"267453485066",appId:"1:267453485066:web:3bc21352c6e3ed8f224ff3"};
+firebase.initializeApp(firebaseConfig);
+const db=firebase.database();
+let tailCounts={};
+
+function getTailRef(pick){
+  const dateKey=DATA?DATA.date.replace(/-/g,''):'';
+  const gameKey=(pick.away+'_'+pick.home).replace(/[^a-zA-Z0-9]/g,'_');
+  return db.ref('tails/'+dateKey+'/'+gameKey);
+}
+
+function loadTailCounts(){
+  if(!DATA)return;
+  const dateKey=DATA.date.replace(/-/g,'');
+  db.ref('tails/'+dateKey).on('value',(snap)=>{
+    const data=snap.val()||{};
+    const prevCounts={...tailCounts};
+    tailCounts={};
+    for(const[gameKey,count]of Object.entries(data)){
+      tailCounts[gameKey]=count;
+    }
+    document.querySelectorAll('[data-tail-key]').forEach(el=>{
+      const k=el.getAttribute('data-tail-key');
+      const c=tailCounts[k]||0;
+      const prev=prevCounts[k]||0;
+      el.textContent=c>0?c+' tailing 🔥':'';
+      if(c>prev&&prev>=0){
+        el.classList.remove('flash');
+        void el.offsetWidth;
+        el.classList.add('flash');
+      }
+    });
+  });
+}
+
+function updateTailCount(pick,isTailing){
+  const ref=getTailRef(pick);
+  ref.transaction((current)=>{
+    const val=current||0;
+    return isTailing?val+1:Math.max(0,val-1);
+  });
+}
+
+function getTailCountForPick(pick){
+  const gameKey=(pick.away+'_'+pick.home).replace(/[^a-zA-Z0-9]/g,'_');
+  return tailCounts[gameKey]||0;
+}
+
+function getTailKey(pick){
+  return(pick.away+'_'+pick.home).replace(/[^a-zA-Z0-9]/g,'_');
+}
+
+// ===== WELCOME POPUP =====
+function showWelcome(){
+  if(localStorage.getItem('cbb_welcomed'))return;
+  const w=document.createElement('div');w.className='welcome-overlay';w.id='welcome-modal';
+  w.innerHTML=`<div class="welcome-box">
+    <div style="font-size:48px;margin-bottom:16px">🏀</div>
+    <h2 style="font-size:22px;font-weight:800;color:#eab308;margin-bottom:8px">Welcome to CBB Model Picks</h2>
+    <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:16px">A statistical model that predicts college basketball scores and finds edges against Vegas spreads.</p>
+    <div style="background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.2);border-radius:12px;padding:14px 16px;margin-bottom:16px;text-align:left">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><span style="font-size:16px">🪙</span><span style="font-size:13px;font-weight:700;color:#eab308">Tap "Tail" on any bet you're taking!</span></div>
+      <p style="font-size:12px;color:rgba(255,255,255,.45);line-height:1.6">This helps us see which picks are popular and how many people are riding along. You'll see a live count of how many others are tailing each bet.</p>
+    </div>
+    <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px 16px;margin-bottom:20px;text-align:left">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px"><span style="font-size:14px">⚠️</span><span style="font-size:12px;font-weight:700;color:rgba(255,255,255,.6)">Disclaimer</span></div>
+      <p style="font-size:11px;color:rgba(255,255,255,.35);line-height:1.6">This model does not account for injuries, suspensions, or last-minute lineup changes. Despite this, it's been hitting at a strong rate. Always gamble responsibly.</p>
+    </div>
+    <button onclick="document.getElementById('welcome-modal').remove();localStorage.setItem('cbb_welcomed','1')" style="width:100%;padding:14px;border-radius:12px;background:linear-gradient(135deg,#eab308,#f59e0b);border:none;color:#000;font-size:15px;font-weight:800;font-family:'DM Sans',sans-serif;cursor:pointer;letter-spacing:.3px">Let's Go 🏀</button>
+  </div>`;
+  document.body.appendChild(w);
+}
+
+function toggleHelp(){showHelp=!showHelp;if(showHelp){renderHelpModal()}else{const m=document.getElementById('help-modal');if(m)m.remove()}}
+
+function renderHelpModal(){
+  const existing=document.getElementById('help-modal');if(existing)existing.remove();
+  const modal=document.createElement('div');modal.id='help-modal';modal.className='modal-overlay';modal.onclick=function(e){if(e.target===this)toggleHelp()};
+  modal.innerHTML=`<div class="modal-content">
+    <h3>🏀 How This Works</h3>
+    <p>This app uses a statistical model to predict college basketball scores and find betting edges against Vegas spreads. Here's what everything means:</p>
+
+    <h3 style="font-size:14px;color:#fff;margin-bottom:10px">Pick Card Breakdown</h3>
+
+    <div class="term"><div class="term-badge" style="background:rgba(234,179,8,.15);color:#eab308">EDGE</div><div class="term-text">The difference between what our model predicts and what Vegas says. A higher edge means our model disagrees more with Vegas — these are our strongest plays. <strong style="color:rgba(255,255,255,.7)">Only bets with 3+ point edge count towards our record.</strong></div></div>
+
+    <div class="term"><div class="term-badge" style="background:rgba(34,197,94,.15);color:#22c55e">Pick</div><div class="term-text">The team our model predicts will win the game outright (not against the spread).</div></div>
+
+    <div class="term"><div class="term-badge" style="background:rgba(168,85,247,.15);color:#a855f7">Bet</div><div class="term-text">The spread bet our model recommends. For example, "Duke -5.5" means bet on Duke to win by 6 or more. "UNC +3.5" means bet on UNC to lose by 3 or fewer (or win).</div></div>
+
+    <div class="term"><div class="term-badge" style="background:rgba(59,130,246,.15);color:#3b82f6">Predicted Score</div><div class="term-text">The exact score our model predicts for the game. This is what drives the edge calculation.</div></div>
+
+    <div class="term"><div class="term-badge" style="background:rgba(34,197,94,.15);color:#22c55e">Confidence</div><div class="term-text">How confident the model is in this prediction. High (75%+) means strong data support. Medium (60-74%) is solid. Low (<60%) means more uncertainty.</div></div>
+
+    <h3 style="font-size:14px;color:#fff;margin-top:20px;margin-bottom:10px">Pick Categories</h3>
+
+    <div class="term"><div class="term-badge" style="background:rgba(249,115,22,.15);color:#f97316">🔥 POD</div><div class="term-text"><strong style="color:rgba(255,255,255,.7)">Play of the Day</strong> — Our single best bet. The game with the highest edge.</div></div>
+
+    <div class="term"><div class="term-badge" style="background:rgba(234,179,8,.15);color:#eab308">⭐ Premium</div><div class="term-text">Top 5 bets of the day (excluding POD). These are our highest conviction plays.</div></div>
+
+    <div class="term"><div class="term-badge" style="background:rgba(168,85,247,.15);color:#a855f7">🎯 Free Plays</div><div class="term-text">All remaining bets with 3+ point edge. Still valuable, just not in our top 5.</div></div>
+
+    <h3 style="font-size:14px;color:#fff;margin-top:20px;margin-bottom:10px">Live Game Badges</h3>
+
+    <div class="term"><div class="term-badge" style="background:rgba(34,197,94,.15);color:#22c55e">✓ COVERING</div><div class="term-text">The current score is on track for our bet to win.</div></div>
+
+    <div class="term"><div class="term-badge" style="background:rgba(239,68,68,.15);color:#ef4444">✗ NOT COVERING</div><div class="term-text">The current score means our bet would lose right now.</div></div>
+
+    <h3 style="font-size:14px;color:#fff;margin-top:20px;margin-bottom:10px">Records & Profit</h3>
+    <p>All records track bets with <strong style="color:rgba(255,255,255,.7)">3+ point edge</strong> only. Profit is calculated on $100 bets at -110 odds ($90.91 per win, -$100 per loss). The "Today" box updates live as games finish.</p>
+
+    <h3 style="font-size:14px;color:#fff;margin-top:20px;margin-bottom:10px">⚠️ Disclaimer</h3>
+    <p>This model does <strong style="color:rgba(255,255,255,.7)">not</strong> account for injuries, suspensions, or last-minute lineup changes. Despite this, it's been hitting at a strong rate. Always gamble responsibly — this is not financial advice.</p>
+
+    <button class="modal-close" onclick="toggleHelp()">Got it</button>
+  </div>`;
+  document.body.appendChild(modal);
+}
+
+// ===== FOLLOW PERSISTENCE =====
+function saveFollowed(){try{const d=DATA?DATA.date:'';document.cookie='cbb_follows='+encodeURIComponent(JSON.stringify({date:d,keys:followed}))+';path=/;max-age=86400;SameSite=Lax'}catch(e){}}
+function loadFollowed(){try{const c=document.cookie.split(';').find(c=>c.trim().startsWith('cbb_follows='));if(!c)return;const v=JSON.parse(decodeURIComponent(c.split('=').slice(1).join('=')));if(v.date===DATA.date)followed=v.keys||{};else followed={}}catch(e){followed={}}}
+
+// ===== ESPN =====
+async function fetchESPNScores(){
+  try{
+    const now=new Date();
+    const et=new Date(now.toLocaleString('en-US',{timeZone:'America/New_York'}));
+    const ds=et.getFullYear()+String(et.getMonth()+1).padStart(2,'0')+String(et.getDate()).padStart(2,'0');
+    
+    // Try multiple approaches to get all games
+    const urls=[
+      `https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates=${ds}&groups=50&limit=400`,
+      `https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates=${ds}&groups=100&limit=400`,
+      `https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates=${ds}&limit=400`,
+      `https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?limit=400`
+    ];
+    
+    let bestEvents=[];
+    for(const url of urls){
+      try{
+        const r=await fetch(url);const d=await r.json();
+        const evts=d.events||[];
+        console.log('📡 ESPN ('+url.split('?')[1]+'):',evts.length,'events');
+        if(evts.length>bestEvents.length)bestEvents=evts;
+        if(evts.length>=20)break; // Good enough, stop trying
+      }catch(e2){console.log('⚠️ Failed:',url)}
+    }
+    
+    console.log('✅ Using best result:',bestEvents.length,'events');
+    espnGames=bestEvents;buildAllGames();matchScores();render();
+  }catch(e){console.log('ESPN error:',e)}
+}
+function normalizeTeam(n){return n.toLowerCase().replace(/[^a-z0-9\s]/g,'').replace(/\s+/g,' ').trim().replace(/^(the|university of|u of)\s/,'').replace(/\sstate$/,' st').replace(/\suniversity$/,'')}
+
+// Common abbreviation/name mappings
+const TEAM_ALIASES={
+  'maryland':'terrapins','purdue':'boilermakers','duke':'blue devils','unc':'tar heels',
+  'north carolina':'tar heels','kentucky':'wildcats','kansas':'jayhawks','villanova':'wildcats',
+  'gonzaga':'bulldogs','houston':'cougars','uconn':'huskies','connecticut':'huskies',
+  'tennessee':'volunteers','alabama':'crimson tide','auburn':'tigers','florida':'gators',
+  'texas':'longhorns','michigan':'wolverines','ohio st':'buckeyes','ohio state':'buckeyes',
+  'indiana':'hoosiers','iowa':'hawkeyes','illinois':'fighting illini','wisconsin':'badgers',
+  'michigan st':'spartans','michigan state':'spartans','penn st':'nittany lions',
+  'iowa st':'cyclones','iowa state':'cyclones','texas tech':'red raiders',
+  'baylor':'bears','oklahoma':'sooners','arkansas':'razorbacks','mississippi':'rebels',
+  'ole miss':'rebels','lsu':'tigers','louisiana state':'tigers','missouri':'tigers',
+  'georgia':'bulldogs','south carolina':'gamecocks','vanderbilt':'commodores',
+  'virginia':'cavaliers','louisville':'cardinals','pittsburgh':'panthers','pitt':'panthers',
+  'nc state':'wolfpack','wake forest':'demon deacons','clemson':'tigers','syracuse':'orange',
+  'notre dame':'fighting irish','miami':'hurricanes','miami fl':'hurricanes',
+  'florida st':'seminoles','florida state':'seminoles','georgia tech':'yellow jackets',
+  'virginia tech':'hokies','boston college':'eagles','smu':'mustangs','cal':'golden bears',
+  'stanford':'cardinal','oregon':'ducks','oregon st':'beavers','washington':'huskies',
+  'washington st':'cougars','ucla':'bruins','usc':'trojans','arizona':'wildcats',
+  'arizona st':'sun devils','colorado':'buffaloes','utah':'utes',
+  'cincinnati':'bearcats','ucf':'knights','byu':'cougars','brigham young':'cougars',
+  'west virginia':'mountaineers','tcu':'horned frogs','texas christian':'horned frogs',
+  'oklahoma st':'cowboys','oklahoma state':'cowboys','kansas st':'wildcats','kansas state':'wildcats',
+  'creighton':'bluejays','xavier':'musketeers','marquette':'golden eagles',
+  'butler':'bulldogs','seton hall':'pirates','st johns':'red storm','depaul':'blue demons',
+  'providence':'friars','georgetown':'hoyas','unlv':'rebels','san diego st':'aztecs',
+  'memphis':'tigers','wichita st':'shockers','dayton':'flyers','saint marys':'gaels',
+  'st marys':'gaels','vcu':'rams','virginia commonwealth':'rams','richmond':'spiders',
+  'davidson':'wildcats','george mason':'patriots','loyola chicago':'ramblers',
+  'drake':'bulldogs','murray st':'racers','murray state':'racers',
+  'grand canyon':'lopes','liberty':'flames','new mexico':'lobos','nevada':'wolf pack',
+  'fresno st':'bulldogs','fresno state':'bulldogs','colorado st':'rams','colorado state':'rams',
+  'boise st':'broncos','boise state':'broncos','utep':'miners','north texas':'mean green',
+  'unt':'mean green','uab':'blazers','fau':'owls','florida atlantic':'owls',
+  'fiu':'panthers','florida international':'panthers','app st':'mountaineers',
+  'appalachian state':'mountaineers','marshall':'thundering herd',
+  'james madison':'dukes','old dominion':'monarchs','troy':'trojans',
+  'louisiana':'ragin cajuns','southern miss':'golden eagles',
+  'texas st':'bobcats','texas state':'bobcats','utsa':'roadrunners',
+  'sam houston':'bearkats','sam houston st':'bearkats',
+  'middle tennessee':'blue raiders','mtsu':'blue raiders',
+  'western kentucky':'hilltoppers','jacksonville st':'gamecocks',
+  'kennesaw st':'owls','kennesaw state':'owls'
+};
+
+function teamsMatch(pickName,espnFull,espnShort,espnAbbr){
+  const pn=normalizeTeam(pickName),ef=normalizeTeam(espnFull),es=normalizeTeam(espnShort);
+  const pa=(espnAbbr||'').toLowerCase();
+  
+  // Direct substring match
+  if(pn&&ef&&(pn.includes(ef)||ef.includes(pn)))return true;
+  if(pn&&es&&(pn.includes(es)||es.includes(pn)))return true;
+  
+  // Abbreviation match (e.g. "MD" matches "Maryland")
+  if(pa&&pn){
+    const pWords=pn.split(' ');
+    const pAbbr=pWords.map(w=>w[0]).join('');
+    if(pa===pAbbr||pa===pn.replace(/\s/g,''))return true;
+  }
+  
+  // First significant word match (e.g. "Maryland" matches "Maryland Terrapins")
+  const pFirst=pn.split(' ')[0];
+  const eFirst=ef.split(' ')[0];
+  const esFirst=es.split(' ')[0];
+  if(pFirst&&pFirst.length>3&&(pFirst===eFirst||pFirst===esFirst))return true;
+  if(eFirst&&eFirst.length>3&&eFirst===pFirst)return true;
+  if(esFirst&&esFirst.length>3&&esFirst===pFirst)return true;
+  
+  // Check if pick name's mascot or school matches ESPN
+  const pAlias=TEAM_ALIASES[pn]||'';
+  if(pAlias&&(ef.includes(pAlias)||es.includes(pAlias)))return true;
+  
+  // Word overlap
+  const pw=pn.split(' ').filter(w=>w.length>2),ew=ef.split(' ').filter(w=>w.length>2),esw=es.split(' ').filter(w=>w.length>2);
+  if(pw.length&&ew.length&&pw.every(w=>ew.some(e=>e.includes(w)||w.includes(e))))return true;
+  if(pw.length&&esw.length&&pw.every(w=>esw.some(e=>e.includes(w)||w.includes(e))))return true;
+  if(ew.length&&pw.length&&ew.every(w=>pw.some(p=>p.includes(w)||w.includes(p))))return true;
+  return false;
+}
+
+function buildAllGames(){
+  allGamesData=[];
+  for(const ev of espnGames){
+    if(!ev.competitions||!ev.competitions[0])continue;
+    const comp=ev.competitions[0],teams=comp.competitors||[];
+    if(teams.length<2)continue;
+    const home=teams.find(t=>t.homeAway==='home'),away=teams.find(t=>t.homeAway==='away');
+    if(!home||!away)continue;
+    const status=comp.status||{},state=status.type?status.type.state:'pre';
+    const detail=status.type?status.type.shortDetail:'';
+    let startTime='';let startDate=null;
+    if(comp.date){const gd=new Date(comp.date);startTime=gd.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'});startDate=gd}
+    const gd={
+      away_name:away.team.shortDisplayName||away.team.displayName||'',
+      home_name:home.team.shortDisplayName||home.team.displayName||'',
+      away_full:away.team.displayName||'',home_full:home.team.displayName||'',
+      away_abbr:away.team.abbreviation||'',home_abbr:home.team.abbreviation||'',
+      away_score:parseInt(away.score)||0,home_score:parseInt(home.score)||0,
+      status:state,detail,startTime,startDate,
+      period:status.period||0,clock:status.displayClock||''
+    };
+    allGamesData.push(gd);
+    if(state==='in')console.log('🏀 LIVE ESPN:',gd.away_full,'('+gd.away_name+'/'+gd.away_abbr+') @',gd.home_full,'('+gd.home_name+'/'+gd.home_abbr+')');
+  }
+  console.log('📊 ESPN total:',allGamesData.length,'games,',allGamesData.filter(g=>g.status==='in').length,'live');
+}
+
+function matchScores(){
+  if(!DATA||!espnGames.length)return;
+  const allPicks=getAllGamesWithPicks();
+  let matched=0,unmatched=[];
+  for(const pick of allPicks){
+    const key=pick.away+'@'+pick.home;
+    let found=false;
+    for(const g of allGamesData){
+      if(teamsMatch(pick.away,g.away_full,g.away_name,g.away_abbr)&&teamsMatch(pick.home,g.home_full,g.home_name,g.home_abbr)){
+        liveScores[key]={away_score:g.away_score,home_score:g.home_score,period:g.period,clock:g.clock,status:g.status,detail:g.detail,startTime:g.startTime,started:g.status!=='pre'};
+        found=true;matched++;break;
+      }
+    }
+    if(!found)unmatched.push(pick.away+' @ '+pick.home);
+  }
+  if(unmatched.length)console.log('⚠️ Unmatched picks ('+unmatched.length+'):', unmatched);
+  if(allGamesData.length)console.log('✅ Matched '+matched+'/'+allPicks.length+' picks to ESPN. ESPN has '+allGamesData.length+' games, '+allGamesData.filter(g=>g.status==='in').length+' live.');
+}
+
+function startScoreUpdates(){fetchESPNScores();if(scoreInterval)clearInterval(scoreInterval);scoreInterval=setInterval(fetchESPNScores,30000)}
+function getGameKey(p){return p.away+'@'+p.home}
+function isFollowed(p){return followed[getGameKey(p)]||false}
+function toggleFollow(p){const k=getGameKey(p);if(followed[k]){delete followed[k];updateTailCount(p,false)}else{followed[k]=true;updateTailCount(p,true)}saveFollowed();render()}
+function getFollowedCount(){return Object.keys(followed).length}
+function getAllPicks(){if(!DATA)return[];return[...(DATA.play_of_the_day?[{...DATA.play_of_the_day,_type:'pod'}]:[]),...(DATA.premium_picks||[]).map(p=>({...p,_type:'premium'})),...(DATA.free_plays||[]).map(p=>({...p,_type:'free'}))]}
+function getAllGamesWithPicks(){if(!DATA)return[];return[...getAllPicks(),...(DATA.all_games||[]).map(p=>({...p,_type:'other'}))]}function getFollowedPicks(){return getAllPicks().filter(p=>isFollowed(p))}
+function getLivePicks(){return getAllPicks().filter(p=>{const ls=liveScores[getGameKey(p)];return ls&&ls.status==='in'})}
+
+function checkCovering(pick,ls){
+  if(!ls||ls.status==='pre')return null;
+  const m=pick.bet.match(/([+-]?\d+\.?\d*)\s*$/);if(!m)return null;
+  const spread=parseFloat(m[1]),betOnHome=pick.bet.toLowerCase().includes(pick.home.toLowerCase());
+  const diff=ls.home_score-ls.away_score;
+  return betOnHome?(diff+spread)>0?'covering':'not_covering':(-diff+spread)>0?'covering':'not_covering';
+}
+function checkResult(p,ls){if(!ls||ls.status!=='post')return null;return checkCovering(p,ls)==='covering'?'won':'lost'}
+function getTodayRecord(){const all=getAllPicks();let w=0,l=0;for(const p of all){const res=checkResult(p,liveScores[getGameKey(p)]);if(res==='won')w++;if(res==='lost')l++}return{wins:w,losses:l}}
+
+// Find model pick for an ESPN game (including sub-3 edge)
+function findPickForGame(g){
+  const all=getAllGamesWithPicks();
+  for(const p of all){if(teamsMatch(p.away,g.away_full,g.away_name,g.away_abbr)&&teamsMatch(p.home,g.home_full,g.home_name,g.home_abbr))return p}
+  return null;
+}
+
+function cleanForFD(name){
+  // Remove periods (St. → St)
+  let n=name.replace(/\./g,'');
+  // Common mappings that differ between model and FanDuel
+  const map={
+    'UConn':'Connecticut','UCONN':'Connecticut',
+    'UNC':'North Carolina','SMU':'Southern Methodist',
+    'USC':'Southern California','UCF':'Central Florida',
+    'UNLV':'Nevada Las Vegas','VCU':'Virginia Commonwealth',
+    'LSU':'Louisiana State','TCU':'Texas Christian',
+    'BYU':'Brigham Young','UTEP':'Texas El Paso',
+    'UVA':'Virginia','UK':'Kentucky',
+    'Ole Miss':'Mississippi','Pitt':'Pittsburgh',
+    'Cuse':'Syracuse','Nova':'Villanova',
+    'SDSU':'San Diego State','SJSU':'San Jose State',
+    'NIU':'Northern Illinois','EMU':'Eastern Michigan',
+    'WMU':'Western Michigan','CMU':'Central Michigan',
+    'FIU':'Florida International','FAU':'Florida Atlantic',
+    'MTSU':'Middle Tennessee','UTSA':'Texas San Antonio',
+    'UAB':'Alabama Birmingham','UNT':'North Texas',
+    'App St':'Appalachian State','Ga Tech':'Georgia Tech',
+    'Miami FL':'Miami Florida','Miami OH':'Miami Ohio'
+  };
+  for(const[k,v]of Object.entries(map)){if(n.toLowerCase()===k.toLowerCase()){n=v;break}}
+  // Expand "St " to "Saint " as FanDuel sometimes uses full
+  // But keep both options — just use the cleaned version
+  return n;
+}
+function fdLink(pick){
+  const team=encodeURIComponent(cleanForFD(pick.pick));
+  const shield=`<svg width="14" height="16" viewBox="0 0 14 16" fill="none"><path d="M7 0L0 2.5V7.5C0 11.6 3 14.9 7 16C11 14.9 14 11.6 14 7.5V2.5L7 0Z" fill="#1876d2"/><text x="7" y="11.5" text-anchor="middle" fill="white" font-size="8" font-weight="800" font-family="sans-serif">F</text></svg>`;
+  return `<a href="https://sportsbook.fanduel.com/search?q=${team}" target="_blank" class="fd-btn" onclick="event.stopPropagation()">${shield} Place Bet</a>`;
+}
+
+// ===== LOAD =====
+async function loadData(){
+  try{const r=await fetch('picks.json?'+Date.now());DATA=await r.json();loadFollowed();startScoreUpdates();loadTailCounts();render();showWelcome()}
+  catch(e){document.getElementById('app').innerHTML=`<div style="min-height:100vh;display:flex;align-items:center;justify-content:center"><div style="text-align:center;color:rgba(255,255,255,.5)"><div style="font-size:48px;margin-bottom:16px">🏀</div><div style="font-size:16px;font-weight:600">No picks available</div></div></div>`}
+}
+
+function pct(w,l){return(w+l)>0?((w/(w+l))*100).toFixed(1):'0.0'}
+function filterByDate(items,dk){if(dateRange==='all')return items;if(dateRange==='custom')return items.filter(i=>(!customFrom||i[dk]>=customFrom)&&(!customTo||i[dk]<=customTo));const d=parseInt(dateRange),c=new Date();c.setDate(c.getDate()-d);const cs=c.toISOString().split('T')[0];return items.filter(i=>i[dk]>=cs)}
+
+function dateBtns(){
+  const bs=[{v:'7',l:'7D'},{v:'14',l:'14D'},{v:'30',l:'30D'},{v:'all',l:'All'},{v:'custom',l:'Custom'}].map(b=>{const a=dateRange===b.v;return`<button onclick="dateRange='${b.v}';render()" style="padding:6px 12px;border-radius:20px;cursor:pointer;background:${a?'rgba(234,179,8,.2)':'rgba(255,255,255,.04)'};color:${a?'#eab308':'rgba(255,255,255,.4)'};font-size:11px;font-weight:700;font-family:'DM Sans',sans-serif;border:1px solid ${a?'rgba(234,179,8,.4)':'rgba(255,255,255,.06)'}">${b.l}</button>`}).join('');
+  const ci=dateRange==='custom'?`<div style="display:flex;gap:8px;margin-top:8px"><input type="date" value="${customFrom}" onchange="customFrom=this.value;render()" style="flex:1;color-scheme:dark"/><span style="color:rgba(255,255,255,.3);align-self:center">to</span><input type="date" value="${customTo}" onchange="customTo=this.value;render()" style="flex:1;color-scheme:dark"/></div>`:'';
+  return`<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">${bs}</div>${ci}`;
+}
+function backBtn(){return`<button onclick="currentPage='main';dateRange='7';render()" style="display:flex;align-items:center;gap:6px;background:none;border:none;color:rgba(255,255,255,.5);font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;padding:0;margin-bottom:16px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Back to Picks</button>`}
+function searchBox(val,varName){return`<div style="margin-bottom:12px"><input type="text" placeholder="Search teams..." value="${val}" id="search-${varName}" oninput="${varName}=this.value;renderKeepFocus('search-${varName}',this.selectionStart)"/></div>`}
+
+function renderKeepFocus(id,cursor){
+  const prev=document.activeElement?document.activeElement.id:'';
+  render();
+  if(id){
+    const el=document.getElementById(id);
+    if(el){el.focus();if(cursor!==undefined)el.setSelectionRange(cursor,cursor)}
+  }
+}
+
+function confBar(v){
+  const pc=Math.round(v*100),c=pc>=75?'#22c55e':pc>=60?'#eab308':'#f97316',label=pc>=75?'High':pc>=60?'Medium':'Low';
+  return`<div><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:10px;color:rgba(255,255,255,.35);font-weight:600">MODEL CONFIDENCE</span><span style="font-size:11px;font-weight:700;color:${c}">${label} · ${pc}%</span></div><div style="height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden"><div style="width:${pc}%;height:100%;background:${c};border-radius:3px"></div></div></div>`;
+}
+
+function liveScoreBadge(pick){
+  const ls=liveScores[getGameKey(pick)];if(!ls)return'';
+  if(ls.status==='in'){
+    const cv=checkCovering(pick,ls),cvC=cv==='covering'?'#22c55e':'#ef4444';
+    return`<div style="margin-top:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:10px 14px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><div style="display:flex;align-items:center;gap:6px"><span class="live-dot"></span><span style="font-size:10px;font-weight:800;color:#ef4444;letter-spacing:1px">LIVE</span></div><span style="font-size:11px;color:rgba(255,255,255,.4)">${ls.detail||('P'+ls.period+' '+ls.clock)}</span></div><div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:11px;color:rgba(255,255,255,.5)">${pick.away}</div><div style="font-size:18px;font-weight:800;font-family:'JetBrains Mono',monospace">${ls.away_score}</div></div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:2px"><div style="font-size:11px;color:rgba(255,255,255,.5)">${pick.home}</div><div style="font-size:18px;font-weight:800;font-family:'JetBrains Mono',monospace">${ls.home_score}</div></div><div style="text-align:center;margin-top:6px"><span style="font-size:10px;font-weight:700;color:${cvC};background:${cv==='covering'?'rgba(34,197,94,.12)':'rgba(239,68,68,.12)'};padding:2px 10px;border-radius:8px">${cv==='covering'?'✓ COVERING':'✗ NOT COVERING'}</span></div></div>`;
+  }
+  if(ls.status==='post'){
+    const won=checkResult(pick,ls)==='won',rc=won?'#22c55e':'#ef4444';
+    return`<div style="margin-top:8px;background:${won?'rgba(34,197,94,.06)':'rgba(239,68,68,.06)'};border:1px solid ${won?'rgba(34,197,94,.2)':'rgba(239,68,68,.2)'};border-radius:10px;padding:10px 14px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><span style="font-size:10px;font-weight:800;color:rgba(255,255,255,.4);letter-spacing:1px">FINAL</span><span style="font-size:10px;font-weight:800;color:${rc};background:${won?'rgba(34,197,94,.15)':'rgba(239,68,68,.15)'};padding:3px 10px;border-radius:8px">${won?'✓ COVERED':'✗ MISSED'}</span></div><div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:11px;color:rgba(255,255,255,.5)">${pick.away}</div><div style="font-size:18px;font-weight:800;font-family:'JetBrains Mono',monospace">${ls.away_score}</div></div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:2px"><div style="font-size:11px;color:rgba(255,255,255,.5)">${pick.home}</div><div style="font-size:18px;font-weight:800;font-family:'JetBrains Mono',monospace">${ls.home_score}</div></div></div>`;
+  }
+  return'';
+}
+
+function pickCard(pk,type,showFollow){
+  const isPOD=type==='pod',key=getGameKey(pk);
+  const ec=pk.edge>=6?'#22c55e':'#eab308',eb=pk.edge>=6?'rgba(34,197,94,.15)':'rgba(234,179,8,.15)',ebd=pk.edge>=6?'rgba(34,197,94,.3)':'rgba(234,179,8,.3)';
+  const ls=liveScores[key],isLive=ls&&ls.status==='in',isFinal=ls&&ls.status==='post';
+  const fol=isFollowed(pk);
+  const fData=JSON.stringify(pk).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');
+  const followBtn=showFollow!==false?`<button class="follow-btn ${fol?'active':'inactive'}" onclick="event.stopPropagation();toggleFollow(JSON.parse(this.getAttribute('data-pick')))" data-pick="${fData}">${fol?'🪙 Tailing':'🪙 Tail'}</button>`:'';
+  const timeStr=ls&&ls.startTime?ls.startTime:'';
+  const timeDisplay=(!isLive&&!isFinal&&timeStr)?`<span style="font-size:10px;color:rgba(255,255,255,.35);font-weight:600;background:rgba(255,255,255,.04);padding:2px 8px;border-radius:6px">🕐 ${timeStr} ET</span>`:(!isLive&&!isFinal)?`<span style="font-size:10px;color:rgba(255,255,255,.2)">Time TBD</span>`:'';
+  return`<div style="background:${isPOD?'linear-gradient(135deg,rgba(234,179,8,.12),rgba(234,179,8,.04))':isLive?'rgba(239,68,68,.04)':isFinal?(checkResult(pk,ls)==='won'?'rgba(34,197,94,.03)':'rgba(239,68,68,.03)'):'rgba(255,255,255,.03)'};border:1px solid ${isPOD?'rgba(234,179,8,.3)':isLive?'rgba(239,68,68,.15)':'rgba(255,255,255,.06)'};border-radius:12px;padding:16px 20px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden">
+    ${isPOD?`<div style="position:absolute;top:0;right:0;background:linear-gradient(135deg,#eab308,#f59e0b);color:#000;font-size:10px;font-weight:800;letter-spacing:1px;padding:4px 12px 4px 16px;border-radius:0 0 0 12px;text-transform:uppercase">🔥 POD</div>`:''}
+    <div style="display:flex;justify-content:space-between;align-items:flex-start"><div style="flex:1"><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px"><span style="font-size:11px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase">${pk.away} @ ${pk.home}</span>${isLive?'<span class="live-dot"></span><span style="font-size:10px;font-weight:800;color:#ef4444">LIVE</span>':''}${timeDisplay}</div><div style="font-size:18px;font-weight:700;color:#fff">${pk.bet}</div></div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px"><div style="background:${eb};border:1px solid ${ebd};border-radius:8px;padding:4px 10px;text-align:center"><div style="font-size:10px;color:rgba(255,255,255,.5);font-weight:600">EDGE</div><div style="font-size:16px;font-weight:800;color:${ec}">${pk.edge.toFixed(1)}</div></div><div style="display:flex;gap:6px;align-items:center">${followBtn}${fdLink(pk)}</div><div class="tail-count" data-tail-key="${getTailKey(pk)}">${getTailCountForPick(pk)>0?getTailCountForPick(pk)+' tailing 🔥':''}</div></div></div>
+    <div style="display:flex;gap:16px;font-size:12px;color:rgba(255,255,255,.5)"><span>Pick: <span style="color:#fff;font-weight:600">${pk.pick}</span></span><span>Predicted Score: <span style="color:#fff;font-weight:600">${pk.pred_score}</span></span></div>
+    ${confBar(pk.confidence)}
+    ${(isLive||isFinal)?liveScoreBadge(pk):''}
+  </div>`;
+}
+
+// Plain ESPN game card (no model pick)
+function plainGameCard(g){
+  const isLive=g.status==='in',isFinal=g.status==='post';
+  return`<div style="background:${isLive?'rgba(239,68,68,.04)':'rgba(255,255,255,.03)'};border:1px solid ${isLive?'rgba(239,68,68,.15)':'rgba(255,255,255,.06)'};border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;gap:8px">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="display:flex;align-items:center;gap:8px"><span style="font-size:11px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase">${g.away_name} @ ${g.home_name}</span>${isLive?'<span class="live-dot"></span><span style="font-size:10px;font-weight:800;color:#ef4444">LIVE</span>':''}${!isLive&&!isFinal&&g.startTime?`<span style="font-size:10px;color:rgba(255,255,255,.35);font-weight:600;background:rgba(255,255,255,.04);padding:2px 8px;border-radius:6px">🕐 ${g.startTime} ET</span>`:''}</div>
+      ${isFinal?`<span style="font-size:10px;font-weight:700;color:rgba(255,255,255,.3)">FINAL</span>`:''}
+    </div>
+    ${isLive||isFinal?`<div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:8px 12px"><div style="display:flex;justify-content:space-between"><span style="font-size:12px;color:rgba(255,255,255,.5)">${g.away_name}</span><span style="font-size:16px;font-weight:800;font-family:'JetBrains Mono',monospace">${g.away_score}</span></div><div style="display:flex;justify-content:space-between;margin-top:2px"><span style="font-size:12px;color:rgba(255,255,255,.5)">${g.home_name}</span><span style="font-size:16px;font-weight:800;font-family:'JetBrains Mono',monospace">${g.home_score}</span></div>${isLive?`<div style="text-align:center;margin-top:4px;font-size:10px;color:rgba(255,255,255,.3)">${g.detail||('P'+g.period+' '+g.clock)}</div>`:''}</div>`:''}
+    <div style="font-size:11px;color:rgba(255,255,255,.25)">No model prediction</div>
+  </div>`;
+}
+
+function histCard(g){
+  const w=g.result==='won',bc=w?'rgba(34,197,94,.3)':'rgba(239,68,68,.3)',bg=w?'rgba(34,197,94,.06)':'rgba(239,68,68,.06)';
+  const badge=w?`<span style="font-size:10px;font-weight:800;color:#22c55e;background:rgba(34,197,94,.15);padding:3px 10px;border-radius:10px">✓ COVERED</span>`:`<span style="font-size:10px;font-weight:800;color:#ef4444;background:rgba(239,68,68,.15);padding:3px 10px;border-radius:10px">✗ MISSED</span>`;
+  return`<div style="background:${bg};border:1px solid ${bc};border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between;align-items:flex-start"><div><div style="font-size:10px;color:rgba(255,255,255,.3);font-weight:600;letter-spacing:1px;margin-bottom:2px">${g.date}</div><div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">${g.away} @ ${g.home}</div><div style="font-size:16px;font-weight:700;color:#fff">${g.bet}</div></div><div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">${badge}<div style="font-size:11px;color:rgba(255,255,255,.4)">Edge: <span style="font-weight:700;color:${g.edge>=6?'#22c55e':'#eab308'}">${typeof g.edge==='number'?g.edge.toFixed(1):g.edge}</span></div></div></div><div style="font-size:12px;color:rgba(255,255,255,.5)">Final Score: <span style="color:#fff;font-weight:600">${g.actual_score||'Pending'}</span></div></div>`;
+}
+
+// Sort: live first, then by time, fallback confidence
+function sortPicks(items){
+  return[...items].sort((a,b)=>{
+    const la=liveScores[getGameKey(a)],lb=liveScores[getGameKey(b)];
+    const sa=la?(la.status==='in'?0:la.status==='pre'?1:2):1;
+    const sb=lb?(lb.status==='in'?0:lb.status==='pre'?1:2):1;
+    if(sa!==sb)return sa-sb;
+    const ta=la&&la.startTime?new Date('2000/1/1 '+la.startTime).getTime():99999999;
+    const tb=lb&&lb.startTime?new Date('2000/1/1 '+lb.startTime).getTime():99999999;
+    if(ta!==tb)return ta-tb;
+    return(b.confidence||0)-(a.confidence||0);
+  });
+}
+
+function sortGames(items){
+  return[...items].sort((a,b)=>{
+    const sa=a.status==='in'?0:a.status==='pre'?1:2;
+    const sb=b.status==='in'?0:b.status==='pre'?1:2;
+    if(sa!==sb)return sa-sb;
+    const ta=a.startDate?a.startDate.getTime():99999999;
+    const tb=b.startDate?b.startDate.getTime():99999999;
+    return ta-tb;
+  });
+}
+
+function filterSearch(items,q,keys){
+  if(!q)return items;
+  const s=q.toLowerCase();
+  return items.filter(i=>keys.some(k=>(i[k]||'').toLowerCase().includes(s)));
+}
+
+// ===== TAB RENDERERS =====
+function renderTodaysGames(){
+  const gamesWithPicks=[];
+  const allPicks=getAllGamesWithPicks();
+  // All model picks become game entries
+  for(const p of allPicks){
+    gamesWithPicks.push({pick:p,espn:allGamesData.find(g=>teamsMatch(p.away,g.away_full,g.away_name,g.away_abbr)&&teamsMatch(p.home,g.home_full,g.home_name,g.home_abbr))||null});
+  }
+  // ESPN games without picks
+  const plainGames=allGamesData.filter(g=>!findPickForGame(g));
+  
+  let filtered=gamesWithPicks.filter(g=>{
+    if(!gamesSearch)return true;
+    const s=gamesSearch.toLowerCase();
+    return g.pick.away.toLowerCase().includes(s)||g.pick.home.toLowerCase().includes(s)||g.pick.pick.toLowerCase().includes(s);
+  });
+  filtered=filtered.sort((a,b)=>{
+    const la=liveScores[getGameKey(a.pick)],lb=liveScores[getGameKey(b.pick)];
+    const sa=la?(la.status==='in'?0:la.status==='pre'?1:2):1;
+    const sb=lb?(lb.status==='in'?0:lb.status==='pre'?1:2):1;
+    if(sa!==sb)return sa-sb;
+    const ta=la&&la.startTime?new Date('2000/1/1 '+la.startTime).getTime():99999999;
+    const tb=lb&&lb.startTime?new Date('2000/1/1 '+lb.startTime).getTime():99999999;
+    if(ta!==tb)return ta-tb;
+    return(b.pick.confidence||0)-(a.pick.confidence||0);
+  });
+
+  let filteredPlain=plainGames.filter(g=>{
+    if(!gamesSearch)return true;
+    const s=gamesSearch.toLowerCase();
+    return g.away_name.toLowerCase().includes(s)||g.home_name.toLowerCase().includes(s)||g.away_full.toLowerCase().includes(s)||g.home_full.toLowerCase().includes(s);
+  });
+  filteredPlain=sortGames(filteredPlain);
+
+  const pickCards=filtered.map(g=>pickCard(g.pick,g.pick._type||'free',true)).join('');
+  const plainCards=filteredPlain.map(g=>plainGameCard(g)).join('');
+  
+  return`<div>${searchBox(gamesSearch,"gamesSearch")}<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="font-size:14px;font-weight:700;color:#eab308">Our Picks</span><span style="font-size:11px;color:rgba(255,255,255,.3);background:rgba(255,255,255,.04);padding:2px 8px;border-radius:8px">${filtered.length}</span></div><div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px">${pickCards||'<div style="text-align:center;padding:20px;color:rgba(255,255,255,.3);font-size:13px">No matching picks</div>'}</div>${filteredPlain.length?`<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="font-size:14px;font-weight:700;color:rgba(255,255,255,.4)">Other Games</span><span style="font-size:11px;color:rgba(255,255,255,.3);background:rgba(255,255,255,.04);padding:2px 8px;border-radius:8px">${filteredPlain.length}</span></div><div style="display:flex;flex-direction:column;gap:8px">${plainCards}</div>`:''}</div>`;
+}
+
+function renderLiveTab(){
+  const subTabs=`<div style="display:flex;gap:6px;margin-bottom:12px"><button class="sub-tab" onclick="liveSubTab='picks';render()" style="background:${liveSubTab==='picks'?'rgba(239,68,68,.15)':'rgba(255,255,255,.04)'};color:${liveSubTab==='picks'?'#ef4444':'rgba(255,255,255,.4)'};border-color:${liveSubTab==='picks'?'rgba(239,68,68,.3)':'rgba(255,255,255,.06)'}">Our Picks</button><button class="sub-tab" onclick="liveSubTab='all';render()" style="background:${liveSubTab==='all'?'rgba(239,68,68,.15)':'rgba(255,255,255,.04)'};color:${liveSubTab==='all'?'#ef4444':'rgba(255,255,255,.4)'};border-color:${liveSubTab==='all'?'rgba(239,68,68,.3)':'rgba(255,255,255,.06)'}">All Games</button></div>`;
+  const search=searchBox(liveSearch,"liveSearch");
+
+  if(liveSubTab==='picks'){
+    let lp=getLivePicks();
+    lp=filterSearch(lp,liveSearch,['away','home','pick']);
+    if(!lp.length)return`${subTabs}${search}<div style="text-align:center;padding:40px 16px;color:rgba(255,255,255,.3)"><div style="font-size:32px;margin-bottom:12px">📺</div><div style="font-size:14px;font-weight:600">No picks live right now</div></div>`;
+    return`${subTabs}${search}<div style="display:flex;flex-direction:column;gap:8px">${lp.map(q=>pickCard(q,q._type||'free',true)).join('')}</div>`;
+  }
+
+  // All live games
+  let liveGames=allGamesData.filter(g=>g.status==='in');
+  liveGames=liveGames.filter(g=>{
+    if(!liveSearch)return true;const s=liveSearch.toLowerCase();
+    return g.away_name.toLowerCase().includes(s)||g.home_name.toLowerCase().includes(s)||g.away_full.toLowerCase().includes(s)||g.home_full.toLowerCase().includes(s);
+  });
+  if(!liveGames.length)return`${subTabs}${search}<div style="text-align:center;padding:40px 16px;color:rgba(255,255,255,.3)"><div style="font-size:32px;margin-bottom:12px">📺</div><div style="font-size:14px;font-weight:600">No games live right now</div></div>`;
+  
+  const cards=liveGames.map(g=>{const pick=findPickForGame(g);return pick?pickCard(pick,pick._type||'free',true):plainGameCard(g)}).join('');
+  return`${subTabs}${search}<div style="display:flex;flex-direction:column;gap:8px">${cards}</div>`;
+}
+
+function renderFollowingTab(){
+  const fp=getFollowedPicks();
+  const search=searchBox(followSearch,"followSearch");
+  if(!fp.length)return`${search}<div style="text-align:center;padding:40px 16px;color:rgba(255,255,255,.3)"><div style="font-size:32px;margin-bottom:12px">🪙</div><div style="font-size:14px;font-weight:600;margin-bottom:4px">No bets tailed yet</div><div style="font-size:12px">Tap 🪙 Tail on any pick to track it here</div></div>`;
+  let filtered=filterSearch(fp,followSearch,['away','home','pick']);
+  let fW=0,fL=0;for(const q of fp){const res=checkResult(q,liveScores[getGameKey(q)]);if(res==='won')fW++;if(res==='lost')fL++}
+  const fTotal=fW+fL;
+  const sorted=sortPicks(filtered);
+  const recordBar=fTotal>0?`<div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:14px 18px;margin-bottom:16px;text-align:center"><div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:600;text-transform:uppercase;letter-spacing:1px">Today's Tailing Record</div><div style="font-size:22px;font-weight:800;color:#fff;margin-top:2px">${fW}-${fL}<span style="font-size:14px;color:rgba(255,255,255,.4);margin-left:8px">(${pct(fW,fL)}%)</span></div></div>`:'';
+  return`${search}${recordBar}<div style="display:flex;flex-direction:column;gap:8px">${sorted.map(q=>pickCard(q,q._type||'free',true)).join('')}</div>`;
+}
+
+// ===== SUB PAGES =====
+function profitPage(){
+  const f=filterByDate(DATA.daily_history||[],'date'),mx=Math.max(...f.map(d=>Math.abs(d.profit)),1);
+  const tp=f.reduce((s,d)=>s+d.profit,0),tw=f.reduce((s,d)=>s+d.wins,0),tl=f.reduce((s,d)=>s+d.losses,0);
+  const bars=f.map(d=>{const ph=Math.max(Math.abs(d.profit)/mx*100,4),ip=d.profit>=0,c=ip?'#22c55e':'#ef4444',lb=d.date.slice(5);return`<div style="display:flex;flex-direction:column;align-items:center;flex:1;min-width:36px;gap:4px"><div style="font-size:10px;font-weight:700;color:${c}">${ip?'+':''}$${Math.abs(d.profit).toFixed(0)}</div><div style="width:100%;max-width:40px;height:120px;display:flex;align-items:${ip?'flex-end':'flex-start'};justify-content:center"><div style="width:80%;height:${ph}%;background:${c};border-radius:4px;opacity:.8"></div></div><div style="font-size:9px;color:rgba(255,255,255,.3);font-weight:600">${lb}</div><div style="font-size:9px;color:rgba(255,255,255,.25)">${d.wins}-${d.losses}</div></div>`}).join('');
+  return`<div class="fade-up" style="padding-bottom:32px">${backBtn()}<h2 style="font-size:18px;font-weight:800;color:#22c55e;margin-bottom:4px">💰 Profit Tracker</h2><p style="font-size:12px;color:rgba(255,255,255,.4);margin-bottom:16px">$100 bets @ -110 · Edge ≥ 3</p>${dateBtns()}<div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:20px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><div><div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:600;text-transform:uppercase;letter-spacing:1px">Period Profit</div><div style="font-size:28px;font-weight:800;color:${tp>=0?'#22c55e':'#ef4444'};font-family:'JetBrains Mono',monospace">${tp>=0?'+':''}$${tp.toFixed(2)}</div></div><div style="text-align:right"><div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:600;text-transform:uppercase;letter-spacing:1px">Record</div><div style="font-size:20px;font-weight:800">${tw}-${tl}</div></div></div><div style="display:flex;gap:2px;align-items:center;overflow-x:auto;padding:4px 0">${bars||'<div style="text-align:center;color:rgba(255,255,255,.3);font-size:13px;width:100%;padding:40px 0">No data</div>'}</div></div></div>`;
+}
+function atsPage(){
+  const f=filterByDate(DATA.daily_history||[],'date').slice().reverse(),tw=f.reduce((s,d)=>s+d.wins,0),tl=f.reduce((s,d)=>s+d.losses,0);
+  const rows=f.map((d,i)=>`<div style="display:grid;grid-template-columns:1fr 70px 70px 80px;align-items:center;background:${i%2?'rgba(255,255,255,.02)':'transparent'};border-radius:6px;padding:2px 0"><div style="font-size:13px;font-weight:600;padding:10px 8px">${d.date}</div><div style="font-size:13px;font-weight:600;color:#22c55e;text-align:center">${d.wins}</div><div style="font-size:13px;font-weight:600;color:#ef4444;text-align:center">${d.losses}</div><div style="text-align:center"><span style="font-size:12px;font-weight:700;color:${d.pct>=.6?'#22c55e':d.pct>=.5?'#eab308':'#ef4444'};background:${d.pct>=.6?'rgba(34,197,94,.12)':d.pct>=.5?'rgba(234,179,8,.12)':'rgba(239,68,68,.12)'};padding:3px 10px;border-radius:10px">${(d.pct*100).toFixed(1)}%</span></div></div>`).join('');
+  const hdrs=['Date','Wins','Losses','Win %'].map((h,i)=>`<div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:1px;text-transform:uppercase;padding:8px ${i?'0':'8px'};text-align:${i?'center':'left'};border-bottom:1px solid rgba(255,255,255,.06)">${h}</div>`).join('');
+  return`<div class="fade-up" style="padding-bottom:32px">${backBtn()}<h2 style="font-size:18px;font-weight:800;color:#22c55e;margin-bottom:4px">📊 Daily ATS</h2><p style="font-size:12px;color:rgba(255,255,255,.4);margin-bottom:16px">Edge ≥ 3</p>${dateBtns()}<div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:20px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><div style="font-size:20px;font-weight:800">${tw}-${tl}</div><span style="font-size:14px;font-weight:700;color:#22c55e;background:rgba(34,197,94,.12);padding:4px 12px;border-radius:10px">${pct(tw,tl)}%</span></div><div style="display:grid;grid-template-columns:1fr 70px 70px 80px;margin-bottom:4px">${hdrs}</div>${rows||'<div style="text-align:center;color:rgba(255,255,255,.3);padding:24px 0">No data</div>'}</div></div>`;
+}
+function histPage(type){
+  const isPOD=type==='pod',items=isPOD?(DATA.past_pods||[]):(DATA.past_premiums||[]);
+  const title=isPOD?'🔥 POD History':'⭐ Premium History';
+  const color=isPOD?'#f97316':'#eab308',r=isPOD?DATA.record.pod:DATA.record.premium;
+  return`<div class="fade-up" style="padding-bottom:32px">${backBtn()}<h2 style="font-size:18px;font-weight:800;color:${color};margin-bottom:4px">${title}</h2><div style="display:flex;align-items:center;gap:12px;margin-bottom:20px"><span style="font-size:20px;font-weight:800">${r.wins}-${r.losses}</span><span style="font-size:14px;font-weight:700;color:${color};background:${color}20;padding:4px 12px;border-radius:10px">${(r.pct*100).toFixed(1)}%</span></div><div style="display:flex;flex-direction:column;gap:8px">${items.map(g=>histCard(g)).join('')||'<div style="text-align:center;color:rgba(255,255,255,.3);padding:24px 0">No results yet</div>'}</div></div>`;
+}
+
+// ===== MAIN =====
+function render(){
+  if(!DATA)return;const r=DATA.record,today=getTodayRecord();
+  if(currentPage!=='main'){
+    let c='';
+    if(currentPage==='profit')c=profitPage();else if(currentPage==='ats')c=atsPage();
+    else if(currentPage==='pod_history')c=histPage('pod');else if(currentPage==='premium_history')c=histPage('premium');
+    document.getElementById('app').innerHTML=`<div style="background:linear-gradient(180deg,rgba(234,179,8,.08),transparent);border-bottom:1px solid rgba(255,255,255,.06);padding:24px 0 20px"><div style="max-width:640px;margin:0 auto;padding:0 20px"><div style="display:flex;align-items:center;gap:10px"><div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#eab308,#f59e0b);display:flex;align-items:center;justify-content:center;font-size:16px">🏀</div><h1 style="font-size:20px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,#fff,rgba(255,255,255,.7));-webkit-background-clip:text;-webkit-text-fill-color:transparent">CBB Model Picks</h1><div style="flex:1"></div><button class="help-btn" onclick="toggleHelp()">?</button></div></div></div><div style="max-width:640px;margin:0 auto;padding:20px">${c}</div>`;return;
+  }
+
+  const liveCount=getLivePicks().length,followCount=getFollowedCount(),allLiveCount=allGamesData.filter(g=>g.status==='in').length;
+  const ff=DATA.free_plays.filter(q=>{if(q.edge<edgeFilter)return false;if(searchQuery){const s=searchQuery.toLowerCase();return q.away.toLowerCase().includes(s)||q.home.toLowerCase().includes(s)||q.pick.toLowerCase().includes(s)}return true});
+  const fb=[3,4,5,6,7].map(v=>{const a=edgeFilter===v;return`<button onclick="edgeFilter=${v};render()" style="padding:6px 14px;border-radius:20px;cursor:pointer;background:${a?'rgba(168,85,247,.2)':'rgba(255,255,255,.04)'};color:${a?'#a855f7':'rgba(255,255,255,.4)'};font-size:12px;font-weight:700;font-family:'DM Sans',sans-serif;border:1px solid ${a?'rgba(168,85,247,.4)':'rgba(255,255,255,.06)'}">${v===3?'All':'≥ '+v}</button>`}).join('');
+
+  const tabs=[
+    {id:'picks',label:"Today's Picks"},
+    {id:'live',label:`Live${allLiveCount?' ('+allLiveCount+')':''}`},
+    {id:'following',label:`Tailing${followCount?' ('+followCount+')':''}`},
+    {id:'games',label:"Today's Games"},
+    {id:'records',label:'Records'}
+  ];
+  const tabBtns=tabs.map(t=>{const a=activeTab===t.id,hl=t.id==='live'&&allLiveCount>0;return`<button onclick="activeTab='${t.id}';render()" style="flex:1;padding:10px 4px;border:none;border-radius:8px;background:${a?'rgba(234,179,8,.15)':'transparent'};color:${a?'#eab308':'rgba(255,255,255,.4)'};font-size:10px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap">${hl?'<span class="live-dot" style="margin-right:3px"></span>':''}${t.label}</button>`}).join('');
+
+  const pills=[
+    {l:'🔥 POD',w:r.pod.wins,lo:r.pod.losses,c:'#f97316',ck:"currentPage='pod_history';render()"},
+    {l:'⭐ Premium',w:r.premium.wins,lo:r.premium.losses,c:'#eab308',ck:"currentPage='premium_history';render()"},
+    {l:'🎯 Free Plays',w:r.free_plays.wins,lo:r.free_plays.losses,c:'#a855f7',ck:''}
+  ].map(s=>`<div ${s.ck?`onclick="${s.ck}" class="clickable"`:''}style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:6px 14px;display:flex;align-items:center;gap:6px;font-size:12px;${s.ck?'cursor:pointer':''}"><span style="color:rgba(255,255,255,.5)">${s.l}</span><span style="font-weight:700;color:${s.c}">${s.w}-${s.lo}</span><span style="color:rgba(255,255,255,.3)">(${pct(s.w,s.lo)}%)</span></div>`).join('');
+
+  let content='';
+  if(activeTab==='picks'){
+    const pod=DATA.play_of_the_day?`<div style="margin-bottom:24px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="color:#f97316"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span><h2 style="font-size:15px;font-weight:700;color:#f97316">Play of the Day</h2><div style="height:1px;flex:1;background:linear-gradient(90deg,rgba(249,115,22,.3),transparent)"></div></div>${pickCard(DATA.play_of_the_day,'pod')}</div>`:'';
+    const prem=DATA.premium_picks.length?`<div style="margin-bottom:24px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="color:#eab308"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span><h2 style="font-size:15px;font-weight:700;color:#eab308">Premium Picks</h2><span style="font-size:11px;background:rgba(234,179,8,.15);color:#eab308;padding:2px 8px;border-radius:10px;font-weight:700">${DATA.premium_picks.length}</span><div style="height:1px;flex:1;background:linear-gradient(90deg,rgba(234,179,8,.3),transparent)"></div></div><div style="display:flex;flex-direction:column;gap:8px">${DATA.premium_picks.map(q=>pickCard(q,'premium')).join('')}</div></div>`:'';
+    const free=`<div style="margin-bottom:32px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:12px"><span style="font-size:16px">🎯</span><h2 style="font-size:15px;font-weight:700;color:#a855f7">Free Plays</h2><span style="font-size:11px;background:rgba(168,85,247,.15);color:#a855f7;padding:2px 8px;border-radius:10px;font-weight:700">${ff.length}</span><div style="height:1px;flex:1;background:linear-gradient(90deg,rgba(168,85,247,.3),transparent)"></div></div><div style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap">${fb}</div><div style="margin-bottom:12px"><input type="text" placeholder="Search teams..." value="${searchQuery}" id="search-searchQuery" oninput="searchQuery=this.value;renderKeepFocus('search-searchQuery',this.selectionStart)"/></div><div style="display:flex;flex-direction:column;gap:8px">${ff.length?ff.map(q=>pickCard(q,'free')).join(''):`<div style="text-align:center;padding:24px 16px;color:rgba(255,255,255,.3);font-size:13px;background:rgba(255,255,255,.02);border-radius:12px;border:1px solid rgba(255,255,255,.04)">${searchQuery?'No matches for "'+searchQuery+'"':'No free plays at edge ≥ '+edgeFilter+' today'}</div>`}</div></div>`;
+    content=pod+prem+free;
+  }else if(activeTab==='live'){content=renderLiveTab()}
+  else if(activeTab==='games'){content=renderTodaysGames()}
+  else if(activeTab==='following'){content=renderFollowingTab()}
+  else if(activeTab==='records'){
+    const pr=[{l:'🔥 Play of the Day',w:r.pod.wins,lo:r.pod.losses,pc:r.pod.pct,c:'#f97316'},{l:'⭐ Premium',w:r.premium.wins,lo:r.premium.losses,pc:r.premium.pct,c:'#eab308'},{l:'🎯 Free Plays',w:r.free_plays.wins,lo:r.free_plays.losses,pc:r.free_plays.pct,c:'#a855f7'},{l:'Combined ATS',w:r.ats_combined.wins,lo:r.ats_combined.losses,pc:r.ats_combined.pct,c:'#3b82f6'}].map(row=>`<div><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><span style="font-size:13px;color:rgba(255,255,255,.7)">${row.l}</span><div style="display:flex;align-items:center;gap:8px"><span style="font-size:14px;font-weight:700">${row.w}-${row.lo}</span><span style="font-size:12px;font-weight:700;color:${row.c};background:${row.c}15;padding:2px 8px;border-radius:6px">${(row.pc*100).toFixed(1)}%</span></div></div><div style="height:4px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden"><div style="width:${row.pc*100}%;height:100%;background:${row.c};border-radius:2px"></div></div></div>`).join('');
+    const sp=(DATA.splits||[]).map((s,i)=>{const pc=s.pct>=.7?'#22c55e':s.pct>=.6?'#eab308':'#f97316',pb=s.pct>=.7?'rgba(34,197,94,.12)':s.pct>=.6?'rgba(234,179,8,.12)':'rgba(249,115,22,.12)';return`<div style="display:grid;grid-template-columns:1fr 70px 70px 80px;align-items:center;background:${i%2?'rgba(255,255,255,.02)':'transparent'};border-radius:6px"><div style="font-size:13px;font-weight:700;padding:10px 0">Edge ≥ ${s.threshold}</div><div style="font-size:13px;font-weight:600;color:#22c55e;text-align:center">${s.wins}</div><div style="font-size:13px;font-weight:600;color:#ef4444;text-align:center">${s.losses}</div><div style="text-align:center"><span style="font-size:12px;font-weight:700;color:${pc};background:${pb};padding:3px 10px;border-radius:10px">${(s.pct*100).toFixed(1)}%</span></div></div>`}).join('');
+    const sh=['Threshold','Wins','Losses','Win %'].map((h,i)=>`<div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.3);letter-spacing:1px;text-transform:uppercase;padding:8px 0;text-align:${i?'center':'left'};border-bottom:1px solid rgba(255,255,255,.06)">${h}</div>`).join('');
+    content=`<div style="padding-bottom:32px"><div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:20px;margin-bottom:16px"><h3 style="font-size:14px;font-weight:700;color:rgba(255,255,255,.5);margin-bottom:16px;letter-spacing:.5px;text-transform:uppercase">Season Performance</h3><div style="display:flex;flex-direction:column;gap:14px">${pr}</div></div><div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:20px;margin-bottom:16px"><h3 style="font-size:14px;font-weight:700;color:rgba(255,255,255,.5);margin-bottom:16px;letter-spacing:.5px;text-transform:uppercase">Edge Threshold</h3><div style="display:grid;grid-template-columns:1fr 70px 70px 80px;margin-bottom:4px">${sh}</div>${sp}</div><div style="background:linear-gradient(135deg,rgba(34,197,94,.08),rgba(34,197,94,.02));border:1px solid rgba(34,197,94,.15);border-radius:12px;padding:20px"><div style="font-size:11px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">Total Profit ($100 @ -110)</div><div style="font-size:36px;font-weight:800;color:#22c55e;font-family:'JetBrains Mono',monospace;letter-spacing:-1px">$${r.profit.toLocaleString(undefined,{minimumFractionDigits:2})}</div><div style="font-size:12px;color:rgba(255,255,255,.4);margin-top:4px">${r.total_bets} bets · ${(r.ats_combined.pct*100).toFixed(1)}% win rate</div></div></div>`;
+  }
+
+  const todayTotal=today.wins+today.losses;
+  const todayColor=todayTotal===0?'#fff':today.wins>today.losses?'#22c55e':today.wins<today.losses?'#ef4444':'#eab308';
+
+  document.getElementById('app').innerHTML=`
+    <div style="background:linear-gradient(180deg,rgba(234,179,8,.08),transparent);border-bottom:1px solid rgba(255,255,255,.06);padding:24px 0 20px"><div style="max-width:640px;margin:0 auto;padding:0 20px"><div style="display:flex;align-items:center;gap:10px;margin-bottom:4px"><div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#eab308,#f59e0b);display:flex;align-items:center;justify-content:center;font-size:16px">🏀</div><h1 style="font-size:20px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,#fff,rgba(255,255,255,.7));-webkit-background-clip:text;-webkit-text-fill-color:transparent">CBB Model Picks</h1><div style="flex:1"></div><button class="help-btn" onclick="toggleHelp()">?</button></div><div style="display:flex;align-items:center;gap:8px;margin-top:8px"><div style="width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s ease infinite"></div><span style="font-size:12px;color:rgba(255,255,255,.4)">Updated ${DATA.updated} · Scores refresh every 30s</span></div></div></div>
+    <div style="max-width:640px;margin:0 auto;padding:0 20px">
+      <div class="fade-up" style="display:flex;gap:10px;padding:20px 0;overflow-x:auto">
+        <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:16px 20px;flex:1;min-width:110px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px">${allLiveCount?'<span class="live-dot"></span>':''}<span style="font-size:10px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase">Today</span></div><div style="font-size:22px;font-weight:800;color:${todayColor}">${todayTotal?today.wins+'-'+today.losses:'0-0'}</div><div style="font-size:11px;color:rgba(255,255,255,.4);margin-top:2px">${todayTotal?pct(today.wins,today.losses)+'%':'No results yet'}</div></div>
+        <div class="clickable" onclick="currentPage='ats';render()" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:16px 20px;flex:1;min-width:110px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="color:#22c55e"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><span style="font-size:10px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase">ATS</span></div><div style="font-size:22px;font-weight:800;color:#22c55e">${r.ats_combined.wins}-${r.ats_combined.losses}</div><div style="font-size:11px;color:rgba(255,255,255,.4);margin-top:2px">${(r.ats_combined.pct*100).toFixed(1)}%</div></div>
+        <div class="clickable" onclick="currentPage='profit';render()" style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:16px 20px;flex:1;min-width:110px"><div style="display:flex;align-items:center;gap:6px;margin-bottom:8px"><span style="color:#22c55e"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><span style="font-size:10px;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:1px;text-transform:uppercase">Profit</span></div><div style="font-size:22px;font-weight:800;color:#22c55e">$${r.profit.toLocaleString()}</div><div style="font-size:11px;color:rgba(255,255,255,.4);margin-top:2px">${r.total_bets} bets</div></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;padding-bottom:12px">${pills}</div>
+      <div style="padding-bottom:16px"><div style="font-size:10px;color:rgba(255,255,255,.25);font-style:italic">ℹ️ Only bets with a 3+ point edge are counted towards our record and profit.</div></div>
+      <div style="display:flex;gap:2px;background:rgba(255,255,255,.03);border-radius:10px;padding:3px;margin-bottom:20px">${tabBtns}</div>
+      <div class="fade-up">${content}</div>
+      <div style="text-align:center;padding:20px 0 32px;border-top:1px solid rgba(255,255,255,.04)"><div style="font-size:11px;color:rgba(255,255,255,.2)">Model-generated picks · Not financial advice · Gamble responsibly</div></div>
+    </div>`;
+}
+
+loadData();
+</script>
+</body>
+</html>
