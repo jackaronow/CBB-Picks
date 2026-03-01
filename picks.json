@@ -1,6 +1,6 @@
 {
   "date": "2026-03-01",
-  "updated": "2026-03-01 04:50 PM",
+  "updated": "2026-03-01 04:57 PM",
   "record": {
     "ats_combined": {
       "wins": 68,
@@ -374,8 +374,8 @@
     "pick": "Wichita St.",
     "bet": "Wichita St. -14.5",
     "edge": 9.2,
-    "confidence": 0.799,
-    "pred_score": "89-57"
+    "confidence": 0.8,
+    "pred_score": "90-57"
   },
   "premium_picks": [
     {
@@ -397,6 +397,15 @@
       "pred_score": "62-89"
     },
     {
+      "away": "Northern Iowa",
+      "home": "Drake",
+      "pick": "Northern Iowa",
+      "bet": "Northern Iowa -4.0",
+      "edge": 6.4,
+      "confidence": 0.719,
+      "pred_score": "77-62"
+    },
+    {
       "away": "Merrimack",
       "home": "Niagara",
       "pick": "Merrimack",
@@ -404,15 +413,6 @@
       "edge": 5.7,
       "confidence": 0.698,
       "pred_score": "78-58"
-    },
-    {
-      "away": "Northern Iowa",
-      "home": "Drake",
-      "pick": "Northern Iowa",
-      "bet": "Northern Iowa -4.0",
-      "edge": 5.5,
-      "confidence": 0.691,
-      "pred_score": "76-63"
     }
   ],
   "free_plays": [
@@ -466,8 +466,8 @@
       "home": "UNC Wilmington",
       "pick": "UNC Wilmington",
       "bet": "UNC Wilmington -4.0",
-      "edge": 4.1,
-      "confidence": 0.646,
+      "edge": 4.2,
+      "confidence": 0.647,
       "pred_score": "67-77"
     }
   ],
@@ -567,8 +567,8 @@
       "home": "UAB",
       "pick": "UAB",
       "bet": "UAB -4.5",
-      "edge": 0.2,
-      "confidence": 0.506,
+      "edge": 0.1,
+      "confidence": 0.505,
       "pred_score": "68-73"
     },
     {
