@@ -1,6 +1,6 @@
 {
   "date": "2026-03-03",
-  "updated": "2026-03-03 03:58 AM",
+  "updated": "2026-03-03 04:43 AM",
   "record": {
     "ats_combined": {
       "wins": 78,
@@ -525,10 +525,10 @@
       "edge": 8.3,
       "raw_edge": 7.9,
       "confidence": 0.764,
-      "pred_score": "65-89",
+      "pred_score": "67-87",
       "best_book": "FanDuel",
       "all_lines": {},
-      "neutral_site": false
+      "neutral_site": true
     },
     {
       "away": "Tennessee",
