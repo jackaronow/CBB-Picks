@@ -1,6 +1,6 @@
 {
   "date": "2026-03-03",
-  "updated": "2026-03-03 03:45 AM",
+  "updated": "2026-03-03 03:58 AM",
   "record": {
     "ats_combined": {
       "wins": 78,
@@ -500,7 +500,8 @@
     "confidence": 0.839,
     "pred_score": "54-92",
     "best_book": null,
-    "all_lines": {}
+    "all_lines": {},
+    "neutral_site": false
   },
   "premium_picks": [
     {
@@ -513,7 +514,8 @@
       "confidence": 0.793,
       "pred_score": "62-85",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Louisiana Monroe",
@@ -525,7 +527,8 @@
       "confidence": 0.764,
       "pred_score": "65-89",
       "best_book": "FanDuel",
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Tennessee",
@@ -537,7 +540,8 @@
       "confidence": 0.755,
       "pred_score": "83-60",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Grand Canyon",
@@ -549,7 +553,8 @@
       "confidence": 0.783,
       "pred_score": "89-51",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     }
   ],
   "free_plays": [
@@ -563,7 +568,8 @@
       "confidence": 0.738,
       "pred_score": "60-79",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Vanderbilt",
@@ -585,7 +591,8 @@
         "BetUS": 7.0,
         "BetMGM": 6.5,
         "Bovada": 7.0
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Mississippi Valley St.",
@@ -597,7 +604,8 @@
       "confidence": 0.71,
       "pred_score": "62-82",
       "best_book": "FanDuel",
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Syracuse",
@@ -609,7 +617,8 @@
       "confidence": 0.704,
       "pred_score": "65-88",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Nebraska",
@@ -621,7 +630,8 @@
       "confidence": 0.723,
       "pred_score": "76-68",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Utah St.",
@@ -644,7 +654,8 @@
         "BetRivers": 8.5,
         "BetMGM": 8.5,
         "Bovada": 7.5
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Kansas",
@@ -656,7 +667,8 @@
       "confidence": 0.698,
       "pred_score": "82-66",
       "best_book": "FanDuel",
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Boston College",
@@ -668,7 +680,8 @@
       "confidence": 0.675,
       "pred_score": "60-81",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Akron",
@@ -680,7 +693,8 @@
       "confidence": 0.665,
       "pred_score": "89-66",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Hampton",
@@ -692,7 +706,8 @@
       "confidence": 0.665,
       "pred_score": "64-85",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "North Carolina A&T",
@@ -704,7 +719,8 @@
       "confidence": 0.652,
       "pred_score": "69-84",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "George Mason",
@@ -716,7 +732,8 @@
       "confidence": 0.652,
       "pred_score": "64-84",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "San Jose St.",
@@ -728,7 +745,8 @@
       "confidence": 0.649,
       "pred_score": "66-80",
       "best_book": "FanDuel",
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Mississippi St.",
@@ -751,7 +769,8 @@
         "BetUS": -23.5,
         "BetMGM": -23.5,
         "Bovada": -23.0
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Purdue Fort Wayne",
@@ -767,7 +786,8 @@
         "FanDuel": -5.5,
         "Fanatics": -5.5,
         "DraftKings": -6.5
-      }
+      },
+      "neutral_site": false
     }
   ],
   "all_games": [
@@ -788,7 +808,8 @@
         "BetUS": 9.5,
         "Bovada": 9.5,
         "Fanatics": 9.5
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Bryant",
@@ -800,7 +821,8 @@
       "confidence": 0.632,
       "pred_score": "67-74",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Ohio",
@@ -812,7 +834,8 @@
       "confidence": 0.632,
       "pred_score": "73-80",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Alabama",
@@ -824,7 +847,8 @@
       "confidence": 0.621,
       "pred_score": "87-80",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Arkansas Pine Bluff",
@@ -836,7 +860,8 @@
       "confidence": 0.614,
       "pred_score": "78-75",
       "best_book": "FanDuel",
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Georgetown",
@@ -848,7 +873,8 @@
       "confidence": 0.611,
       "pred_score": "62-86",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Wake Forest",
@@ -860,7 +886,8 @@
       "confidence": 0.597,
       "pred_score": "63-85",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "BYU",
@@ -872,7 +899,8 @@
       "confidence": 0.593,
       "pred_score": "76-74",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Ball St.",
@@ -894,7 +922,8 @@
         "BetRivers": -3.5,
         "Bovada": -4.5,
         "Fanatics": -4.0
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Nevada",
@@ -906,7 +935,8 @@
       "confidence": 0.593,
       "pred_score": "75-71",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Georgia St.",
@@ -918,7 +948,8 @@
       "confidence": 0.593,
       "pred_score": "67-71",
       "best_book": "FanDuel",
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": true
     },
     {
       "away": "UNC Wilmington",
@@ -930,7 +961,8 @@
       "confidence": 0.59,
       "pred_score": "79-68",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Army",
@@ -942,7 +974,8 @@
       "confidence": 0.59,
       "pred_score": "70-76",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Albany",
@@ -954,7 +987,8 @@
       "confidence": 0.569,
       "pred_score": "66-78",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Holy Cross",
@@ -966,7 +1000,8 @@
       "confidence": 0.576,
       "pred_score": "68-75",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Toledo",
@@ -988,7 +1023,8 @@
         "Caesars": -8.5,
         "BetUS": -8.5,
         "Bovada": -9.0
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "LSU",
@@ -1000,7 +1036,8 @@
       "confidence": 0.565,
       "pred_score": "70-83",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Southern",
@@ -1018,7 +1055,8 @@
         "DraftKings": -1.5,
         "BetMGM": 1.5,
         "Fanatics": -1.0
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Clemson",
@@ -1030,7 +1068,8 @@
       "confidence": 0.561,
       "pred_score": "69-75",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Dayton",
@@ -1042,7 +1081,8 @@
       "confidence": 0.554,
       "pred_score": "79-68",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Towson",
@@ -1054,7 +1094,8 @@
       "confidence": 0.561,
       "pred_score": "69-68",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "San Diego St.",
@@ -1077,7 +1118,8 @@
         "BetRivers": -1.5,
         "BetMGM": -1.5,
         "Bovada": -1.5
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Colorado",
@@ -1089,7 +1131,8 @@
       "confidence": 0.551,
       "pred_score": "76-74",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Monmouth",
@@ -1101,7 +1144,8 @@
       "confidence": 0.547,
       "pred_score": "79-70",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "UMBC",
@@ -1113,7 +1157,8 @@
       "confidence": 0.54,
       "pred_score": "76-67",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Eastern Michigan",
@@ -1125,7 +1170,8 @@
       "confidence": 0.536,
       "pred_score": "70-75",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Oklahoma St.",
@@ -1148,7 +1194,8 @@
         "BetUS": -9.0,
         "BetMGM": -8.5,
         "Bovada": -9.0
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Missouri",
@@ -1160,7 +1207,8 @@
       "confidence": 0.536,
       "pred_score": "75-77",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Kentucky",
@@ -1172,7 +1220,8 @@
       "confidence": 0.529,
       "pred_score": "77-77",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "West Virginia",
@@ -1195,7 +1244,8 @@
         "BetUS": 1.5,
         "BetMGM": 1.5,
         "Bovada": 1.5
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "Grambling St.",
@@ -1212,7 +1262,8 @@
         "LowVig.ag": -1.0,
         "DraftKings": -1.5,
         "Fanatics": -1.0
-      }
+      },
+      "neutral_site": false
     },
     {
       "away": "UMass Lowell",
@@ -1224,7 +1275,8 @@
       "confidence": 0.507,
       "pred_score": "73-70",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     },
     {
       "away": "Seton Hall",
@@ -1236,7 +1288,8 @@
       "confidence": 0.504,
       "pred_score": "74-71",
       "best_book": null,
-      "all_lines": {}
+      "all_lines": {},
+      "neutral_site": false
     }
   ],
   "accuracy": {
