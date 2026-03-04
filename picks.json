@@ -1,11 +1,11 @@
 {
   "date": "2026-03-04",
-  "updated": "2026-03-04 07:49 AM",
+  "updated": "2026-03-04 08:04 AM",
   "record": {
     "ats_combined": {
-      "wins": 87,
+      "wins": 90,
       "losses": 44,
-      "pct": 0.664
+      "pct": 0.672
     },
     "premium": {
       "wins": 26,
@@ -13,65 +13,65 @@
       "pct": 0.65
     },
     "free_plays": {
-      "wins": 61,
+      "wins": 64,
       "losses": 30,
-      "pct": 0.67
+      "pct": 0.681
     },
     "pod": {
       "wins": 8,
       "losses": 0,
       "pct": 1.0
     },
-    "profit": 5200.11,
-    "profit_flat": 3509.17,
-    "total_bets": 131
+    "profit": 5472.84,
+    "profit_flat": 3781.9,
+    "total_bets": 134
   },
   "splits": [
     {
       "threshold": 4,
-      "wins": 87,
+      "wins": 90,
       "losses": 44,
-      "pct": 0.664
+      "pct": 0.672
     },
     {
       "threshold": 5,
-      "wins": 54,
-      "losses": 28,
-      "pct": 0.659
+      "wins": 55,
+      "losses": 27,
+      "pct": 0.671
     },
     {
       "threshold": 6,
-      "wins": 40,
+      "wins": 38,
       "losses": 18,
-      "pct": 0.69
+      "pct": 0.679
     },
     {
       "threshold": 7,
-      "wins": 25,
+      "wins": 23,
       "losses": 9,
-      "pct": 0.735
+      "pct": 0.719
     },
     {
       "threshold": 8,
       "wins": 16,
-      "losses": 5,
-      "pct": 0.762
+      "losses": 6,
+      "pct": 0.727
     }
   ],
   "daily_history": [
     {
       "date": "2026-02-24",
-      "wins": 7,
+      "wins": 8,
       "losses": 5,
-      "pct": 0.583,
-      "profit": 300.01
+      "pct": 0.615,
+      "profit": 390.92
     },
     {
       "date": "2026-02-25",
-      "wins": 15,
+      "wins": 16,
       "losses": 3,
-      "pct": 0.833,
-      "profit": 1418.2
+      "pct": 0.842,
+      "profit": 1509.11
     },
     {
       "date": "2026-02-26",
@@ -110,10 +110,10 @@
     },
     {
       "date": "2026-03-03",
-      "wins": 9,
+      "wins": 10,
       "losses": 10,
-      "pct": 0.474,
-      "profit": -18.17
+      "pct": 0.5,
+      "profit": 72.74
     }
   ],
   "past_pods": [
