@@ -1,11 +1,11 @@
 {
   "date": "2026-03-05",
-  "updated": "2026-03-05 09:29 AM",
+  "updated": "2026-03-05 09:37 AM",
   "record": {
     "ats_combined": {
       "wins": 99,
-      "losses": 48,
-      "pct": 0.673
+      "losses": 53,
+      "pct": 0.651
     },
     "premium": {
       "wins": 30,
@@ -14,64 +14,64 @@
     },
     "free_plays": {
       "wins": 69,
-      "losses": 33,
-      "pct": 0.676
+      "losses": 38,
+      "pct": 0.645
     },
     "pod": {
       "wins": 8,
       "losses": 1,
       "pct": 0.889
     },
-    "profit": 6054.67,
-    "profit_flat": 4200.09,
-    "total_bets": 147
+    "profit": 5554.67,
+    "profit_flat": 3700.09,
+    "total_bets": 152
   },
   "splits": [
     {
       "threshold": 4,
       "wins": 99,
-      "losses": 48,
-      "pct": 0.673
+      "losses": 53,
+      "pct": 0.651
     },
     {
       "threshold": 5,
-      "wins": 62,
-      "losses": 31,
-      "pct": 0.667
+      "wins": 66,
+      "losses": 28,
+      "pct": 0.702
     },
     {
       "threshold": 6,
-      "wins": 41,
-      "losses": 19,
-      "pct": 0.683
+      "wins": 40,
+      "losses": 20,
+      "pct": 0.667
     },
     {
       "threshold": 7,
       "wins": 25,
-      "losses": 9,
-      "pct": 0.735
+      "losses": 10,
+      "pct": 0.714
     },
     {
       "threshold": 8,
-      "wins": 16,
-      "losses": 6,
-      "pct": 0.727
+      "wins": 15,
+      "losses": 4,
+      "pct": 0.789
     }
   ],
   "daily_history": [
     {
       "date": "2026-02-24",
       "wins": 8,
-      "losses": 5,
-      "pct": 0.615,
-      "profit": 390.92
+      "losses": 4,
+      "pct": 0.667,
+      "profit": 490.92
     },
     {
       "date": "2026-02-25",
       "wins": 16,
-      "losses": 3,
-      "pct": 0.842,
-      "profit": 1509.11
+      "losses": 5,
+      "pct": 0.762,
+      "profit": 1309.11
     },
     {
       "date": "2026-02-26",
@@ -90,16 +90,16 @@
     {
       "date": "2026-02-28",
       "wins": 31,
-      "losses": 11,
-      "pct": 0.738,
-      "profit": 1881.85
+      "losses": 12,
+      "pct": 0.721,
+      "profit": 1781.85
     },
     {
       "date": "2026-03-01",
       "wins": 5,
-      "losses": 6,
-      "pct": 0.455,
-      "profit": -172.72
+      "losses": 7,
+      "pct": 0.417,
+      "profit": -272.72
     },
     {
       "date": "2026-03-02",
@@ -118,9 +118,9 @@
     {
       "date": "2026-03-04",
       "wins": 9,
-      "losses": 4,
-      "pct": 0.692,
-      "profit": 581.83
+      "losses": 6,
+      "pct": 0.6,
+      "profit": 381.83
     }
   ],
   "past_pods": [
@@ -618,7 +618,7 @@
     "home": "Michigan St.",
     "pick": "Michigan St.",
     "bet": "Michigan St. -19.5",
-    "edge": 11.1,
+    "edge": 10.5,
     "raw_edge": 10.7,
     "confidence": 0.835,
     "pred_score": "52-91",
@@ -632,10 +632,23 @@
       "home": "East Carolina",
       "pick": "Tulsa",
       "bet": "Tulsa -9.5",
-      "edge": 8.9,
+      "edge": 9.3,
       "raw_edge": 8.7,
       "confidence": 0.786,
       "pred_score": "88-63",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false
+    },
+    {
+      "away": "Sam Houston St.",
+      "home": "Delaware",
+      "pick": "Sam Houston St.",
+      "bet": "Sam Houston St. -6.5",
+      "edge": 7.3,
+      "raw_edge": 6.9,
+      "confidence": 0.735,
+      "pred_score": "83-64",
       "best_book": null,
       "all_lines": {},
       "neutral_site": false
@@ -645,7 +658,7 @@
       "home": "Northern Iowa",
       "pick": "Northern Iowa",
       "bet": "Northern Iowa -14.5",
-      "edge": 7.5,
+      "edge": 7.2,
       "raw_edge": 7.5,
       "confidence": 0.752,
       "pred_score": "53-83",
@@ -654,24 +667,11 @@
       "neutral_site": true
     },
     {
-      "away": "Sam Houston St.",
-      "home": "Delaware",
-      "pick": "Sam Houston St.",
-      "bet": "Sam Houston St. -6.5",
-      "edge": 7.1,
-      "raw_edge": 6.9,
-      "confidence": 0.735,
-      "pred_score": "83-64",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false
-    },
-    {
       "away": "Louisiana Tech",
       "home": "Liberty",
       "pick": "Liberty",
       "bet": "Liberty -8.5",
-      "edge": 6.9,
+      "edge": 7.1,
       "raw_edge": 6.7,
       "confidence": 0.729,
       "pred_score": "60-79",
@@ -686,7 +686,7 @@
       "home": "Iowa",
       "pick": "Michigan",
       "bet": "Michigan -9.5",
-      "edge": 5.3,
+      "edge": 5.5,
       "raw_edge": 5.2,
       "confidence": 0.682,
       "pred_score": "84-64",
@@ -699,7 +699,7 @@
       "home": "Tennessee Martin",
       "pick": "Tennessee Martin",
       "bet": "Tennessee Martin -7.5",
-      "edge": 5.3,
+      "edge": 5.5,
       "raw_edge": 5.2,
       "confidence": 0.682,
       "pred_score": "59-75",
@@ -712,7 +712,7 @@
       "home": "Jackson St.",
       "pick": "Jackson St.",
       "bet": "Jackson St. -10.5",
-      "edge": 5.0,
+      "edge": 4.8,
       "raw_edge": 5.0,
       "confidence": 0.675,
       "pred_score": "63-83",
@@ -721,24 +721,11 @@
       "neutral_site": false
     },
     {
-      "away": "Oral Roberts",
-      "home": "North Dakota St.",
-      "pick": "North Dakota St.",
-      "bet": "North Dakota St. -11.5",
-      "edge": 4.6,
-      "raw_edge": 4.6,
-      "confidence": 0.662,
-      "pred_score": "62-84",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": true
-    },
-    {
       "away": "Drake",
       "home": "Southern Illinois",
       "pick": "Southern Illinois",
       "bet": "Southern Illinois -4.5",
-      "edge": 4.3,
+      "edge": 4.5,
       "raw_edge": 4.4,
       "confidence": 0.655,
       "pred_score": "67-79",
@@ -751,22 +738,33 @@
       "home": "Colgate",
       "pick": "Colgate",
       "bet": "Colgate -7.5",
-      "edge": 4.2,
+      "edge": 4.4,
       "raw_edge": 4.1,
       "confidence": 0.645,
       "pred_score": "68-82",
       "best_book": null,
       "all_lines": {},
       "neutral_site": false
-    }
-  ],
-  "all_games": [
+    },
+    {
+      "away": "Oral Roberts",
+      "home": "North Dakota St.",
+      "pick": "North Dakota St.",
+      "bet": "North Dakota St. -11.5",
+      "edge": 4.4,
+      "raw_edge": 4.6,
+      "confidence": 0.662,
+      "pred_score": "62-84",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true
+    },
     {
       "away": "Delaware St.",
       "home": "Maryland Eastern Shore",
       "pick": "Maryland Eastern Shore",
       "bet": "Maryland Eastern Shore -6.5",
-      "edge": 3.9,
+      "edge": 4.0,
       "raw_edge": 3.8,
       "confidence": 0.635,
       "pred_score": "60-73",
@@ -779,46 +777,22 @@
       "home": "Cal St. Bakersfield",
       "pick": "CSUN",
       "bet": "CSUN -8.5",
-      "edge": 3.9,
+      "edge": 4.0,
       "raw_edge": 3.8,
       "confidence": 0.635,
       "pred_score": "87-69",
       "best_book": null,
       "all_lines": {},
       "neutral_site": false
-    },
-    {
-      "away": "Bucknell",
-      "home": "Navy",
-      "pick": "Navy",
-      "bet": "Navy -17.5",
-      "edge": 3.8,
-      "raw_edge": 3.7,
-      "confidence": 0.632,
-      "pred_score": "56-84",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false
-    },
-    {
-      "away": "UC Riverside",
-      "home": "Hawaii",
-      "pick": "Hawaii",
-      "bet": "Hawaii -11.5",
-      "edge": 3.7,
-      "raw_edge": 3.7,
-      "confidence": 0.632,
-      "pred_score": "63-83",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false
-    },
+    }
+  ],
+  "all_games": [
     {
       "away": "Howard",
       "home": "Norfolk St.",
       "pick": "Howard",
       "bet": "Howard -5.5",
-      "edge": 3.7,
+      "edge": 3.8,
       "raw_edge": 3.6,
       "confidence": 0.628,
       "pred_score": "80-66",
@@ -831,10 +805,23 @@
       "home": "Cal Baptist",
       "pick": "Cal Baptist",
       "bet": "Cal Baptist -9.5",
-      "edge": 3.6,
+      "edge": 3.7,
       "raw_edge": 3.5,
       "confidence": 0.625,
       "pred_score": "61-77",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false
+    },
+    {
+      "away": "UC Riverside",
+      "home": "Hawaii",
+      "pick": "Hawaii",
+      "bet": "Hawaii -11.5",
+      "edge": 3.6,
+      "raw_edge": 3.7,
+      "confidence": 0.632,
+      "pred_score": "63-83",
       "best_book": null,
       "all_lines": {},
       "neutral_site": false
@@ -844,7 +831,7 @@
       "home": "St. Thomas",
       "pick": "St. Thomas",
       "bet": "St. Thomas -6.5",
-      "edge": 3.5,
+      "edge": 3.6,
       "raw_edge": 3.4,
       "confidence": 0.621,
       "pred_score": "68-82",
@@ -853,11 +840,24 @@
       "neutral_site": true
     },
     {
+      "away": "Bucknell",
+      "home": "Navy",
+      "pick": "Navy",
+      "bet": "Navy -17.5",
+      "edge": 3.6,
+      "raw_edge": 3.7,
+      "confidence": 0.632,
+      "pred_score": "56-84",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false
+    },
+    {
       "away": "Kennesaw St.",
       "home": "UTEP",
       "pick": "Kennesaw St.",
       "bet": "Kennesaw St. -2.5",
-      "edge": 3.4,
+      "edge": 3.5,
       "raw_edge": 3.5,
       "confidence": 0.625,
       "pred_score": "79-69",
@@ -870,7 +870,7 @@
       "home": "UC Irvine",
       "pick": "UC Irvine",
       "bet": "UC Irvine -9.5",
-      "edge": 3.3,
+      "edge": 3.4,
       "raw_edge": 3.2,
       "confidence": 0.614,
       "pred_score": "67-83",
@@ -883,7 +883,7 @@
       "home": "Southern Utah",
       "pick": "Utah Valley",
       "bet": "Utah Valley -9.5",
-      "edge": 3.3,
+      "edge": 3.4,
       "raw_edge": 3.2,
       "confidence": 0.614,
       "pred_score": "85-66",
@@ -896,7 +896,7 @@
       "home": "Arkansas St.",
       "pick": "Arkansas St.",
       "bet": "Arkansas St. -7.0",
-      "edge": 3.3,
+      "edge": 3.4,
       "raw_edge": 3.2,
       "confidence": 0.614,
       "pred_score": "72-86",
@@ -909,7 +909,7 @@
       "home": "Fairfield",
       "pick": "Fairfield",
       "bet": "Fairfield -5.5",
-      "edge": 2.7,
+      "edge": 2.8,
       "raw_edge": 2.6,
       "confidence": 0.593,
       "pred_score": "70-81",
@@ -922,7 +922,7 @@
       "home": "Morgan St.",
       "pick": "Morgan St.",
       "bet": "Morgan St. -6.5",
-      "edge": 2.5,
+      "edge": 2.6,
       "raw_edge": 2.4,
       "confidence": 0.586,
       "pred_score": "70-81",
@@ -935,7 +935,7 @@
       "home": "Portland",
       "pick": "Portland",
       "bet": "Portland -2.5",
-      "edge": 2.3,
+      "edge": 2.4,
       "raw_edge": 2.4,
       "confidence": 0.586,
       "pred_score": "71-77",
@@ -961,7 +961,7 @@
       "home": "Florida A&M",
       "pick": "Bethune Cookman",
       "bet": "Bethune Cookman -2.5",
-      "edge": 1.9,
+      "edge": 2.0,
       "raw_edge": 2.0,
       "confidence": 0.572,
       "pred_score": "76-69",
@@ -974,7 +974,7 @@
       "home": "Texas Southern",
       "pick": "Texas Southern",
       "bet": "Texas Southern -3.5",
-      "edge": 1.9,
+      "edge": 2.0,
       "raw_edge": 2.0,
       "confidence": 0.572,
       "pred_score": "73-80",
@@ -987,7 +987,7 @@
       "home": "FIU",
       "pick": "FIU",
       "bet": "Middle Tennessee +2.5",
-      "edge": 1.8,
+      "edge": 1.9,
       "raw_edge": 1.9,
       "confidence": 0.569,
       "pred_score": "75-75",
@@ -1000,7 +1000,7 @@
       "home": "Long Beach St.",
       "pick": "UC Davis",
       "bet": "UC Davis -2.5",
-      "edge": 1.7,
+      "edge": 1.8,
       "raw_edge": 1.8,
       "confidence": 0.565,
       "pred_score": "78-71",
@@ -1022,6 +1022,19 @@
       "neutral_site": true
     },
     {
+      "away": "South Carolina St.",
+      "home": "North Carolina Central",
+      "pick": "North Carolina Central",
+      "bet": "South Carolina St. +7.5",
+      "edge": 1.1,
+      "raw_edge": 1.0,
+      "confidence": 0.536,
+      "pred_score": "69-77",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false
+    },
+    {
       "away": "Sacred Heart",
       "home": "Iona",
       "pick": "Iona",
@@ -1035,14 +1048,14 @@
       "neutral_site": true
     },
     {
-      "away": "South Carolina St.",
-      "home": "North Carolina Central",
-      "pick": "North Carolina Central",
-      "bet": "South Carolina St. +7.5",
+      "away": "South Florida",
+      "home": "Memphis",
+      "pick": "South Florida",
+      "bet": "South Florida -6.5",
       "edge": 1.0,
-      "raw_edge": 1.0,
-      "confidence": 0.536,
-      "pred_score": "69-77",
+      "raw_edge": 0.9,
+      "confidence": 0.533,
+      "pred_score": "81-70",
       "best_book": null,
       "all_lines": {},
       "neutral_site": false
@@ -1061,24 +1074,11 @@
       "neutral_site": false
     },
     {
-      "away": "South Florida",
-      "home": "Memphis",
-      "pick": "South Florida",
-      "bet": "South Florida -6.5",
-      "edge": 0.9,
-      "raw_edge": 0.9,
-      "confidence": 0.533,
-      "pred_score": "81-70",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false
-    },
-    {
       "away": "San Diego",
       "home": "Loyola Marymount",
       "pick": "Loyola Marymount",
       "bet": "Loyola Marymount -5.5",
-      "edge": 0.9,
+      "edge": 1.0,
       "raw_edge": 0.9,
       "confidence": 0.533,
       "pred_score": "69-78",
@@ -1218,7 +1218,7 @@
     }
   ],
   "accuracy": {
-    "total_games": 436,
+    "total_games": 437,
     "avg_diff": 16.3,
     "within_5": 32,
     "within_10": 108,
