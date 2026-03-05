@@ -1,77 +1,77 @@
 {
   "date": "2026-03-05",
-  "updated": "2026-03-05 09:37 AM",
+  "updated": "2026-03-05 09:56 AM",
   "record": {
     "ats_combined": {
       "wins": 99,
-      "losses": 53,
-      "pct": 0.651
+      "losses": 49,
+      "pct": 0.669
     },
     "premium": {
-      "wins": 30,
-      "losses": 15,
-      "pct": 0.667
+      "wins": 29,
+      "losses": 16,
+      "pct": 0.644
     },
     "free_plays": {
-      "wins": 69,
-      "losses": 38,
-      "pct": 0.645
+      "wins": 70,
+      "losses": 33,
+      "pct": 0.68
     },
     "pod": {
-      "wins": 8,
-      "losses": 1,
-      "pct": 0.889
+      "wins": 9,
+      "losses": 0,
+      "pct": 1.0
     },
-    "profit": 5554.67,
-    "profit_flat": 3700.09,
-    "total_bets": 152
+    "profit": 5954.67,
+    "profit_flat": 4100.09,
+    "total_bets": 148
   },
   "splits": [
     {
       "threshold": 4,
       "wins": 99,
-      "losses": 53,
-      "pct": 0.651
+      "losses": 49,
+      "pct": 0.669
     },
     {
       "threshold": 5,
-      "wins": 66,
-      "losses": 28,
-      "pct": 0.702
+      "wins": 62,
+      "losses": 31,
+      "pct": 0.667
     },
     {
       "threshold": 6,
-      "wins": 40,
-      "losses": 20,
-      "pct": 0.667
+      "wins": 41,
+      "losses": 19,
+      "pct": 0.683
     },
     {
       "threshold": 7,
       "wins": 25,
-      "losses": 10,
-      "pct": 0.714
+      "losses": 9,
+      "pct": 0.735
     },
     {
       "threshold": 8,
-      "wins": 15,
-      "losses": 4,
-      "pct": 0.789
+      "wins": 16,
+      "losses": 6,
+      "pct": 0.727
     }
   ],
   "daily_history": [
     {
       "date": "2026-02-24",
       "wins": 8,
-      "losses": 4,
-      "pct": 0.667,
-      "profit": 490.92
+      "losses": 5,
+      "pct": 0.615,
+      "profit": 390.92
     },
     {
       "date": "2026-02-25",
       "wins": 16,
-      "losses": 5,
-      "pct": 0.762,
-      "profit": 1309.11
+      "losses": 3,
+      "pct": 0.842,
+      "profit": 1509.11
     },
     {
       "date": "2026-02-26",
@@ -90,16 +90,16 @@
     {
       "date": "2026-02-28",
       "wins": 31,
-      "losses": 12,
-      "pct": 0.721,
-      "profit": 1781.85
+      "losses": 11,
+      "pct": 0.738,
+      "profit": 1881.85
     },
     {
       "date": "2026-03-01",
       "wins": 5,
-      "losses": 7,
-      "pct": 0.417,
-      "profit": -272.72
+      "losses": 6,
+      "pct": 0.455,
+      "profit": -172.72
     },
     {
       "date": "2026-03-02",
@@ -118,20 +118,20 @@
     {
       "date": "2026-03-04",
       "wins": 9,
-      "losses": 6,
-      "pct": 0.6,
-      "profit": 381.83
+      "losses": 5,
+      "pct": 0.643,
+      "profit": 481.83
     }
   ],
   "past_pods": [
     {
       "date": "2026-03-04",
-      "away": "Loyola Chicago",
-      "home": "Saint Louis",
-      "bet": "Saint Louis -27.5",
-      "edge": 8.7,
-      "actual_score": "65-79",
-      "result": "lost"
+      "away": "Maryland",
+      "home": "Wisconsin",
+      "bet": "Wisconsin -13.5",
+      "edge": 7.5,
+      "actual_score": "45-78",
+      "result": "won"
     },
     {
       "date": "2026-03-03",
@@ -245,20 +245,20 @@
     },
     {
       "date": "2026-03-04",
-      "away": "Fairleigh Dickinson",
-      "home": "Mercyhurst",
-      "bet": "Mercyhurst -4.5",
-      "edge": 5.6,
-      "actual_score": "61-70",
-      "result": "won"
+      "away": "Chicago St.",
+      "home": "LIU",
+      "bet": "LIU -11.5",
+      "edge": 5.5,
+      "actual_score": "75-79",
+      "result": "lost"
     },
     {
       "date": "2026-03-03",
-      "away": "Mississippi St.",
-      "home": "Florida",
-      "bet": "Florida -22.5",
-      "edge": 8.9,
-      "actual_score": "74-108",
+      "away": "Drexel",
+      "home": "Hofstra",
+      "bet": "Hofstra -8.5",
+      "edge": 7.0,
+      "actual_score": "51-62",
       "result": "won"
     },
     {
@@ -272,11 +272,11 @@
     },
     {
       "date": "2026-03-03",
-      "away": "TCU",
-      "home": "Texas Tech",
-      "bet": "Texas Tech -9.5",
-      "edge": 9.0,
-      "actual_score": "73-65",
+      "away": "Vanderbilt",
+      "home": "Mississippi",
+      "bet": "Vanderbilt -6.5",
+      "edge": 6.3,
+      "actual_score": "89-86",
       "result": "lost"
     },
     {
