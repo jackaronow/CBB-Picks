@@ -1,11 +1,11 @@
 {
   "date": "2026-03-05",
-  "updated": "2026-03-05 09:21 AM",
+  "updated": "2026-03-05 09:29 AM",
   "record": {
     "ats_combined": {
       "wins": 99,
-      "losses": 49,
-      "pct": 0.669
+      "losses": 48,
+      "pct": 0.673
     },
     "premium": {
       "wins": 30,
@@ -14,57 +14,57 @@
     },
     "free_plays": {
       "wins": 69,
-      "losses": 34,
-      "pct": 0.67
+      "losses": 33,
+      "pct": 0.676
     },
     "pod": {
       "wins": 8,
       "losses": 1,
       "pct": 0.889
     },
-    "profit": 5954.67,
-    "profit_flat": 4100.09,
-    "total_bets": 148
+    "profit": 6054.67,
+    "profit_flat": 4200.09,
+    "total_bets": 147
   },
   "splits": [
     {
       "threshold": 4,
       "wins": 99,
-      "losses": 49,
-      "pct": 0.669
+      "losses": 48,
+      "pct": 0.673
     },
     {
       "threshold": 5,
-      "wins": 66,
-      "losses": 29,
-      "pct": 0.695
+      "wins": 62,
+      "losses": 31,
+      "pct": 0.667
     },
     {
       "threshold": 6,
       "wins": 41,
-      "losses": 20,
-      "pct": 0.672
+      "losses": 19,
+      "pct": 0.683
     },
     {
       "threshold": 7,
-      "wins": 26,
+      "wins": 25,
       "losses": 9,
-      "pct": 0.743
+      "pct": 0.735
     },
     {
       "threshold": 8,
       "wins": 16,
-      "losses": 5,
-      "pct": 0.762
+      "losses": 6,
+      "pct": 0.727
     }
   ],
   "daily_history": [
     {
       "date": "2026-02-24",
       "wins": 8,
-      "losses": 4,
-      "pct": 0.667,
-      "profit": 490.92
+      "losses": 5,
+      "pct": 0.615,
+      "profit": 390.92
     },
     {
       "date": "2026-02-25",
@@ -90,9 +90,9 @@
     {
       "date": "2026-02-28",
       "wins": 31,
-      "losses": 12,
-      "pct": 0.721,
-      "profit": 1781.85
+      "losses": 11,
+      "pct": 0.738,
+      "profit": 1881.85
     },
     {
       "date": "2026-03-01",
@@ -118,9 +118,9 @@
     {
       "date": "2026-03-04",
       "wins": 9,
-      "losses": 5,
-      "pct": 0.643,
-      "profit": 481.83
+      "losses": 4,
+      "pct": 0.692,
+      "profit": 581.83
     }
   ],
   "past_pods": [
@@ -618,11 +618,11 @@
     "home": "Michigan St.",
     "pick": "Michigan St.",
     "bet": "Michigan St. -19.5",
-    "edge": 10.5,
+    "edge": 11.1,
     "raw_edge": 10.7,
     "confidence": 0.835,
     "pred_score": "52-91",
-    "best_book": "FanDuel",
+    "best_book": null,
     "all_lines": {},
     "neutral_site": false
   },
@@ -632,7 +632,7 @@
       "home": "East Carolina",
       "pick": "Tulsa",
       "bet": "Tulsa -9.5",
-      "edge": 9.2,
+      "edge": 8.9,
       "raw_edge": 8.7,
       "confidence": 0.786,
       "pred_score": "88-63",
@@ -645,7 +645,7 @@
       "home": "Northern Iowa",
       "pick": "Northern Iowa",
       "bet": "Northern Iowa -14.5",
-      "edge": 7.4,
+      "edge": 7.5,
       "raw_edge": 7.5,
       "confidence": 0.752,
       "pred_score": "53-83",
@@ -658,23 +658,12 @@
       "home": "Delaware",
       "pick": "Sam Houston St.",
       "bet": "Sam Houston St. -6.5",
-      "edge": 7.3,
+      "edge": 7.1,
       "raw_edge": 6.9,
       "confidence": 0.735,
       "pred_score": "83-64",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": 7.5,
-        "LowVig.ag": 7.5,
-        "FanDuel": 6.5,
-        "Fanatics": 6.0,
-        "DraftKings": 6.5,
-        "BetMGM": 6.5,
-        "BetRivers": 6.5,
-        "BetUS": 7.5,
-        "Caesars": 7.0,
-        "Bovada": 6.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -682,7 +671,7 @@
       "home": "Liberty",
       "pick": "Liberty",
       "bet": "Liberty -8.5",
-      "edge": 7.1,
+      "edge": 6.9,
       "raw_edge": 6.7,
       "confidence": 0.729,
       "pred_score": "60-79",
@@ -697,7 +686,7 @@
       "home": "Iowa",
       "pick": "Michigan",
       "bet": "Michigan -9.5",
-      "edge": 5.5,
+      "edge": 5.3,
       "raw_edge": 5.2,
       "confidence": 0.682,
       "pred_score": "84-64",
@@ -710,11 +699,11 @@
       "home": "Tennessee Martin",
       "pick": "Tennessee Martin",
       "bet": "Tennessee Martin -7.5",
-      "edge": 5.5,
+      "edge": 5.3,
       "raw_edge": 5.2,
       "confidence": 0.682,
       "pred_score": "59-75",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -723,11 +712,11 @@
       "home": "Jackson St.",
       "pick": "Jackson St.",
       "bet": "Jackson St. -10.5",
-      "edge": 4.9,
+      "edge": 5.0,
       "raw_edge": 5.0,
       "confidence": 0.675,
       "pred_score": "63-83",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -736,23 +725,12 @@
       "home": "North Dakota St.",
       "pick": "North Dakota St.",
       "bet": "North Dakota St. -11.5",
-      "edge": 4.5,
+      "edge": 4.6,
       "raw_edge": 4.6,
       "confidence": 0.662,
       "pred_score": "62-84",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "DraftKings": -10.5,
-        "BetMGM": -10.5,
-        "Fanatics": -11.0,
-        "FanDuel": -11.5,
-        "BetOnline": -11.5,
-        "Caesars": -11.0,
-        "LowVig.ag": -11.5,
-        "Bovada": -10.5,
-        "BetRivers": -10.5,
-        "BetUS": -11.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": true
     },
     {
@@ -760,7 +738,7 @@
       "home": "Southern Illinois",
       "pick": "Southern Illinois",
       "bet": "Southern Illinois -4.5",
-      "edge": 4.4,
+      "edge": 4.3,
       "raw_edge": 4.4,
       "confidence": 0.655,
       "pred_score": "67-79",
@@ -773,24 +751,26 @@
       "home": "Colgate",
       "pick": "Colgate",
       "bet": "Colgate -7.5",
-      "edge": 4.3,
+      "edge": 4.2,
       "raw_edge": 4.1,
       "confidence": 0.645,
       "pred_score": "68-82",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
-    },
+    }
+  ],
+  "all_games": [
     {
       "away": "Delaware St.",
       "home": "Maryland Eastern Shore",
       "pick": "Maryland Eastern Shore",
       "bet": "Maryland Eastern Shore -6.5",
-      "edge": 4.0,
+      "edge": 3.9,
       "raw_edge": 3.8,
       "confidence": 0.635,
       "pred_score": "60-73",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -799,47 +779,23 @@
       "home": "Cal St. Bakersfield",
       "pick": "CSUN",
       "bet": "CSUN -8.5",
-      "edge": 4.0,
+      "edge": 3.9,
       "raw_edge": 3.8,
       "confidence": 0.635,
       "pred_score": "87-69",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
-      "neutral_site": false
-    }
-  ],
-  "all_games": [
-    {
-      "away": "Howard",
-      "home": "Norfolk St.",
-      "pick": "Howard",
-      "bet": "Howard -5.5",
-      "edge": 3.8,
-      "raw_edge": 3.6,
-      "confidence": 0.628,
-      "pred_score": "80-66",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": 5.0,
-        "LowVig.ag": 5.0,
-        "DraftKings": 5.5,
-        "Fanatics": 5.5,
-        "BetMGM": 5.5,
-        "BetRivers": 5.5,
-        "Bovada": 6.0,
-        "FanDuel": 5.5
-      },
       "neutral_site": false
     },
     {
-      "away": "Abilene Christian",
-      "home": "Cal Baptist",
-      "pick": "Cal Baptist",
-      "bet": "Cal Baptist -9.5",
-      "edge": 3.7,
-      "raw_edge": 3.5,
-      "confidence": 0.625,
-      "pred_score": "61-77",
+      "away": "Bucknell",
+      "home": "Navy",
+      "pick": "Navy",
+      "bet": "Navy -17.5",
+      "edge": 3.8,
+      "raw_edge": 3.7,
+      "confidence": 0.632,
+      "pred_score": "56-84",
       "best_book": null,
       "all_lines": {},
       "neutral_site": false
@@ -849,11 +805,37 @@
       "home": "Hawaii",
       "pick": "Hawaii",
       "bet": "Hawaii -11.5",
-      "edge": 3.6,
+      "edge": 3.7,
       "raw_edge": 3.7,
       "confidence": 0.632,
       "pred_score": "63-83",
-      "best_book": "FanDuel",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false
+    },
+    {
+      "away": "Howard",
+      "home": "Norfolk St.",
+      "pick": "Howard",
+      "bet": "Howard -5.5",
+      "edge": 3.7,
+      "raw_edge": 3.6,
+      "confidence": 0.628,
+      "pred_score": "80-66",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false
+    },
+    {
+      "away": "Abilene Christian",
+      "home": "Cal Baptist",
+      "pick": "Cal Baptist",
+      "bet": "Cal Baptist -9.5",
+      "edge": 3.6,
+      "raw_edge": 3.5,
+      "confidence": 0.625,
+      "pred_score": "61-77",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -862,60 +844,25 @@
       "home": "St. Thomas",
       "pick": "St. Thomas",
       "bet": "St. Thomas -6.5",
-      "edge": 3.6,
+      "edge": 3.5,
       "raw_edge": 3.4,
       "confidence": 0.621,
       "pred_score": "68-82",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": -6.0,
-        "LowVig.ag": -6.0,
-        "Caesars": -6.0,
-        "FanDuel": -6.5,
-        "BetRivers": -6.5,
-        "DraftKings": -6.5,
-        "BetMGM": -6.5,
-        "BetUS": -6.0,
-        "Bovada": -6.0,
-        "Fanatics": -6.0
-      },
-      "neutral_site": true
-    },
-    {
-      "away": "Bucknell",
-      "home": "Navy",
-      "pick": "Navy",
-      "bet": "Navy -17.5",
-      "edge": 3.6,
-      "raw_edge": 3.7,
-      "confidence": 0.632,
-      "pred_score": "56-84",
       "best_book": null,
       "all_lines": {},
-      "neutral_site": false
+      "neutral_site": true
     },
     {
       "away": "Kennesaw St.",
       "home": "UTEP",
       "pick": "Kennesaw St.",
       "bet": "Kennesaw St. -2.5",
-      "edge": 3.5,
+      "edge": 3.4,
       "raw_edge": 3.5,
       "confidence": 0.625,
       "pred_score": "79-69",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": 2.5,
-        "LowVig.ag": 2.5,
-        "DraftKings": 2.5,
-        "BetMGM": 2.5,
-        "BetUS": 2.5,
-        "Caesars": 2.5,
-        "BetRivers": 2.5,
-        "Fanatics": 2.5,
-        "Bovada": 2.5,
-        "FanDuel": 2.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -923,7 +870,7 @@
       "home": "UC Irvine",
       "pick": "UC Irvine",
       "bet": "UC Irvine -9.5",
-      "edge": 3.4,
+      "edge": 3.3,
       "raw_edge": 3.2,
       "confidence": 0.614,
       "pred_score": "67-83",
@@ -936,7 +883,7 @@
       "home": "Southern Utah",
       "pick": "Utah Valley",
       "bet": "Utah Valley -9.5",
-      "edge": 3.4,
+      "edge": 3.3,
       "raw_edge": 3.2,
       "confidence": 0.614,
       "pred_score": "85-66",
@@ -949,11 +896,11 @@
       "home": "Arkansas St.",
       "pick": "Arkansas St.",
       "bet": "Arkansas St. -7.0",
-      "edge": 3.4,
+      "edge": 3.3,
       "raw_edge": 3.2,
       "confidence": 0.614,
       "pred_score": "72-86",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": true
     },
@@ -979,17 +926,8 @@
       "raw_edge": 2.4,
       "confidence": 0.586,
       "pred_score": "70-81",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": -6.5,
-        "LowVig.ag": -6.5,
-        "DraftKings": -6.5,
-        "Fanatics": -7.0,
-        "BetMGM": -6.5,
-        "BetRivers": -6.5,
-        "Bovada": -6.5,
-        "FanDuel": -6.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -997,7 +935,7 @@
       "home": "Portland",
       "pick": "Portland",
       "bet": "Portland -2.5",
-      "edge": 2.4,
+      "edge": 2.3,
       "raw_edge": 2.4,
       "confidence": 0.586,
       "pred_score": "71-77",
@@ -1023,20 +961,12 @@
       "home": "Florida A&M",
       "pick": "Bethune Cookman",
       "bet": "Bethune Cookman -2.5",
-      "edge": 2.0,
+      "edge": 1.9,
       "raw_edge": 2.0,
       "confidence": 0.572,
       "pred_score": "76-69",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": 2.5,
-        "LowVig.ag": 2.5,
-        "FanDuel": 2.5,
-        "Fanatics": 2.5,
-        "DraftKings": 2.5,
-        "BetRivers": 2.5,
-        "Bovada": 2.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -1044,20 +974,12 @@
       "home": "Texas Southern",
       "pick": "Texas Southern",
       "bet": "Texas Southern -3.5",
-      "edge": 2.0,
+      "edge": 1.9,
       "raw_edge": 2.0,
       "confidence": 0.572,
       "pred_score": "73-80",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": -3.5,
-        "LowVig.ag": -3.5,
-        "DraftKings": -3.5,
-        "Fanatics": -3.5,
-        "BetRivers": -3.5,
-        "Bovada": -3.0,
-        "FanDuel": -3.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -1065,11 +987,11 @@
       "home": "FIU",
       "pick": "FIU",
       "bet": "Middle Tennessee +2.5",
-      "edge": 1.9,
+      "edge": 1.8,
       "raw_edge": 1.9,
       "confidence": 0.569,
       "pred_score": "75-75",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -1078,23 +1000,12 @@
       "home": "Long Beach St.",
       "pick": "UC Davis",
       "bet": "UC Davis -2.5",
-      "edge": 1.8,
+      "edge": 1.7,
       "raw_edge": 1.8,
       "confidence": 0.565,
       "pred_score": "78-71",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": 2.0,
-        "LowVig.ag": 2.0,
-        "DraftKings": 1.5,
-        "BetMGM": 1.5,
-        "BetUS": 2.0,
-        "Caesars": 2.0,
-        "Bovada": 1.5,
-        "Fanatics": 1.5,
-        "FanDuel": 2.5,
-        "BetRivers": 1.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -1106,31 +1017,9 @@
       "raw_edge": 1.4,
       "confidence": 0.551,
       "pred_score": "69-75",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": true
-    },
-    {
-      "away": "South Carolina St.",
-      "home": "North Carolina Central",
-      "pick": "North Carolina Central",
-      "bet": "South Carolina St. +7.5",
-      "edge": 1.1,
-      "raw_edge": 1.0,
-      "confidence": 0.536,
-      "pred_score": "69-77",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": -8.0,
-        "LowVig.ag": -8.0,
-        "FanDuel": -7.5,
-        "Fanatics": -8.0,
-        "DraftKings": -7.5,
-        "BetMGM": -7.5,
-        "BetRivers": -7.5,
-        "Bovada": -8.0
-      },
-      "neutral_site": false
     },
     {
       "away": "Sacred Heart",
@@ -1146,14 +1035,14 @@
       "neutral_site": true
     },
     {
-      "away": "South Florida",
-      "home": "Memphis",
-      "pick": "South Florida",
-      "bet": "South Florida -6.5",
+      "away": "South Carolina St.",
+      "home": "North Carolina Central",
+      "pick": "North Carolina Central",
+      "bet": "South Carolina St. +7.5",
       "edge": 1.0,
-      "raw_edge": 0.9,
-      "confidence": 0.533,
-      "pred_score": "81-70",
+      "raw_edge": 1.0,
+      "confidence": 0.536,
+      "pred_score": "69-77",
       "best_book": null,
       "all_lines": {},
       "neutral_site": false
@@ -1167,7 +1056,20 @@
       "raw_edge": 1.0,
       "confidence": 0.536,
       "pred_score": "70-70",
-      "best_book": "FanDuel",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false
+    },
+    {
+      "away": "South Florida",
+      "home": "Memphis",
+      "pick": "South Florida",
+      "bet": "South Florida -6.5",
+      "edge": 0.9,
+      "raw_edge": 0.9,
+      "confidence": 0.533,
+      "pred_score": "81-70",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -1176,7 +1078,7 @@
       "home": "Loyola Marymount",
       "pick": "Loyola Marymount",
       "bet": "Loyola Marymount -5.5",
-      "edge": 1.0,
+      "edge": 0.9,
       "raw_edge": 0.9,
       "confidence": 0.533,
       "pred_score": "69-78",
@@ -1193,19 +1095,8 @@
       "raw_edge": 0.9,
       "confidence": 0.533,
       "pred_score": "72-77",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "DraftKings": -1.5,
-        "LowVig.ag": -2.5,
-        "BetOnline": -2.5,
-        "Caesars": -2.0,
-        "Bovada": -2.0,
-        "FanDuel": -2.5,
-        "BetRivers": -2.5,
-        "Fanatics": -2.5,
-        "BetUS": -2.5,
-        "BetMGM": -3.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": true
     },
     {
@@ -1243,7 +1134,7 @@
       "raw_edge": 0.6,
       "confidence": 0.522,
       "pred_score": "77-73",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -1256,7 +1147,7 @@
       "raw_edge": 0.5,
       "confidence": 0.518,
       "pred_score": "78-73",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -1269,17 +1160,8 @@
       "raw_edge": 0.4,
       "confidence": 0.515,
       "pred_score": "70-73",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": -3.5,
-        "LowVig.ag": -3.5,
-        "DraftKings": -3.5,
-        "Fanatics": -3.5,
-        "BetMGM": -3.5,
-        "BetRivers": -3.5,
-        "Bovada": -3.0,
-        "FanDuel": -3.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -1304,7 +1186,7 @@
       "raw_edge": 0.4,
       "confidence": 0.515,
       "pred_score": "75-72",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     },
@@ -1317,19 +1199,8 @@
       "raw_edge": 0.4,
       "confidence": 0.515,
       "pred_score": "69-75",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "BetOnline": -5.0,
-        "LowVig.ag": -5.0,
-        "DraftKings": -5.5,
-        "BetMGM": -5.5,
-        "BetUS": -5.0,
-        "BetRivers": -4.5,
-        "Caesars": -5.0,
-        "Fanatics": -5.0,
-        "Bovada": -5.0,
-        "FanDuel": -4.5
-      },
+      "best_book": null,
+      "all_lines": {},
       "neutral_site": false
     },
     {
@@ -1341,7 +1212,7 @@
       "raw_edge": 0.2,
       "confidence": 0.507,
       "pred_score": "72-74",
-      "best_book": "FanDuel",
+      "best_book": null,
       "all_lines": {},
       "neutral_site": false
     }
