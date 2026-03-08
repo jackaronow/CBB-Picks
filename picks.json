@@ -1,30 +1,30 @@
 {
   "date": "2026-03-08",
-  "updated": "2026-03-08 12:06 PM",
+  "updated": "2026-03-08 12:09 PM",
   "record": {
     "ats_combined": {
-      "wins": 118,
-      "losses": 76,
-      "pct": 0.608
+      "wins": 117,
+      "losses": 78,
+      "pct": 0.6
     },
     "premium": {
-      "wins": 35,
-      "losses": 25,
-      "pct": 0.583
+      "wins": 34,
+      "losses": 26,
+      "pct": 0.567
     },
     "free_plays": {
       "wins": 83,
-      "losses": 51,
-      "pct": 0.619
+      "losses": 52,
+      "pct": 0.615
     },
     "pod": {
-      "wins": 11,
-      "losses": 1,
-      "pct": 0.917
+      "wins": 10,
+      "losses": 2,
+      "pct": 0.833
     },
-    "profit": 4709.24,
-    "profit_flat": 3127.38,
-    "total_bets": 194
+    "profit": 4036.51,
+    "profit_flat": 2836.47,
+    "total_bets": 195
   },
   "splits": [
     {
