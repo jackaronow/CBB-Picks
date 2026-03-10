@@ -1,6 +1,6 @@
 {
   "date": "2026-03-10",
-  "updated": "2026-03-10 11:48 AM",
+  "updated": "2026-03-10 12:12 PM",
   "record": {
     "ats_combined": {
       "wins": 123,
@@ -923,7 +923,7 @@
     "home": "Merrimack",
     "pick": "Merrimack",
     "bet": "Siena +3.5",
-    "edge": 16.6,
+    "edge": 16.3,
     "raw_edge": 12.5,
     "confidence": 0.872,
     "pred_score": "67-71",
@@ -948,7 +948,7 @@
       "home": "Vermont",
       "pick": "Vermont",
       "bet": "NJIT +13.5",
-      "edge": 9.3,
+      "edge": 9.5,
       "raw_edge": 8.5,
       "confidence": 0.78,
       "pred_score": "65-79",
@@ -968,34 +968,11 @@
       "is_dog": true
     },
     {
-      "away": "Monmouth",
-      "home": "Hofstra",
-      "pick": "Hofstra",
-      "bet": "Hofstra -4.5",
-      "edge": 8.3,
-      "raw_edge": 7.5,
-      "confidence": 0.752,
-      "pred_score": "65-78",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "FanDuel": -4.5,
-        "LowVig.ag": -4.5,
-        "Caesars": -4.5,
-        "BetOnline": -4.5,
-        "BetRivers": -4.5,
-        "BetMGM": -4.5,
-        "Bovada": -4.5,
-        "BetUS": -4.5
-      },
-      "neutral_site": true,
-      "is_dog": false
-    },
-    {
       "away": "Pittsburgh",
       "home": "Stanford",
       "pick": "Stanford",
       "bet": "Stanford -5.5",
-      "edge": 8.0,
+      "edge": 8.1,
       "raw_edge": 7.5,
       "confidence": 0.752,
       "pred_score": "68-76",
@@ -1011,6 +988,29 @@
         "Fanatics": -5.5,
         "BetUS": -5.5,
         "Bovada": -5.5
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Monmouth",
+      "home": "Hofstra",
+      "pick": "Hofstra",
+      "bet": "Hofstra -4.5",
+      "edge": 8.1,
+      "raw_edge": 7.5,
+      "confidence": 0.752,
+      "pred_score": "65-78",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -4.5,
+        "LowVig.ag": -4.5,
+        "Caesars": -4.5,
+        "BetOnline": -4.5,
+        "BetRivers": -4.5,
+        "BetMGM": -4.5,
+        "Bovada": -4.5,
+        "BetUS": -4.5
       },
       "neutral_site": true,
       "is_dog": false
@@ -1043,31 +1043,6 @@
   ],
   "free_plays": [
     {
-      "away": "Maryland",
-      "home": "Oregon",
-      "pick": "Oregon",
-      "bet": "Oregon -3.5",
-      "edge": 6.1,
-      "raw_edge": 5.5,
-      "confidence": 0.691,
-      "pred_score": "69-75",
-      "best_book": "FanDuel",
-      "all_lines": {
-        "FanDuel": -3.5,
-        "BetRivers": -3.5,
-        "DraftKings": -3.5,
-        "BetOnline": -3.5,
-        "LowVig.ag": -3.5,
-        "BetMGM": -3.5,
-        "Caesars": -3.5,
-        "Fanatics": -4.0,
-        "BetUS": -4.0,
-        "Bovada": -3.5
-      },
-      "neutral_site": true,
-      "is_dog": false
-    },
-    {
       "away": "Mercyhurst",
       "home": "LIU",
       "pick": "LIU",
@@ -1088,6 +1063,31 @@
         "Fanatics": -5.5
       },
       "neutral_site": false,
+      "is_dog": false
+    },
+    {
+      "away": "Maryland",
+      "home": "Oregon",
+      "pick": "Oregon",
+      "bet": "Oregon -3.5",
+      "edge": 5.9,
+      "raw_edge": 5.5,
+      "confidence": 0.691,
+      "pred_score": "69-75",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -3.5,
+        "BetRivers": -3.5,
+        "DraftKings": -3.5,
+        "BetOnline": -3.5,
+        "LowVig.ag": -3.5,
+        "BetMGM": -3.5,
+        "Caesars": -3.5,
+        "Fanatics": -4.0,
+        "BetUS": -4.0,
+        "Bovada": -3.5
+      },
+      "neutral_site": true,
       "is_dog": false
     },
     {
@@ -1135,7 +1135,7 @@
       "home": "Stephen F. Austin",
       "pick": "Stephen F. Austin",
       "bet": "Stephen F. Austin -6.5",
-      "edge": 3.8,
+      "edge": 3.9,
       "raw_edge": 3.6,
       "confidence": 0.628,
       "pred_score": "64-78",
@@ -1222,11 +1222,25 @@
       "is_dog": true
     },
     {
+      "away": "Syracuse",
+      "home": "SMU",
+      "pick": "SMU",
+      "bet": "SMU -5.5",
+      "edge": 1.6,
+      "raw_edge": 1.5,
+      "confidence": 0.554,
+      "pred_score": "72-82",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
       "away": "Detroit Mercy",
       "home": "Wright St.",
       "pick": "Wright St.",
       "bet": "Wright St. -4.5",
-      "edge": 1.7,
+      "edge": 1.6,
       "raw_edge": 1.5,
       "confidence": 0.554,
       "pred_score": "72-80",
@@ -1246,25 +1260,11 @@
       "is_dog": false
     },
     {
-      "away": "Syracuse",
-      "home": "SMU",
-      "pick": "SMU",
-      "bet": "SMU -5.5",
-      "edge": 1.6,
-      "raw_edge": 1.5,
-      "confidence": 0.554,
-      "pred_score": "72-82",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": true,
-      "is_dog": false
-    },
-    {
       "away": "Idaho",
       "home": "Eastern Washington",
       "pick": "Eastern Washington",
       "bet": "Idaho +1.5",
-      "edge": 1.5,
+      "edge": 1.4,
       "raw_edge": 1.1,
       "confidence": 0.54,
       "pred_score": "75-75",
@@ -1278,7 +1278,7 @@
       "home": "Colorado",
       "pick": "Colorado",
       "bet": "Oklahoma St. +1.5",
-      "edge": 1.1,
+      "edge": 1.0,
       "raw_edge": 0.8,
       "confidence": 0.529,
       "pred_score": "79-80",
@@ -1328,7 +1328,7 @@
       "home": "Gonzaga",
       "pick": "Gonzaga",
       "bet": "Santa Clara +6.5",
-      "edge": 0.6,
+      "edge": 0.7,
       "raw_edge": 0.5,
       "confidence": 0.518,
       "pred_score": "73-81",
