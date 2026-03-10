@@ -1,6 +1,6 @@
 {
   "date": "2026-03-10",
-  "updated": "2026-03-10 10:03 AM",
+  "updated": "2026-03-10 11:48 AM",
   "record": {
     "ats_combined": {
       "wins": 123,
@@ -29,21 +29,21 @@
   "splits": [
     {
       "threshold": 4,
-      "wins": 122,
-      "losses": 85,
-      "pct": 0.589
+      "wins": 121,
+      "losses": 86,
+      "pct": 0.585
     },
     {
       "threshold": 5,
-      "wins": 77,
-      "losses": 52,
-      "pct": 0.597
+      "wins": 76,
+      "losses": 53,
+      "pct": 0.589
     },
     {
       "threshold": 6,
-      "wins": 50,
-      "losses": 31,
-      "pct": 0.617
+      "wins": 49,
+      "losses": 32,
+      "pct": 0.605
     },
     {
       "threshold": 7,
@@ -152,10 +152,10 @@
     },
     {
       "date": "2026-03-09",
-      "wins": 2,
-      "losses": 2,
-      "pct": 0.5,
-      "profit": -36.36
+      "wins": 1,
+      "losses": 3,
+      "pct": 0.25,
+      "profit": -227.27
     }
   ],
   "past_pods": [
@@ -921,180 +921,183 @@
   "play_of_the_day": {
     "away": "Siena",
     "home": "Merrimack",
-    "pick": "Over 126.5",
-    "bet": "Over 126.5",
-    "edge": 12.5,
+    "pick": "Merrimack",
+    "bet": "Siena +3.5",
+    "edge": 16.6,
     "raw_edge": 12.5,
-    "confidence": 0.0,
-    "pred_score": "66-73",
-    "best_book": null,
-    "all_lines": {},
-    "neutral_site": false,
-    "is_dog": false,
-    "pick_type": "ou",
-    "vegas_total": 126.5,
-    "model_total": 139
+    "confidence": 0.872,
+    "pred_score": "67-71",
+    "best_book": "FanDuel",
+    "all_lines": {
+      "FanDuel": -3.5,
+      "BetRivers": -3.5,
+      "LowVig.ag": -3.0,
+      "BetOnline": -3.0,
+      "Caesars": -3.0,
+      "BetUS": -3.0,
+      "Bovada": -3.0,
+      "BetMGM": -2.5,
+      "Fanatics": -3.0
+    },
+    "neutral_site": true,
+    "is_dog": true
   },
   "premium_picks": [
     {
       "away": "NJIT",
       "home": "Vermont",
-      "pick": "Over 135.5",
-      "bet": "Over 135.5",
-      "edge": 8.5,
+      "pick": "Vermont",
+      "bet": "NJIT +13.5",
+      "edge": 9.3,
       "raw_edge": 8.5,
-      "confidence": 0.0,
+      "confidence": 0.78,
       "pred_score": "65-79",
-      "best_book": null,
-      "all_lines": {},
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -13.5,
+        "LowVig.ag": -13.5,
+        "BetOnline": -13.5,
+        "DraftKings": -13.5,
+        "BetRivers": -13.5,
+        "Caesars": -13.5,
+        "Bovada": -12.5,
+        "BetMGM": -13.5,
+        "Fanatics": -12.5
+      },
       "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ou",
-      "vegas_total": 135.5,
-      "model_total": 144
+      "is_dog": true
     },
-    {
-      "away": "Utah",
-      "home": "Cincinnati",
-      "pick": "Over 136.5",
-      "bet": "Over 136.5",
-      "edge": 8.5,
-      "raw_edge": 8.5,
-      "confidence": 0.0,
-      "pred_score": "62-83",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ou",
-      "vegas_total": 136.5,
-      "model_total": 145
-    },
-    {
-      "away": "Pittsburgh",
-      "home": "Stanford",
-      "pick": "Over 136.5",
-      "bet": "Over 136.5",
-      "edge": 7.5,
-      "raw_edge": 7.5,
-      "confidence": 0.0,
-      "pred_score": "66-78",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ou",
-      "vegas_total": 136.5,
-      "model_total": 144
-    },
-    {
-      "away": "Monmouth",
-      "home": "Hofstra",
-      "pick": "Over 134.5",
-      "bet": "Over 134.5",
-      "edge": 7.5,
-      "raw_edge": 7.5,
-      "confidence": 0.0,
-      "pred_score": "63-79",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ou",
-      "vegas_total": 134.5,
-      "model_total": 142
-    }
-  ],
-  "free_plays": [
     {
       "away": "Monmouth",
       "home": "Hofstra",
       "pick": "Hofstra",
       "bet": "Hofstra -4.5",
-      "edge": 6.3,
-      "raw_edge": 5.7,
-      "confidence": 0.698,
+      "edge": 8.3,
+      "raw_edge": 7.5,
+      "confidence": 0.752,
       "pred_score": "65-78",
-      "best_book": null,
-      "all_lines": {},
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -4.5,
+        "LowVig.ag": -4.5,
+        "Caesars": -4.5,
+        "BetOnline": -4.5,
+        "BetRivers": -4.5,
+        "BetMGM": -4.5,
+        "Bovada": -4.5,
+        "BetUS": -4.5
+      },
       "neutral_site": true,
-      "is_dog": false,
-      "pick_type": "ats"
+      "is_dog": false
     },
     {
-      "away": "UMass Lowell",
-      "home": "UMBC",
-      "pick": "UMBC",
-      "bet": "UMBC -7.5",
-      "edge": 5.7,
-      "raw_edge": 5.3,
-      "confidence": 0.685,
-      "pred_score": "66-82",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ats"
+      "away": "Pittsburgh",
+      "home": "Stanford",
+      "pick": "Stanford",
+      "bet": "Stanford -5.5",
+      "edge": 8.0,
+      "raw_edge": 7.5,
+      "confidence": 0.752,
+      "pred_score": "68-76",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -5.5,
+        "BetRivers": -5.5,
+        "DraftKings": -5.5,
+        "BetOnline": -5.5,
+        "LowVig.ag": -5.5,
+        "BetMGM": -5.5,
+        "Caesars": -5.5,
+        "Fanatics": -5.5,
+        "BetUS": -5.5,
+        "Bovada": -5.5
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Utah",
+      "home": "Cincinnati",
+      "pick": "Cincinnati",
+      "bet": "Cincinnati -11.5",
+      "edge": 7.8,
+      "raw_edge": 8.5,
+      "confidence": 0.78,
+      "pred_score": "64-82",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -11.5,
+        "BetRivers": -11.5,
+        "DraftKings": -11.5,
+        "LowVig.ag": -11.5,
+        "BetOnline": -11.5,
+        "BetMGM": -11.5,
+        "Caesars": -11.5,
+        "Fanatics": -11.5,
+        "BetUS": -11.5,
+        "Bovada": -11.0
+      },
+      "neutral_site": true,
+      "is_dog": false
+    }
+  ],
+  "free_plays": [
+    {
+      "away": "Maryland",
+      "home": "Oregon",
+      "pick": "Oregon",
+      "bet": "Oregon -3.5",
+      "edge": 6.1,
+      "raw_edge": 5.5,
+      "confidence": 0.691,
+      "pred_score": "69-75",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -3.5,
+        "BetRivers": -3.5,
+        "DraftKings": -3.5,
+        "BetOnline": -3.5,
+        "LowVig.ag": -3.5,
+        "BetMGM": -3.5,
+        "Caesars": -3.5,
+        "Fanatics": -4.0,
+        "BetUS": -4.0,
+        "Bovada": -3.5
+      },
+      "neutral_site": true,
+      "is_dog": false
     },
     {
       "away": "Mercyhurst",
       "home": "LIU",
-      "pick": "Over 136.5",
-      "bet": "Over 136.5",
-      "edge": 5.5,
+      "pick": "LIU",
+      "bet": "LIU -5.5",
+      "edge": 5.9,
       "raw_edge": 5.5,
-      "confidence": 0.0,
+      "confidence": 0.691,
       "pred_score": "66-76",
-      "best_book": null,
-      "all_lines": {},
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -5.5,
+        "BetOnline": -5.5,
+        "LowVig.ag": -5.5,
+        "BetRivers": -6.5,
+        "Caesars": -6.0,
+        "Bovada": -6.0,
+        "BetMGM": -5.5,
+        "Fanatics": -5.5
+      },
       "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ou",
-      "vegas_total": 136.5,
-      "model_total": 142
-    },
-    {
-      "away": "Maryland",
-      "home": "Oregon",
-      "pick": "Over 138.5",
-      "bet": "Over 138.5",
-      "edge": 5.5,
-      "raw_edge": 5.5,
-      "confidence": 0.0,
-      "pred_score": "67-77",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ou",
-      "vegas_total": 138.5,
-      "model_total": 144
-    },
-    {
-      "away": "Penn St.",
-      "home": "Northwestern",
-      "pick": "Over 143.5",
-      "bet": "Over 143.5",
-      "edge": 5.5,
-      "raw_edge": 5.5,
-      "confidence": 0.0,
-      "pred_score": "66-83",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
-      "is_dog": false,
-      "pick_type": "ou",
-      "vegas_total": 143.5,
-      "model_total": 149
+      "is_dog": false
     },
     {
       "away": "Penn St.",
       "home": "Northwestern",
       "pick": "Northwestern",
       "bet": "Northwestern -6.5",
-      "edge": 4.5,
-      "raw_edge": 4.2,
-      "confidence": 0.649,
+      "edge": 5.9,
+      "raw_edge": 5.5,
+      "confidence": 0.691,
       "pred_score": "67-82",
       "best_book": "FanDuel",
       "all_lines": {
@@ -1109,8 +1112,21 @@
         "Fanatics": -6.0
       },
       "neutral_site": true,
-      "is_dog": false,
-      "pick_type": "ats"
+      "is_dog": false
+    },
+    {
+      "away": "UMass Lowell",
+      "home": "UMBC",
+      "pick": "UMBC",
+      "bet": "UMBC -7.5",
+      "edge": 5.7,
+      "raw_edge": 5.3,
+      "confidence": 0.685,
+      "pred_score": "66-82",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": false,
+      "is_dog": false
     }
   ],
   "all_games": [
@@ -1126,20 +1142,6 @@
       "best_book": "FanDuel",
       "all_lines": {},
       "neutral_site": true,
-      "is_dog": false
-    },
-    {
-      "away": "Mercyhurst",
-      "home": "LIU",
-      "pick": "LIU",
-      "bet": "LIU -5.5",
-      "edge": 2.7,
-      "raw_edge": 2.5,
-      "confidence": 0.59,
-      "pred_score": "66-76",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
       "is_dog": false
     },
     {
@@ -1164,20 +1166,6 @@
         "BetUS": -3.5
       },
       "neutral_site": true,
-      "is_dog": true
-    },
-    {
-      "away": "NJIT",
-      "home": "Vermont",
-      "pick": "Vermont",
-      "bet": "NJIT +13.5",
-      "edge": 2.3,
-      "raw_edge": 2.1,
-      "confidence": 0.576,
-      "pred_score": "65-79",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": false,
       "is_dog": true
     },
     {
@@ -1272,20 +1260,6 @@
       "is_dog": false
     },
     {
-      "away": "Utah",
-      "home": "Cincinnati",
-      "pick": "Cincinnati",
-      "bet": "Cincinnati -11.5",
-      "edge": 1.6,
-      "raw_edge": 1.8,
-      "confidence": 0.565,
-      "pred_score": "64-82",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": true,
-      "is_dog": false
-    },
-    {
       "away": "Idaho",
       "home": "Eastern Washington",
       "pick": "Eastern Washington",
@@ -1323,20 +1297,6 @@
       },
       "neutral_site": true,
       "is_dog": true
-    },
-    {
-      "away": "Maryland",
-      "home": "Oregon",
-      "pick": "Oregon",
-      "bet": "Oregon -3.5",
-      "edge": 1.1,
-      "raw_edge": 1.0,
-      "confidence": 0.536,
-      "pred_score": "69-75",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": true,
-      "is_dog": false
     },
     {
       "away": "New Mexico St.",
@@ -1378,20 +1338,6 @@
       "is_dog": true
     },
     {
-      "away": "Pittsburgh",
-      "home": "Stanford",
-      "pick": "Stanford",
-      "bet": "Stanford -5.5",
-      "edge": 0.4,
-      "raw_edge": 0.4,
-      "confidence": 0.515,
-      "pred_score": "68-76",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": true,
-      "is_dog": false
-    },
-    {
       "away": "Missouri St.",
       "home": "FIU",
       "pick": "FIU",
@@ -1404,20 +1350,6 @@
       "all_lines": {},
       "neutral_site": true,
       "is_dog": false
-    },
-    {
-      "away": "Siena",
-      "home": "Merrimack",
-      "pick": "Merrimack",
-      "bet": "Siena +3.5",
-      "edge": 0.4,
-      "raw_edge": 0.3,
-      "confidence": 0.511,
-      "pred_score": "67-71",
-      "best_book": null,
-      "all_lines": {},
-      "neutral_site": true,
-      "is_dog": true
     },
     {
       "away": "Alcorn St.",
