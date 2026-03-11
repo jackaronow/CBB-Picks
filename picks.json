@@ -1,1 +1,1602 @@
-
+{
+  "date": "2026-03-11",
+  "updated": "2026-03-11 10:52 AM",
+  "record": {
+    "ats_combined": {
+      "wins": 129,
+      "losses": 87,
+      "pct": 0.597
+    },
+    "premium": {
+      "wins": 42,
+      "losses": 33,
+      "pct": 0.56
+    },
+    "free_plays": {
+      "wins": 87,
+      "losses": 54,
+      "pct": 0.617
+    },
+    "pod": {
+      "wins": 12,
+      "losses": 3,
+      "pct": 0.8
+    },
+    "profit": 4336.53,
+    "profit_flat": 3027.39,
+    "total_bets": 216
+  },
+  "splits": [
+    {
+      "threshold": 4,
+      "wins": 124,
+      "losses": 77,
+      "pct": 0.617
+    },
+    {
+      "threshold": 5,
+      "wins": 77,
+      "losses": 48,
+      "pct": 0.616
+    },
+    {
+      "threshold": 6,
+      "wins": 51,
+      "losses": 30,
+      "pct": 0.63
+    },
+    {
+      "threshold": 7,
+      "wins": 31,
+      "losses": 15,
+      "pct": 0.674
+    },
+    {
+      "threshold": 8,
+      "wins": 22,
+      "losses": 8,
+      "pct": 0.733
+    }
+  ],
+  "daily_history": [
+    {
+      "date": "2026-02-24",
+      "wins": 8,
+      "losses": 5,
+      "pct": 0.615,
+      "profit": 390.92
+    },
+    {
+      "date": "2026-02-25",
+      "wins": 16,
+      "losses": 3,
+      "pct": 0.842,
+      "profit": 1509.11
+    },
+    {
+      "date": "2026-02-26",
+      "wins": 11,
+      "losses": 4,
+      "pct": 0.733,
+      "profit": 954.56
+    },
+    {
+      "date": "2026-02-27",
+      "wins": 4,
+      "losses": 3,
+      "pct": 0.571,
+      "profit": 418.19
+    },
+    {
+      "date": "2026-02-28",
+      "wins": 31,
+      "losses": 11,
+      "pct": 0.738,
+      "profit": 1881.85
+    },
+    {
+      "date": "2026-03-01",
+      "wins": 5,
+      "losses": 6,
+      "pct": 0.455,
+      "profit": -172.72
+    },
+    {
+      "date": "2026-03-02",
+      "wins": 5,
+      "losses": 2,
+      "pct": 0.714,
+      "profit": 418.19
+    },
+    {
+      "date": "2026-03-03",
+      "wins": 10,
+      "losses": 10,
+      "pct": 0.5,
+      "profit": 72.74
+    },
+    {
+      "date": "2026-03-04",
+      "wins": 9,
+      "losses": 5,
+      "pct": 0.643,
+      "profit": 481.83
+    },
+    {
+      "date": "2026-03-05",
+      "wins": 2,
+      "losses": 10,
+      "pct": 0.167,
+      "profit": -1227.27
+    },
+    {
+      "date": "2026-03-06",
+      "wins": 5,
+      "losses": 4,
+      "pct": 0.556,
+      "profit": 218.19
+    },
+    {
+      "date": "2026-03-07",
+      "wins": 12,
+      "losses": 13,
+      "pct": 0.48,
+      "profit": -236.35
+    },
+    {
+      "date": "2026-03-10",
+      "wins": 6,
+      "losses": 1,
+      "pct": 0.857,
+      "profit": 900.01
+    }
+  ],
+  "past_pods": [
+    {
+      "date": "2026-03-10",
+      "away": "Monmouth",
+      "home": "Hofstra",
+      "bet": "Hofstra -4.5",
+      "edge": 8.5,
+      "actual_score": "69-75",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-07",
+      "away": "George Washington",
+      "home": "Loyola Chicago",
+      "bet": "George Washington -10.5",
+      "edge": 10.5,
+      "actual_score": "62-68",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-06",
+      "away": "Northern Illinois",
+      "home": "Akron",
+      "bet": "Akron -22.5",
+      "edge": 10.5,
+      "actual_score": "55-94",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-05",
+      "away": "Rutgers",
+      "home": "Michigan St.",
+      "bet": "Michigan St. -19.5",
+      "edge": 10.7,
+      "actual_score": "87-91",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-04",
+      "away": "Maryland",
+      "home": "Wisconsin",
+      "bet": "Wisconsin -13.5",
+      "edge": 7.5,
+      "actual_score": "45-78",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-03",
+      "away": "Oregon",
+      "home": "Illinois",
+      "bet": "Illinois -18.5",
+      "edge": 10.9,
+      "actual_score": "54-80",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-02",
+      "away": "Montana St.",
+      "home": "Northern Arizona",
+      "bet": "Montana St. -5.5",
+      "edge": 8.3,
+      "actual_score": "76-65",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-01",
+      "away": "Wichita St.",
+      "home": "UTSA",
+      "bet": "Wichita St. -14.5",
+      "edge": 9.3,
+      "actual_score": "84-67",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-28",
+      "away": "Stephen F. Austin",
+      "home": "Houston Christian",
+      "bet": "Stephen F. Austin -8.0",
+      "edge": 10.9,
+      "actual_score": "77-56",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-27",
+      "away": "Rider",
+      "home": "Iona",
+      "bet": "Iona -11.5",
+      "edge": 8.6,
+      "actual_score": "58-80",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-26",
+      "away": "Bryant",
+      "home": "UMBC",
+      "bet": "UMBC -10.5",
+      "edge": 9.4,
+      "actual_score": "58-70",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-25",
+      "away": "Evansville",
+      "home": "Belmont",
+      "bet": "Belmont -19.5",
+      "edge": 8.5,
+      "actual_score": "64-98",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-24",
+      "away": "Duke",
+      "home": "Notre Dame",
+      "bet": "Duke -17.5",
+      "edge": 9.0,
+      "actual_score": "100-56",
+      "result": "won"
+    }
+  ],
+  "past_premiums": [
+    {
+      "date": "2026-03-10",
+      "away": "UMass Lowell",
+      "home": "UMBC",
+      "bet": "UMBC -7.5",
+      "edge": 10.5,
+      "actual_score": "69-91",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-10",
+      "away": "Kansas St.",
+      "home": "BYU",
+      "bet": "BYU -10.5",
+      "edge": 7.5,
+      "actual_score": "91-105",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-10",
+      "away": "Penn St.",
+      "home": "Northwestern",
+      "bet": "Northwestern -6.5",
+      "edge": 8.5,
+      "actual_score": "66-76",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-10",
+      "away": "Monmouth",
+      "home": "Hofstra",
+      "bet": "Hofstra -4.5",
+      "edge": 8.5,
+      "actual_score": "69-75",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-07",
+      "away": "Connecticut",
+      "home": "Marquette",
+      "bet": "Connecticut -9.5",
+      "edge": 7.1,
+      "actual_score": "62-68",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-07",
+      "away": "George Washington",
+      "home": "Loyola Chicago",
+      "bet": "George Washington -10.5",
+      "edge": 10.5,
+      "actual_score": "62-68",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-07",
+      "away": "Arizona",
+      "home": "Colorado",
+      "bet": "Arizona -13.5",
+      "edge": 8.9,
+      "actual_score": "89-79",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-07",
+      "away": "Air Force",
+      "home": "Nevada",
+      "bet": "Nevada -24.5",
+      "edge": 8.5,
+      "actual_score": "59-74",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-07",
+      "away": "New Hampshire",
+      "home": "UMBC",
+      "bet": "UMBC -12.5",
+      "edge": 7.0,
+      "actual_score": "69-84",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-06",
+      "away": "Northern Illinois",
+      "home": "Akron",
+      "bet": "Akron -22.5",
+      "edge": 10.5,
+      "actual_score": "55-94",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-06",
+      "away": "Miami OH",
+      "home": "Ohio",
+      "bet": "Miami OH -5.5",
+      "edge": 5.3,
+      "actual_score": "110-108",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-06",
+      "away": "UNLV",
+      "home": "San Diego St.",
+      "bet": "San Diego St. -9.5",
+      "edge": 5.4,
+      "actual_score": "86-89",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-06",
+      "away": "VMI",
+      "home": "UNC Greensboro",
+      "bet": "UNC Greensboro -7.5",
+      "edge": 5.6,
+      "actual_score": "70-84",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-06",
+      "away": "Bellarmine",
+      "home": "Central Arkansas",
+      "bet": "Central Arkansas -6.5",
+      "edge": 5.1,
+      "actual_score": "73-86",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-05",
+      "away": "Tulsa",
+      "home": "East Carolina",
+      "bet": "Tulsa -9.5",
+      "edge": 8.7,
+      "actual_score": "93-66",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-05",
+      "away": "Rutgers",
+      "home": "Michigan St.",
+      "bet": "Michigan St. -19.5",
+      "edge": 10.7,
+      "actual_score": "87-91",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-05",
+      "away": "Drake",
+      "home": "Southern Illinois",
+      "bet": "Southern Illinois -4.5",
+      "edge": 4.4,
+      "actual_score": "67-63",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-05",
+      "away": "Evansville",
+      "home": "Northern Iowa",
+      "bet": "Northern Iowa -14.5",
+      "edge": 7.5,
+      "actual_score": "59-68",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-05",
+      "away": "Oral Roberts",
+      "home": "North Dakota St.",
+      "bet": "North Dakota St. -11.5",
+      "edge": 4.6,
+      "actual_score": "65-76",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-04",
+      "away": "St. Bonaventure",
+      "home": "George Washington",
+      "bet": "George Washington -7.5",
+      "edge": 7.0,
+      "actual_score": "82-91",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-04",
+      "away": "Ohio St.",
+      "home": "Penn St.",
+      "bet": "Ohio St. -7.5",
+      "edge": 6.6,
+      "actual_score": "94-62",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-04",
+      "away": "Loyola Chicago",
+      "home": "Saint Louis",
+      "bet": "Saint Louis -27.5",
+      "edge": 8.7,
+      "actual_score": "65-79",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-04",
+      "away": "Maryland",
+      "home": "Wisconsin",
+      "bet": "Wisconsin -13.5",
+      "edge": 7.5,
+      "actual_score": "45-78",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-04",
+      "away": "Chicago St.",
+      "home": "LIU",
+      "bet": "LIU -11.5",
+      "edge": 5.5,
+      "actual_score": "75-79",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-03",
+      "away": "Drexel",
+      "home": "Hofstra",
+      "bet": "Hofstra -8.5",
+      "edge": 7.0,
+      "actual_score": "51-62",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-03",
+      "away": "Oregon",
+      "home": "Illinois",
+      "bet": "Illinois -18.5",
+      "edge": 10.9,
+      "actual_score": "54-80",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-03",
+      "away": "Vanderbilt",
+      "home": "Mississippi",
+      "bet": "Vanderbilt -6.5",
+      "edge": 6.3,
+      "actual_score": "89-86",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-03",
+      "away": "Grand Canyon",
+      "home": "Air Force",
+      "bet": "Grand Canyon -19.5",
+      "edge": 8.6,
+      "actual_score": "86-60",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-03",
+      "away": "Louisiana Monroe",
+      "home": "Old Dominion",
+      "bet": "Old Dominion -10.5",
+      "edge": 7.9,
+      "actual_score": "80-87",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-02",
+      "away": "Coppin St.",
+      "home": "Howard",
+      "bet": "Howard -19.5",
+      "edge": 8.0,
+      "actual_score": "70-90",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-02",
+      "away": "Northwestern St.",
+      "home": "UT Rio Grande Valley",
+      "bet": "UT Rio Grande Valley -9.5",
+      "edge": 7.9,
+      "actual_score": "62-74",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-02",
+      "away": "Southeastern Louisiana",
+      "home": "New Orleans",
+      "bet": "New Orleans -7.5",
+      "edge": 6.2,
+      "actual_score": "82-78",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-02",
+      "away": "Montana St.",
+      "home": "Northern Arizona",
+      "bet": "Montana St. -5.5",
+      "edge": 8.3,
+      "actual_score": "76-65",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-02",
+      "away": "Stephen F. Austin",
+      "home": "Incarnate Word",
+      "bet": "Stephen F. Austin -8.5",
+      "edge": 6.8,
+      "actual_score": "76-68",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-01",
+      "away": "Merrimack",
+      "home": "Niagara",
+      "bet": "Merrimack -8.5",
+      "edge": 5.9,
+      "actual_score": "73-66",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-01",
+      "away": "Rider",
+      "home": "Siena",
+      "bet": "Siena -15.5",
+      "edge": 8.3,
+      "actual_score": "61-76",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-01",
+      "away": "Memphis",
+      "home": "East Carolina",
+      "bet": "Memphis -5.0",
+      "edge": 6.9,
+      "actual_score": "68-84",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-01",
+      "away": "Tulane",
+      "home": "South Florida",
+      "bet": "South Florida -14.5",
+      "edge": 6.2,
+      "actual_score": "62-90",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-01",
+      "away": "Wichita St.",
+      "home": "UTSA",
+      "bet": "Wichita St. -14.5",
+      "edge": 9.3,
+      "actual_score": "84-67",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-28",
+      "away": "Stephen F. Austin",
+      "home": "Houston Christian",
+      "bet": "Stephen F. Austin -8.0",
+      "edge": 10.9,
+      "actual_score": "77-56",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-28",
+      "away": "East Texas A&M",
+      "home": "UT Rio Grande Valley",
+      "bet": "UT Rio Grande Valley -10.5",
+      "edge": 7.6,
+      "actual_score": "55-63",
+      "result": "lost"
+    },
+    {
+      "date": "2026-02-28",
+      "away": "Fordham",
+      "home": "VCU",
+      "bet": "VCU -12.5",
+      "edge": 7.9,
+      "actual_score": "63-82",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-28",
+      "away": "Air Force",
+      "home": "Wyoming",
+      "bet": "Wyoming -20.5",
+      "edge": 7.6,
+      "actual_score": "62-66",
+      "result": "lost"
+    },
+    {
+      "date": "2026-02-28",
+      "away": "Oregon St.",
+      "home": "Santa Clara",
+      "bet": "Santa Clara -16.5",
+      "edge": 8.4,
+      "actual_score": "72-93",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-27",
+      "away": "Brown",
+      "home": "Columbia",
+      "bet": "Columbia -5.5",
+      "edge": 5.3,
+      "actual_score": "62-80",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-27",
+      "away": "Rider",
+      "home": "Iona",
+      "bet": "Iona -11.5",
+      "edge": 8.6,
+      "actual_score": "58-80",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-27",
+      "away": "Manhattan",
+      "home": "Saint Peter's",
+      "bet": "Saint Peter's -7.5",
+      "edge": 6.2,
+      "actual_score": "65-75",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-27",
+      "away": "Louisiana Monroe",
+      "home": "Troy",
+      "bet": "Troy -18.5",
+      "edge": 6.6,
+      "actual_score": "65-80",
+      "result": "lost"
+    },
+    {
+      "date": "2026-02-27",
+      "away": "Akron",
+      "home": "Kent St.",
+      "bet": "Akron -3.5",
+      "edge": 6.1,
+      "actual_score": "92-70",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-26",
+      "away": "Bryant",
+      "home": "UMBC",
+      "bet": "UMBC -10.5",
+      "edge": 9.4,
+      "actual_score": "58-70",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-26",
+      "away": "Cal St. Bakersfield",
+      "home": "UC San Diego",
+      "bet": "UC San Diego -14.5",
+      "edge": 8.2,
+      "actual_score": "72-84",
+      "result": "lost"
+    },
+    {
+      "date": "2026-02-26",
+      "away": "Western Illinois",
+      "home": "SIUE",
+      "bet": "SIUE -15.5",
+      "edge": 9.2,
+      "actual_score": "47-67",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-26",
+      "away": "FIU",
+      "home": "Sam Houston St.",
+      "bet": "Sam Houston St. -6.5",
+      "edge": 6.1,
+      "actual_score": "67-100",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-26",
+      "away": "VMI",
+      "home": "Samford",
+      "bet": "Samford -17.5",
+      "edge": 6.1,
+      "actual_score": "61-80",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-25",
+      "away": "Mississippi St.",
+      "home": "Alabama",
+      "bet": "Alabama -15.0",
+      "edge": 8.2,
+      "actual_score": "75-100",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-25",
+      "away": "Portland",
+      "home": "Gonzaga",
+      "bet": "Gonzaga -25.5",
+      "edge": 8.1,
+      "actual_score": "48-89",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-25",
+      "away": "Evansville",
+      "home": "Belmont",
+      "bet": "Belmont -19.5",
+      "edge": 8.5,
+      "actual_score": "64-98",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-25",
+      "away": "Maryland",
+      "home": "Nebraska",
+      "bet": "Nebraska -17.5",
+      "edge": 7.7,
+      "actual_score": "61-74",
+      "result": "lost"
+    },
+    {
+      "date": "2026-02-25",
+      "away": "Tulsa",
+      "home": "Tulane",
+      "bet": "Tulsa -4.5",
+      "edge": 8.5,
+      "actual_score": "90-56",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-24",
+      "away": "Duke",
+      "home": "Notre Dame",
+      "bet": "Duke -17.5",
+      "edge": 9.0,
+      "actual_score": "100-56",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-24",
+      "away": "Northern Illinois",
+      "home": "Toledo",
+      "bet": "Toledo -13.0",
+      "edge": 8.8,
+      "actual_score": "69-79",
+      "result": "lost"
+    },
+    {
+      "date": "2026-02-24",
+      "away": "Arizona",
+      "home": "Baylor",
+      "bet": "Arizona -9.0",
+      "edge": 8.6,
+      "actual_score": "87-80",
+      "result": "lost"
+    },
+    {
+      "date": "2026-02-24",
+      "away": "Cincinnati",
+      "home": "Texas Tech",
+      "bet": "Texas Tech -6.5",
+      "edge": 7.8,
+      "actual_score": "68-80",
+      "result": "won"
+    },
+    {
+      "date": "2026-02-24",
+      "away": "Iowa St.",
+      "home": "Utah",
+      "bet": "Iowa St. -13.5",
+      "edge": 6.6,
+      "actual_score": "75-59",
+      "result": "won"
+    }
+  ],
+  "play_of_the_day": {
+    "away": "San Jose St.",
+    "home": "Boise St.",
+    "pick": "Boise St.",
+    "bet": "Boise St. -15.5",
+    "edge": 14.5,
+    "raw_edge": 15.5,
+    "confidence": 0.921,
+    "pred_score": "58-89",
+    "best_book": "FanDuel",
+    "all_lines": {},
+    "neutral_site": false,
+    "is_dog": false
+  },
+  "premium_picks": [
+    {
+      "away": "Air Force",
+      "home": "Nevada",
+      "pick": "Nevada",
+      "bet": "Nevada -20.5",
+      "edge": 12.3,
+      "raw_edge": 17.5,
+      "confidence": 0.944,
+      "pred_score": "52-90",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Loyola Chicago",
+      "home": "Richmond",
+      "pick": "Richmond",
+      "bet": "Richmond -5.5",
+      "edge": 10.3,
+      "raw_edge": 9.5,
+      "confidence": 0.806,
+      "pred_score": "66-81",
+      "best_book": "FanDuel",
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Mississippi",
+      "home": "Texas",
+      "pick": "Texas",
+      "bet": "Texas -6.5",
+      "edge": 10.3,
+      "raw_edge": 9.5,
+      "confidence": 0.806,
+      "pred_score": "67-83",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -6.5,
+        "DraftKings": -6.5,
+        "BetRivers": -6.5,
+        "Fanatics": -6.5,
+        "LowVig.ag": -6.5,
+        "BetOnline": -6.5,
+        "Caesars": -6.5,
+        "BetMGM": -6.5,
+        "BetUS": -6.5,
+        "Bovada": -6.5
+      },
+      "neutral_site": false,
+      "is_dog": false
+    },
+    {
+      "away": "Maryland",
+      "home": "Iowa",
+      "pick": "Iowa",
+      "bet": "Iowa -11.5",
+      "edge": 9.5,
+      "raw_edge": 10.5,
+      "confidence": 0.83,
+      "pred_score": "60-82",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    }
+  ],
+  "free_plays": [
+    {
+      "away": "Rutgers",
+      "home": "Minnesota",
+      "pick": "Minnesota",
+      "bet": "Minnesota -4.5",
+      "edge": 9.0,
+      "raw_edge": 8.5,
+      "confidence": 0.78,
+      "pred_score": "64-77",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Mississippi St.",
+      "home": "Auburn",
+      "pick": "Auburn",
+      "bet": "Auburn -7.5",
+      "edge": 8.1,
+      "raw_edge": 7.5,
+      "confidence": 0.752,
+      "pred_score": "70-85",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -7.5,
+        "DraftKings": -7.5,
+        "BetRivers": -7.5,
+        "Fanatics": -7.5,
+        "LowVig.ag": -7.5,
+        "BetOnline": -7.5,
+        "Caesars": -7.5,
+        "BetMGM": -7.5,
+        "BetUS": -7.5,
+        "Bovada": -7.5
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Pittsburgh",
+      "home": "N.C. State",
+      "pick": "N.C. State",
+      "bet": "N.C. State -8.5",
+      "edge": 8.1,
+      "raw_edge": 7.5,
+      "confidence": 0.752,
+      "pred_score": "66-82",
+      "best_book": "FanDuel",
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "South Carolina",
+      "home": "Oklahoma",
+      "pick": "Oklahoma",
+      "bet": "Oklahoma -7.5",
+      "edge": 7.1,
+      "raw_edge": 6.5,
+      "confidence": 0.723,
+      "pred_score": "67-81",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Cal Poly",
+      "home": "UC San Diego",
+      "pick": "UC San Diego",
+      "bet": "UC San Diego -5.5",
+      "edge": 7.1,
+      "raw_edge": 6.5,
+      "confidence": 0.723,
+      "pred_score": "71-83",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Tulane",
+      "home": "Memphis",
+      "pick": "Memphis",
+      "bet": "Memphis -4.5",
+      "edge": 6.9,
+      "raw_edge": 6.5,
+      "confidence": 0.723,
+      "pred_score": "68-79",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "BYU",
+      "home": "West Virginia",
+      "pick": "BYU",
+      "bet": "BYU -4.5",
+      "edge": 6.9,
+      "raw_edge": 6.5,
+      "confidence": 0.723,
+      "pred_score": "78-67",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "New Mexico St.",
+      "home": "Sam Houston St.",
+      "pick": "Sam Houston St.",
+      "bet": "Sam Houston St. -4.5",
+      "edge": 6.9,
+      "raw_edge": 6.5,
+      "confidence": 0.723,
+      "pred_score": "71-82",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -4.5,
+        "DraftKings": -4.5,
+        "BetRivers": -4.5,
+        "BetOnline": -4.5,
+        "LowVig.ag": -4.5,
+        "Caesars": -4.5,
+        "BetMGM": -4.5,
+        "Bovada": -5.0,
+        "BetUS": -4.5,
+        "Fanatics": -5.0
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Arizona St.",
+      "home": "Iowa St.",
+      "pick": "Iowa St.",
+      "bet": "Iowa St. -11.5",
+      "edge": 6.8,
+      "raw_edge": 7.5,
+      "confidence": 0.752,
+      "pred_score": "65-84",
+      "best_book": "FanDuel",
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Prairie View A&M",
+      "home": "Bethune Cookman",
+      "pick": "Bethune Cookman",
+      "bet": "Bethune Cookman -5.5",
+      "edge": 6.0,
+      "raw_edge": 5.5,
+      "confidence": 0.691,
+      "pred_score": "70-81",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "BetOnline": -6.0,
+        "LowVig.ag": -6.0,
+        "FanDuel": -5.5,
+        "Caesars": -6.0,
+        "DraftKings": -5.5,
+        "BetRivers": -5.5,
+        "Bovada": -6.0,
+        "Fanatics": -6.0
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "SMU",
+      "home": "Louisville",
+      "pick": "Louisville",
+      "bet": "Louisville -6.5",
+      "edge": 6.0,
+      "raw_edge": 5.5,
+      "confidence": 0.691,
+      "pred_score": "73-85",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Georgetown",
+      "home": "DePaul",
+      "pick": "Georgetown",
+      "bet": "Georgetown +0.5",
+      "edge": 5.4,
+      "raw_edge": 4.5,
+      "confidence": 0.659,
+      "pred_score": "73-69",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Wyoming",
+      "home": "UNLV",
+      "pick": "Wyoming",
+      "bet": "Wyoming +3.5",
+      "edge": 5.4,
+      "raw_edge": 4.5,
+      "confidence": 0.659,
+      "pred_score": "77-76",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Northwestern",
+      "home": "Indiana",
+      "pick": "Indiana",
+      "bet": "Indiana -4.5",
+      "edge": 4.8,
+      "raw_edge": 4.5,
+      "confidence": 0.659,
+      "pred_score": "69-78",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Wake Forest",
+      "home": "Clemson",
+      "pick": "Clemson",
+      "bet": "Clemson -4.5",
+      "edge": 4.8,
+      "raw_edge": 4.5,
+      "confidence": 0.659,
+      "pred_score": "68-77",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    }
+  ],
+  "all_games": [
+    {
+      "away": "LSU",
+      "home": "Kentucky",
+      "pick": "Kentucky",
+      "bet": "Kentucky -8.5",
+      "edge": 3.8,
+      "raw_edge": 3.5,
+      "confidence": 0.625,
+      "pred_score": "69-81",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Missouri St.",
+      "home": "Liberty",
+      "pick": "Liberty",
+      "bet": "Liberty -6.5",
+      "edge": 3.8,
+      "raw_edge": 3.5,
+      "confidence": 0.625,
+      "pred_score": "68-78",
+      "best_book": "FanDuel",
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Jackson St.",
+      "home": "Florida A&M",
+      "pick": "Florida A&M",
+      "bet": "Florida A&M -5.5",
+      "edge": 2.7,
+      "raw_edge": 2.5,
+      "confidence": 0.59,
+      "pred_score": "70-78",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "FanDuel": -5.5,
+        "DraftKings": -5.5,
+        "LowVig.ag": -6.5,
+        "BetOnline": -6.5,
+        "Caesars": -6.5,
+        "BetRivers": -6.5,
+        "Bovada": -6.5
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Delaware St.",
+      "home": "Morgan St.",
+      "pick": "Morgan St.",
+      "bet": "Morgan St. -3.5",
+      "edge": 2.6,
+      "raw_edge": 2.5,
+      "confidence": 0.59,
+      "pred_score": "70-76",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "BetOnline": -3.0,
+        "LowVig.ag": -3.0,
+        "FanDuel": -3.5,
+        "Fanatics": -3.0,
+        "BetRivers": -3.5,
+        "DraftKings": -2.5,
+        "Caesars": -2.5,
+        "BetMGM": -2.5,
+        "Bovada": -3.0
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Tarleton St.",
+      "home": "Abilene Christian",
+      "pick": "Tarleton St.",
+      "bet": "Tarleton St. -2.5",
+      "edge": 2.6,
+      "raw_edge": 2.5,
+      "confidence": 0.59,
+      "pred_score": "74-69",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "BetOnline": 1.5,
+        "LowVig.ag": 1.5,
+        "DraftKings": 1.5,
+        "Fanatics": 2.0,
+        "Caesars": 1.5,
+        "FanDuel": 2.5,
+        "BetRivers": 2.5,
+        "BetMGM": 1.5,
+        "BetUS": 1.5,
+        "Bovada": 2.0
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Temple",
+      "home": "Florida Atlantic",
+      "pick": "Florida Atlantic",
+      "bet": "Florida Atlantic -1.5",
+      "edge": 2.6,
+      "raw_edge": 2.5,
+      "confidence": 0.59,
+      "pred_score": "72-76",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Cincinnati",
+      "home": "UCF",
+      "pick": "Cincinnati",
+      "bet": "Cincinnati -2.5",
+      "edge": 2.6,
+      "raw_edge": 2.5,
+      "confidence": 0.59,
+      "pred_score": "77-72",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "California",
+      "home": "Florida St.",
+      "pick": "Florida St.",
+      "bet": "California +4.5",
+      "edge": 1.8,
+      "raw_edge": 1.5,
+      "confidence": 0.554,
+      "pred_score": "74-77",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "BetOnline": -4.5,
+        "LowVig.ag": -4.5,
+        "DraftKings": -4.5,
+        "Caesars": -4.5,
+        "Fanatics": -5.0,
+        "FanDuel": -4.5,
+        "BetRivers": -4.5,
+        "BetMGM": -4.5,
+        "BetUS": -5.0,
+        "Bovada": -5.0
+      },
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Xavier",
+      "home": "Marquette",
+      "pick": "Marquette",
+      "bet": "Xavier +4.5",
+      "edge": 1.8,
+      "raw_edge": 1.5,
+      "confidence": 0.554,
+      "pred_score": "75-78",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "UC Santa Barbara",
+      "home": "UC Davis",
+      "pick": "UC Santa Barbara",
+      "bet": "UC Davis +5.5",
+      "edge": 1.8,
+      "raw_edge": 1.5,
+      "confidence": 0.554,
+      "pred_score": "75-71",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Fresno St.",
+      "home": "Colorado St.",
+      "pick": "Colorado St.",
+      "bet": "Colorado St. -6.5",
+      "edge": 1.6,
+      "raw_edge": 1.5,
+      "confidence": 0.554,
+      "pred_score": "68-76",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "BetOnline": -7.0,
+        "LowVig.ag": -7.0,
+        "DraftKings": -7.5,
+        "Fanatics": -7.0,
+        "Caesars": -7.0,
+        "FanDuel": -6.5,
+        "BetRivers": -7.5,
+        "BetMGM": -7.5,
+        "BetUS": -7.0,
+        "Bovada": -7.5
+      },
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "St. Bonaventure",
+      "home": "La Salle",
+      "pick": "St. Bonaventure",
+      "bet": "La Salle +5.5",
+      "edge": 0.6,
+      "raw_edge": 0.5,
+      "confidence": 0.518,
+      "pred_score": "76-71",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Providence",
+      "home": "Butler",
+      "pick": "Providence",
+      "bet": "Butler +1.5",
+      "edge": 0.6,
+      "raw_edge": 0.5,
+      "confidence": 0.518,
+      "pred_score": "80-79",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "USC",
+      "home": "Washington",
+      "pick": "Washington",
+      "bet": "USC +5.5",
+      "edge": 0.6,
+      "raw_edge": 0.5,
+      "confidence": 0.518,
+      "pred_score": "73-78",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "McNeese",
+      "home": "Stephen F. Austin",
+      "pick": "McNeese",
+      "bet": "Stephen F. Austin +2.5",
+      "edge": 0.6,
+      "raw_edge": 0.5,
+      "confidence": 0.518,
+      "pred_score": "73-71",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Idaho",
+      "home": "Montana",
+      "pick": "Idaho",
+      "bet": "Montana +2.5",
+      "edge": 0.6,
+      "raw_edge": 0.5,
+      "confidence": 0.518,
+      "pred_score": "75-73",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Boston University",
+      "home": "Lehigh",
+      "pick": "Boston University",
+      "bet": "Boston University -1.5",
+      "edge": 0.5,
+      "raw_edge": 0.5,
+      "confidence": 0.518,
+      "pred_score": "74-72",
+      "best_book": "FanDuel",
+      "all_lines": {},
+      "neutral_site": false,
+      "is_dog": false
+    },
+    {
+      "away": "Oklahoma St.",
+      "home": "TCU",
+      "pick": "TCU",
+      "bet": "TCU -4.5",
+      "edge": 0.5,
+      "raw_edge": 0.5,
+      "confidence": 0.518,
+      "pred_score": "74-79",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "DraftKings": -5.5,
+        "BetOnline": -5.0,
+        "LowVig.ag": -5.0,
+        "Caesars": -5.0,
+        "FanDuel": -4.5,
+        "BetMGM": -5.5,
+        "BetRivers": -4.5,
+        "Bovada": -5.5,
+        "BetUS": -5.0,
+        "Fanatics": -5.0
+      },
+      "neutral_site": true,
+      "is_dog": false
+    }
+  ],
+  "accuracy": {
+    "total_games": 625,
+    "avg_diff": 16.9,
+    "within_5": 45,
+    "within_10": 152,
+    "exact_one_team": 53
+  },
+  "best_predictions": [
+    {
+      "away": "Louisiana",
+      "home": "Troy",
+      "date": "2026-02-24",
+      "pred_score": "59-79",
+      "actual_score": "59-78",
+      "total_diff": 1,
+      "bet": "Troy -11.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "Pittsburgh",
+      "home": "Stanford",
+      "date": "2026-02-25",
+      "pred_score": "68-75",
+      "actual_score": "67-75",
+      "total_diff": 1,
+      "bet": "Pittsburgh +9.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "South Carolina",
+      "home": "Georgia",
+      "date": "2026-02-28",
+      "pred_score": "67-87",
+      "actual_score": "68-87",
+      "total_diff": 1,
+      "bet": "Georgia -11.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "Tulane",
+      "home": "South Florida",
+      "date": "2026-03-01",
+      "pred_score": "62-89",
+      "actual_score": "62-90",
+      "total_diff": 1,
+      "bet": "South Florida -14.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "UNLV",
+      "home": "Grand Canyon",
+      "date": "2026-02-25",
+      "pred_score": "67-82",
+      "actual_score": "67-80",
+      "total_diff": 2,
+      "bet": "Grand Canyon -9.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "Oakland",
+      "home": "IU Indy",
+      "date": "2026-02-25",
+      "pred_score": "88-74",
+      "actual_score": "86-74",
+      "total_diff": 2,
+      "bet": "Oakland -5.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "Florida",
+      "home": "Texas",
+      "date": "2026-02-25",
+      "pred_score": "84-69",
+      "actual_score": "84-71",
+      "total_diff": 2,
+      "bet": "Florida -6.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "Seattle",
+      "home": "Loyola Marymount",
+      "date": "2026-02-28",
+      "pred_score": "71-68",
+      "actual_score": "71-66",
+      "total_diff": 2,
+      "bet": "Seattle +-0.0",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "Nebraska",
+      "home": "USC",
+      "date": "2026-02-28",
+      "pred_score": "82-65",
+      "actual_score": "82-67",
+      "total_diff": 2,
+      "bet": "Nebraska -4.5",
+      "result": "\u2713 Covered"
+    },
+    {
+      "away": "Florida St.",
+      "home": "Pittsburgh",
+      "date": "2026-03-04",
+      "pred_score": "75-72",
+      "actual_score": "75-74",
+      "total_diff": 2,
+      "bet": "Florida St. -1.5",
+      "result": "\u2717 Missed"
+    }
+  ]
+}
