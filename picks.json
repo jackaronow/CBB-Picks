@@ -1,16 +1,16 @@
 {
-  "date": "2026-03-15",
-  "updated": "2026-03-15 11:23 AM",
+  "date": "2026-03-19",
+  "updated": "2026-03-19 10:21 AM",
   "record": {
     "ats_combined": {
-      "wins": 152,
-      "losses": 117,
+      "wins": 156,
+      "losses": 120,
       "pct": 0.565
     },
     "premium": {
-      "wins": 55,
-      "losses": 40,
-      "pct": 0.5789
+      "wins": 56,
+      "losses": 50,
+      "pct": 0.52.8
     },
     "free_plays": {
       "wins": 103,
@@ -18,44 +18,44 @@
       "pct": 0.592
     },
     "pod": {
-      "wins": 13,
+      "wins": 14,
       "losses": 6,
-      "pct": 0.684
+      "pct": 0.70
     },
-    "profit": 2554.74,
-    "profit_flat": 2118.32,
-    "total_bets": 269
+    "profit": 1372.93,
+    "profit_flat": 1581.96,
+    "total_bets": 282
   },
   "splits": [
     {
       "threshold": 4,
       "wins": 147,
-      "losses": 107,
-      "pct": 0.579
+      "losses": 112,
+      "pct": 0.568
     },
     {
       "threshold": 5,
       "wins": 95,
-      "losses": 69,
-      "pct": 0.579
+      "losses": 71,
+      "pct": 0.572
     },
     {
       "threshold": 6,
       "wins": 66,
-      "losses": 47,
-      "pct": 0.584
+      "losses": 48,
+      "pct": 0.579
     },
     {
       "threshold": 7,
       "wins": 38,
-      "losses": 27,
-      "pct": 0.585
+      "losses": 28,
+      "pct": 0.576
     },
     {
       "threshold": 8,
       "wins": 26,
-      "losses": 16,
-      "pct": 0.619
+      "losses": 17,
+      "pct": 0.605
     }
   ],
   "daily_history": [
@@ -177,9 +177,50 @@
       "losses": 5,
       "pct": 0.286,
       "profit": -727.27
+    },
+    {
+      "date": "2026-03-17",
+      "wins": 0,
+      "losses": 3,
+      "pct": 0.0,
+      "profit": -700.0
+    },
+    {
+      "date": "2026-03-18",
+      "wins": 0,
+      "losses": 2,
+      "pct": 0.0,
+      "profit": -500.0
     }
   ],
   "past_pods": [
+    {
+      "date": "2026-03-18",
+      "away": "Navy",
+      "home": "Wake Forest",
+      "bet": "Wake Forest -10.5",
+      "edge": 8.7,
+      "actual_score": "72-82",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-17",
+      "away": "UNC Wilmington",
+      "home": "Yale",
+      "bet": "Yale -4.5",
+      "edge": 4.5,
+      "actual_score": "68-67",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-15",
+      "away": "Dayton",
+      "home": "VCU",
+      "bet": "VCU -3.5",
+      "edge": 2.4,
+      "actual_score": "62-70",
+      "result": "won"
+    },
     {
       "date": "2026-03-14",
       "away": "Virginia",
@@ -335,6 +376,123 @@
     }
   ],
   "past_premiums": [
+    {
+      "date": "2026-03-18",
+      "away": "Miami OH",
+      "home": "SMU",
+      "bet": "SMU -7.5",
+      "edge": 5.9,
+      "actual_score": "89-79",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-18",
+      "away": "Navy",
+      "home": "Wake Forest",
+      "bet": "Wake Forest -10.5",
+      "edge": 8.7,
+      "actual_score": "72-82",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-18",
+      "away": "Sam Houston St.",
+      "home": "New Mexico",
+      "bet": "New Mexico -11.5",
+      "edge": 3.1,
+      "actual_score": "83-107",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-18",
+      "away": "Murray St.",
+      "home": "Nevada",
+      "bet": "Nevada -8.5",
+      "edge": 3.8,
+      "actual_score": "75-89",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-17",
+      "away": "UMBC",
+      "home": "Howard",
+      "bet": "UMBC -1.5",
+      "edge": 0.3,
+      "actual_score": "83-86",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-17",
+      "away": "Liberty",
+      "home": "George Mason",
+      "bet": "George Mason -3.5",
+      "edge": 1.7,
+      "actual_score": "77-71",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-17",
+      "away": "UNC Wilmington",
+      "home": "Yale",
+      "bet": "Yale -4.5",
+      "edge": 4.5,
+      "actual_score": "68-67",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-17",
+      "away": "Davidson",
+      "home": "Oklahoma St.",
+      "bet": "Oklahoma St. -6.5",
+      "edge": 4.5,
+      "actual_score": "80-84",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-17",
+      "away": "South Alabama",
+      "home": "Auburn",
+      "bet": "Auburn -17.5",
+      "edge": 4.5,
+      "actual_score": "67-78",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-15",
+      "away": "Purdue",
+      "home": "Michigan",
+      "bet": "Michigan -6.5",
+      "edge": 1.0,
+      "actual_score": "80-72",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-15",
+      "away": "Dayton",
+      "home": "VCU",
+      "bet": "VCU -3.5",
+      "edge": 2.4,
+      "actual_score": "62-70",
+      "result": "won"
+    },
+    {
+      "date": "2026-03-15",
+      "away": "Vanderbilt",
+      "home": "Arkansas",
+      "bet": "Vanderbilt -2.5",
+      "edge": 1.0,
+      "actual_score": "75-86",
+      "result": "lost"
+    },
+    {
+      "date": "2026-03-15",
+      "away": "Wichita St.",
+      "home": "South Florida",
+      "bet": "South Florida -5.5",
+      "edge": 1.8,
+      "actual_score": "55-70",
+      "result": "won"
+    },
     {
       "date": "2026-03-14",
       "away": "Charlotte",
@@ -1093,14 +1251,14 @@
     }
   ],
   "play_of_the_day": {
-    "away": "Dayton",
-    "home": "VCU",
-    "pick": "VCU",
-    "bet": "VCU -3.5",
-    "edge": 2.6,
-    "raw_edge": 3.5,
-    "confidence": 0.588,
-    "pred_score": "70-77",
+    "away": "High Point",
+    "home": "Wisconsin",
+    "pick": "Wisconsin",
+    "bet": "Wisconsin -10.5",
+    "edge": 9.4,
+    "raw_edge": 14.5,
+    "confidence": 0.822,
+    "pred_score": "66-91",
     "best_book": null,
     "all_lines": {},
     "neutral_site": true,
@@ -1108,81 +1266,249 @@
   },
   "premium_picks": [
     {
-      "away": "Penn",
-      "home": "Yale",
-      "pick": "Yale",
-      "bet": "Yale -8.5",
-      "edge": 2.4,
-      "raw_edge": 3.5,
-      "confidence": 0.588,
-      "pred_score": "68-80",
+      "away": "Troy",
+      "home": "Nebraska",
+      "pick": "Nebraska",
+      "bet": "Nebraska -13.5",
+      "edge": 8.2,
+      "raw_edge": 12.5,
+      "confidence": 0.787,
+      "pred_score": "58-84",
       "best_book": null,
       "all_lines": {},
       "neutral_site": true,
       "is_dog": false
     },
     {
-      "away": "Wichita St.",
-      "home": "South Florida",
-      "pick": "South Florida",
-      "bet": "South Florida -5.5",
-      "edge": 1.8,
-      "raw_edge": 2.5,
-      "confidence": 0.563,
-      "pred_score": "71-79",
+      "away": "McNeese",
+      "home": "Vanderbilt",
+      "pick": "Vanderbilt",
+      "bet": "Vanderbilt -12.5",
+      "edge": 8.2,
+      "raw_edge": 12.5,
+      "confidence": 0.787,
+      "pred_score": "62-87",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "South Florida",
+      "home": "Louisville",
+      "pick": "Louisville",
+      "bet": "Louisville -4.5",
+      "edge": 8.0,
+      "raw_edge": 10.5,
+      "confidence": 0.748,
+      "pred_score": "70-85",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "North Dakota St.",
+      "home": "Michigan St.",
+      "pick": "Michigan St.",
+      "bet": "Michigan St. -15.5",
+      "edge": 7.4,
+      "raw_edge": 10.5,
+      "confidence": 0.748,
+      "pred_score": "59-85",
+      "best_book": "FanDuel",
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    }
+  ],
+  "free_plays": [
+    {
+      "away": "TCU",
+      "home": "Ohio St.",
+      "pick": "Ohio St.",
+      "bet": "Ohio St. -2.5",
+      "edge": 5.7,
+      "raw_edge": 7.5,
+      "confidence": 0.683,
+      "pred_score": "69-79",
       "best_book": "FanDuel",
       "all_lines": {
-        "DraftKings": -5.5,
-        "BetOnline": -5.5,
-        "LowVig.ag": -5.5,
-        "Caesars": -5.5,
-        "BetRivers": -5.5,
-        "FanDuel": -5.5,
-        "BetMGM": -5.5,
-        "Bovada": -6.0,
-        "BetUS": -5.5,
-        "Fanatics": -5.5
+        "DraftKings": -2.5,
+        "FanDuel": -2.5,
+        "BetRivers": -2.5,
+        "Caesars": -2.0,
+        "Fanatics": -2.0,
+        "BetOnline": -2.0,
+        "LowVig.ag": -2.0,
+        "BetUS": -2.0,
+        "Bovada": -2.5,
+        "MyBookie": -2.0
+      },
+      "neutral_site": true,
+      "is_dog": false
+    }
+  ],
+  "all_games": [
+    {
+      "away": "Hawaii",
+      "home": "Arkansas",
+      "pick": "Arkansas",
+      "bet": "Arkansas -15.5",
+      "edge": 6.0,
+      "raw_edge": 8.5,
+      "confidence": 0.706,
+      "pred_score": "65-89",
+      "best_book": "FanDuel",
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Howard",
+      "home": "Michigan",
+      "pick": "Michigan",
+      "bet": "Howard +31.5",
+      "edge": 5.7,
+      "raw_edge": 7.5,
+      "confidence": 0.683,
+      "pred_score": "63-87",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "VCU",
+      "home": "North Carolina",
+      "pick": "North Carolina",
+      "bet": "North Carolina -2.5",
+      "edge": 3.4,
+      "raw_edge": 4.5,
+      "confidence": 0.613,
+      "pred_score": "72-79",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Kennesaw St.",
+      "home": "Gonzaga",
+      "pick": "Gonzaga",
+      "bet": "Gonzaga -21.5",
+      "edge": 2.1,
+      "raw_edge": 3.5,
+      "confidence": 0.588,
+      "pred_score": "64-89",
+      "best_book": "FanDuel",
+      "all_lines": {
+        "DraftKings": -21.5,
+        "FanDuel": -21.5,
+        "BetMGM": -21.5,
+        "Caesars": -21.5,
+        "BetRivers": -20.5,
+        "Fanatics": -21.0,
+        "BetOnline": -21.0,
+        "LowVig.ag": -21.0,
+        "BetUS": -21.0,
+        "Bovada": -21.0,
+        "MyBookie": -21.0
       },
       "neutral_site": true,
       "is_dog": false
     },
     {
-      "away": "Vanderbilt",
-      "home": "Arkansas",
-      "pick": "Vanderbilt",
-      "bet": "Vanderbilt -2.5",
-      "edge": 1.1,
-      "raw_edge": 1.5,
-      "confidence": 0.538,
-      "pred_score": "82-78",
+      "away": "Saint Louis",
+      "home": "Georgia",
+      "pick": "Georgia",
+      "bet": "Georgia -2.5",
+      "edge": 2.0,
+      "raw_edge": 2.5,
+      "confidence": 0.563,
+      "pred_score": "78-83",
       "best_book": null,
       "all_lines": {},
       "neutral_site": true,
       "is_dog": false
     },
     {
-      "away": "Purdue",
-      "home": "Michigan",
-      "pick": "Michigan",
-      "bet": "Michigan -6.5",
-      "edge": 1.0,
+      "away": "Siena",
+      "home": "Duke",
+      "pick": "Duke",
+      "bet": "Siena +27.5",
+      "edge": 1.9,
+      "raw_edge": 2.5,
+      "confidence": 0.563,
+      "pred_score": "58-83",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Texas A&M",
+      "home": "Saint Mary's",
+      "pick": "Saint Mary's",
+      "bet": "Saint Mary's -2.5",
+      "edge": 1.1,
       "raw_edge": 1.5,
       "confidence": 0.538,
-      "pred_score": "72-80",
+      "pred_score": "73-77",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Texas",
+      "home": "BYU",
+      "pick": "BYU",
+      "bet": "BYU -2.5",
+      "edge": 1.1,
+      "raw_edge": 1.5,
+      "confidence": 0.538,
+      "pred_score": "76-80",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": false
+    },
+    {
+      "away": "Penn",
+      "home": "Illinois",
+      "pick": "Illinois",
+      "bet": "Penn +25.5",
+      "edge": 0.4,
+      "raw_edge": 0.5,
+      "confidence": 0.513,
+      "pred_score": "62-87",
+      "best_book": null,
+      "all_lines": {},
+      "neutral_site": true,
+      "is_dog": true
+    },
+    {
+      "away": "Idaho",
+      "home": "Houston",
+      "pick": "Houston",
+      "bet": "Houston -23.5",
+      "edge": 0.3,
+      "raw_edge": 0.5,
+      "confidence": 0.513,
+      "pred_score": "59-83",
       "best_book": null,
       "all_lines": {},
       "neutral_site": true,
       "is_dog": false
     }
   ],
-  "free_plays": [],
-  "all_games": [],
   "accuracy": {
-    "total_games": 755,
+    "total_games": 779,
     "avg_diff": 16.8,
-    "within_5": 54,
-    "within_10": 181,
-    "exact_one_team": 61
+    "within_5": 57,
+    "within_10": 186,
+    "exact_one_team": 62
   },
   "best_predictions": [
     {
@@ -1246,6 +1572,16 @@
       "result": "\u2713 Covered"
     },
     {
+      "away": "Wyoming",
+      "home": "Wichita St.",
+      "date": "2026-03-17",
+      "pred_score": "70-75",
+      "actual_score": "70-74",
+      "total_diff": 1,
+      "bet": "Wyoming +5.5",
+      "result": "\u2713 Covered"
+    },
+    {
       "away": "UNLV",
       "home": "Grand Canyon",
       "date": "2026-02-25",
@@ -1273,16 +1609,6 @@
       "actual_score": "84-71",
       "total_diff": 2,
       "bet": "Florida -6.5",
-      "result": "\u2713 Covered"
-    },
-    {
-      "away": "Seattle",
-      "home": "Loyola Marymount",
-      "date": "2026-02-28",
-      "pred_score": "71-68",
-      "actual_score": "71-66",
-      "total_diff": 2,
-      "bet": "Seattle +-0.0",
       "result": "\u2713 Covered"
     }
   ]
